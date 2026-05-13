@@ -1,0 +1,27 @@
+AUTOMACAO — LEIA ANTES
+
+Este projeto foi preparado para atualização diária do relatório às 07:00.
+
+REGRA PRINCIPAL
+A automação deve sobrescrever somente o arquivo `index.html`.
+
+ARQUIVOS QUE DEVEM PERMANECER FIXOS
+- .nojekyll
+- favicon.ico
+- favicon-16x16.png
+- favicon-32x32.png
+- apple-touch-icon.png
+- android-chrome-192x192.png
+- android-chrome-512x512.png
+- site.webmanifest
+- README.md
+- .github/workflows/deploy-pages.yml
+
+FLUXO IDEAL
+1. gerar o novo conteúdo diário;
+2. salvar no arquivo `index.html`;
+3. commit com mensagem descritiva;
+4. push para a branch `main`.
+
+OBSERVACAO
+Se a automação rodar dentro do próprio GitHub Actions e fizer commit usando apenas `GITHUB_TOKEN`, pode haver comportamento indesejado para disparo de novo ciclo de publicação. O caminho mais seguro é a automação rodar fora do GitHub ou usar um fluxo devidamente controlado.

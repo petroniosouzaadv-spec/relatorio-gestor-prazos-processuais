@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relatório do Gestor de Prazos Processuais - 12/05/2026</title>
+    <meta
+      name="description"
+      content="Relatório do Gestor de Prazos Processuais com foco em prazos fatais, intimações recentes, agenda crítica e providências prioritárias."
+    />
+    <meta name="theme-color" content="#16090b" />
+    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 12/05/2026" />
+    <meta
+      property="og:description"
+      content="Painel executivo de prazos fatais, agenda crítica e providências processuais prioritárias."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <style>
+      :root {
+        --bg-top: #15090b;
+        --bg-mid: #2c0a10;
+        --bg-bottom: #07090d;
+        --blood: #8b101d;
+        --blood-strong: #b31322;
+        --blood-soft: #cf5562;
+        --gold: #bb9d6d;
+        --gold-soft: #d7c098;
+        --ink: #f5f2f1;
+        --muted: #c7bcc0;
+        --line: rgba(255, 232, 235, 0.12);
+        --panel: rgba(17, 10, 12, 0.82);
+        --panel-strong: rgba(24, 12, 15, 0.94);
+        --danger: #ff7d8a;
+        --danger-strong: #ff4b5d;
+        --warning: #f3bf67;
+        --success: #9ac8a4;
+        --info: #9fb8d8;
+        --shadow: 0 26px 64px rgba(0, 0, 0, 0.34);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Montserrat, "Segoe UI", Arial, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, rgba(179, 19, 34, 0.18), transparent 22%),
+          linear-gradient(180deg, rgba(139, 16, 29, 0.22) 0%, rgba(139, 16, 29, 0) 20%),
+          linear-gradient(135deg, var(--bg-top) 0%, var(--bg-mid) 44%, var(--bg-bottom) 100%);
+      }
+
+      a {
+        color: var(--gold-soft);
+        text-decoration: none;
+      }
+
+      strong {
+        color: #fff6f7;
+      }
+
+      .page {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 28px 20px 64px;
+      }
+
+      .top-alert {
+        margin-bottom: 18px;
+        padding: 16px 18px;
+        border: 1px solid rgba(255, 125, 138, 0.2);
+        background: linear-gradient(90deg, rgba(179, 19, 34, 0.24), rgba(179, 19, 34, 0.08));
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+      }
+
+      .top-alert p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #fff1f2;
+      }
+
+      .hero {
+        border-radius: 22px;
+        padding: 30px;
+        border: 1px solid rgba(187, 157, 109, 0.24);
+        background:
+          linear-gradient(140deg, rgba(50, 9, 16, 0.95), rgba(14, 12, 16, 0.95)),
+          linear-gradient(180deg, rgba(187, 157, 109, 0.08), rgba(187, 157, 109, 0));
+        box-shadow: var(--shadow);
+      }
+
+      .brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 26px;
+        flex-wrap: wrap;
+      }
+
+      .brand-mark {
+        max-width: 760px;
+      }
+
+      .brandbar {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+
+      .brand-seal {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(187, 157, 109, 0.42);
+        background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95));
+        color: var(--gold-soft);
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        box-shadow: var(--shadow);
+        flex: 0 0 auto;
+      }
+
+      .brand-copy {
+        min-width: 0;
+      }
+
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #d9c8cc;
+        margin-bottom: 4px;
+        display: block;
+      }
+
+      .office-name {
+        margin: 0;
+        font-size: 22px;
+        line-height: 1;
+        font-weight: 800;
+        color: #ffffff;
+      }
+
+      .office-name small {
+        display: block;
+        margin-top: 2px;
+        font-size: 12px;
+        line-height: 1.15;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .title {
+        margin: 0;
+        font-size: clamp(38px, 4.4vw, 64px);
+        line-height: 0.95;
+        font-weight: 800;
+      }
+
+      .subtitle {
+        margin: 18px 0 0;
+        max-width: 760px;
+        line-height: 1.75;
+        font-size: 16px;
+        color: #e4dadd;
+      }
+
+      .rule {
+        margin-top: 22px;
+        width: 136px;
+        height: 2px;
+        background: linear-gradient(90deg, var(--danger-strong), rgba(255, 75, 93, 0));
+      }
+
+      .stamp {
+        min-width: 290px;
+        max-width: 340px;
+        padding: 20px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 125, 138, 0.16);
+        background: rgba(255, 255, 255, 0.035);
+      }
+
+      .stamp h2,
+      .section h2 {
+        margin: 0 0 10px;
+        font-size: 14px;
+        color: var(--gold-soft);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .stamp p {
+        margin: 7px 0;
+        font-size: 15px;
+        line-height: 1.62;
+        color: #f2e8ea;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+        margin-top: 22px;
+      }
+
+      .grid.summary {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .grid.main {
+        grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.92fr);
+        align-items: start;
+      }
+
+      .metric,
+      .section,
+      .callout {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px;
+        backdrop-filter: blur(12px);
+        box-shadow: var(--shadow);
+      }
+
+      .metric .value {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+
+      .metric .label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #d5c0c5;
+      }
+
+      .metric .desc {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.62;
+      }
+
+      .value.danger {
+        color: var(--danger-strong);
+      }
+
+      .value.warning {
+        color: var(--warning);
+      }
+
+      .value.gold {
+        color: var(--gold);
+      }
+
+      .value.info {
+        color: var(--info);
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        align-items: flex-start;
+        margin-bottom: 16px;
+      }
+
+      .section-header p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .item {
+        padding: 15px 16px;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 240, 242, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .item h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .item p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.72;
+        color: #e6dbde;
+      }
+
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+
+      .badge {
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 11px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .badge.critical {
+        color: #ffd5da;
+        border-color: rgba(255, 75, 93, 0.38);
+        background: rgba(255, 75, 93, 0.11);
+      }
+
+      .badge.high {
+        color: #ffe0aa;
+        border-color: rgba(243, 191, 103, 0.24);
+        background: rgba(243, 191, 103, 0.08);
+      }
+
+      .badge.medium {
+        color: #e7dfe2;
+        border-color: rgba(231, 223, 226, 0.16);
+      }
+
+      .badge.low {
+        color: #d6eadb;
+        border-color: rgba(154, 200, 164, 0.2);
+        background: rgba(154, 200, 164, 0.08);
+      }
+
+      .date-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .date-time {
+        min-width: 92px;
+        color: var(--warning);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .source-list,
+      .meta {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 240, 242, 0.08);
+        font-size: 12px;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .callout {
+        background: var(--panel-strong);
+      }
+
+      .callout p {
+        margin: 0;
+        color: #e9dfe2;
+        line-height: 1.72;
+        font-size: 15px;
+      }
+
+      .footnote {
+        margin-top: 20px;
+        padding: 18px 20px;
+        border-radius: 16px;
+        background: rgba(17, 10, 12, 0.92);
+        border: 1px solid rgba(187, 157, 109, 0.14);
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.72;
+        box-shadow: var(--shadow);
+      }
+
+      @media (max-width: 980px) {
+        .grid.summary,
+        .grid.main {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 18px 14px 40px;
+        }
+
+        .hero,
+        .metric,
+        .section,
+        .callout {
+          padding: 18px;
+          border-radius: 15px;
+        }
+
+        .brand-seal {
+          width: 42px;
+          height: 42px;
+          font-size: 14px;
+        }
+
+        .office-name {
+          font-size: 19px;
+        }
+
+        .office-name small {
+          font-size: 11px;
+        }
+
+        .title {
+          font-size: clamp(36px, 10.6vw, 50px);
+        }
+
+        .subtitle,
+        .top-alert p,
+        .stamp p,
+        .item p,
+        .callout p {
+          font-size: 14px;
+        }
+
+        .metric .value {
+          font-size: 34px;
+        }
+
+        .stamp {
+          width: 100%;
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="top-alert">
+        <p>
+          <strong>Alerta de risco:</strong> existem prazos fatais vencendo hoje e a manhã de 14/05/2026 já está comprimida por audiência e múltiplas providências operacionais. A lógica do relatório é simples: conferir imediatamente o que vence hoje e antecipar em 13/05 tudo o que puder evitar perda de prazo na manhã seguinte.
+        </p>
+      </section>
+
+      <section class="hero">
+        <div class="brand">
+          <div class="brand-mark">
+            <div class="brandbar">
+              <div class="brand-seal">PS</div>
+              <div class="brand-copy">
+                <span class="eyebrow">Petrônio Souza Advogados Associados</span>
+                <h1 class="office-name">Petrônio Souza<small>Advogados Associados</small></h1>
+              </div>
+            </div>
+            <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
+            <p class="subtitle">
+              Consolidação realizada em <strong>12/05/2026 às 20:46</strong>, no fuso <strong>America/Sao_Paulo</strong>, com base em Google Agenda, Gmail e registros operacionais já organizados. Este painel foi desenhado para leitura executiva rápida, priorização jurídica imediata e prevenção objetiva de perda de prazo.
+            </p>
+            <div class="rule"></div>
+          </div>
+          <aside class="stamp">
+            <h2>Leitura executiva</h2>
+            <p><strong>Risco dominante:</strong> 2 prazos fatais vencem hoje e precisam de conferência final de cumprimento.</p>
+            <p><strong>Próximo gargalo:</strong> 14/05/2026 concentra audiência às 08:00 e cinco blocos operacionais até 10:15.</p>
+            <p><strong>Estratégia segura:</strong> tratar 13/05 como dia de antecipação, triagem de publicações e preparo da audiência.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="grid summary">
+        <article class="metric">
+          <div class="value danger">2</div>
+          <div class="label">Prazos fatais vencendo em 12/05</div>
+          <div class="desc">Os processos 0000439-72.2026.5.06.0142 e 0000223-05.2024.5.06.0103 exigem conferência imediata no sistema.</div>
+        </article>
+        <article class="metric">
+          <div class="value warning">2</div>
+          <div class="label">Novas publicações a qualificar em 13/05</div>
+          <div class="desc">Há nova publicação via Jusbrasil e intimação TRT6 que podem gerar nova organização de prazo.</div>
+        </article>
+        <article class="metric">
+          <div class="value gold">1</div>
+          <div class="label">Audiência crítica em 14/05 às 08:00</div>
+          <div class="desc">CEJUSC - Olinda, em meio a uma manhã já tomada por blocos de providência e revisão processual.</div>
+        </article>
+        <article class="metric">
+          <div class="value info">5</div>
+          <div class="label">Blocos de prazo até 10:00 em 14/05</div>
+          <div class="desc">Há acúmulo operacional suficiente para justificar preparo prévio ainda em 13/05.</div>
+        </article>
+      </section>
+
+      <section class="grid main">
+        <div class="list">
+          <article class="section">
+            <div class="section-header">
+              <div>
+                <h2>Panorama do dia</h2>
+              </div>
+              <p>Leitura executiva do risco imediato, da pressão de agenda e do que não deve ser empurrado para o dia seguinte.</p>
+            </div>
+            <div class="list">
+              <div class="item">
+                <h3>1. Existem 2 prazos fatais vencendo hoje e eles permanecem como risco máximo até confirmação de protocolo.</h3>
+                <p>Os processos <strong>0000439-72.2026.5.06.0142</strong> e <strong>0000223-05.2024.5.06.0103</strong> devem ser tratados como pendência crítica até que o PJe/TRT demonstre claramente o cumprimento. Sem essa prova, a gestão correta é agir como se ainda houvesse risco de perda até 23:59.</p>
+              </div>
+              <div class="item">
+                <h3>2. O dia 13/05/2026 já nasce com trabalho qualificado e não deve ser consumido apenas com leitura reativa.</h3>
+                <p>Há providência operacional sugerida às 08:00 para o processo <strong>0007599-45.2026.8.17.2001</strong>, além da necessidade de leitura da publicação do processo <strong>0000212-48.2026.5.06.0121</strong> e da intimação do processo <strong>0000338-95.2026.5.06.0122</strong>.</p>
+              </div>
+              <div class="item">
+                <h3>3. A manhã de 14/05/2026 já está estruturalmente congestionada.</h3>
+                <p>Entre 07:00 e 10:00 há uma sequência de blocos processuais, somada à audiência do processo <strong>0037446-79.2019.8.17.2990</strong> no CEJUSC - Olinda, das 08:00 às 09:00. Isso cria risco real de sobreposição e atraso se a preparação não for antecipada em 13/05.</p>
+              </div>
+              <div class="item">
+                <h3>4. O maior ganho tático agora é esvaziar o dia 14/05 antes que ele comece.</h3>
+                <p>Os processos com fatal em <strong>15/05/2026</strong> já admitem preparação prévia. O relatório recomenda reduzir o volume da manhã crítica adiantando leitura, minuta, organização documental e estratégia mínima já em 13/05.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="section">
+            <div class="section-header">
+              <div>
+                <h2>Crítico</h2>
+              </div>
+              <p>Itens que não podem permanecer em estado de incerteza até o encerramento do dia.</p>
+            </div>
+            <div class="list">
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge critical">Risco máximo</span>
+                  <span class="badge medium">TRT6</span>
+                </div>
+                <h3>Processo 0000439-72.2026.5.06.0142</h3>
+                <p><strong>Prazo fatal:</strong> 12/05/2026. <strong>Providência:</strong> confirmar imediatamente no PJe/TRT se houve protocolo ou cumprimento. <strong>Tratamento executivo:</strong> sem prova objetiva no sistema, o item permanece como risco máximo até 23:59.</p>
+              </div>
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge critical">Risco máximo</span>
+                  <span class="badge medium">TRT6</span>
+                </div>
+                <h3>Processo 0000223-05.2024.5.06.0103</h3>
+                <p><strong>Prazo fatal:</strong> 12/05/2026. <strong>Providência:</strong> aplicar a mesma lógica de conferência imediata de protocolo e, se necessário, adotar cumprimento ainda hoje. O risco não pode ser empurrado para amanhã.</p>
+              </div>
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge high">Conflito operacional</span>
+                  <span class="badge medium">Audiência</span>
+                </div>
+                <h3>Processo 0037446-79.2019.8.17.2990</h3>
+                <p><strong>Evento:</strong> audiência no CEJUSC - Olinda em 14/05/2026, das 08:00 às 09:00. <strong>Risco:</strong> está inserida em uma manhã tomada por cinco blocos adicionais de prazo. <strong>Providência:</strong> fechar documentação e estratégia mínima já em 13/05.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="section">
+            <div class="section-header">
+              <div>
+                <h2>Atenção</h2>
+              </div>
+              <p>Itens que exigem leitura qualificada do ato para correta organização do fluxo.</p>
+            </div>
+            <div class="list">
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">13/05 08:00</div>
+                  <h3>0007599-45.2026.8.17.2001</h3>
+                </div>
+                <p><strong>Data operacional sugerida:</strong> 13/05/2026. <strong>Fatal:</strong> 14/05/2026 às 23:59. A peça depende da leitura do despacho ou da intimação, então o primeiro ato útil do dia é abrir o teor e definir a manifestação cabível.</p>
+              </div>
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">13/05</div>
+                  <h3>0000212-48.2026.5.06.0121</h3>
+                </div>
+                <p><strong>Origem:</strong> Gmail/Jusbrasil. <strong>Evento:</strong> nova publicação com data de 13/05/2026. <strong>Providência:</strong> abrir o teor do diário e verificar se a publicação cria novo prazo ou apenas demanda controle de andamento.</p>
+              </div>
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">13/05</div>
+                  <h3>0000338-95.2026.5.06.0122</h3>
+                </div>
+                <p><strong>Origem:</strong> Gmail/TRT6. <strong>Evento:</strong> intimação publicada em 12/05/2026. <strong>Providência:</strong> conferir o teor no PJe, qualificar a natureza do ato e verificar se já deve haver contagem processual efetiva.</p>
+              </div>
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">14/05 07:00</div>
+                  <h3>0002351-26.2024.8.17.4990</h3>
+                </div>
+                <p>Providência operacional antes do fatal de <strong>15/05/2026 às 23:59</strong>. A recomendação é não deixar a leitura ou a organização para a manhã congestionada do dia 14/05.</p>
+              </div>
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">14/05 07:30</div>
+                  <h3>0006873-06.2025.8.17.2810</h3>
+                </div>
+                <p>Analisar sentença e definir manifestação ou recurso antes do fatal de <strong>15/05/2026 às 23:59</strong>. É candidato claro a adiantamento em 13/05.</p>
+              </div>
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">14/05 09:00</div>
+                  <h3>0000483-57.2026.5.06.0121</h3>
+                </div>
+                <p>Andamento do TRT com ato ainda não visível na captura. Exige conferência no sistema antes de qualquer classificação definitiva.</p>
+              </div>
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">14/05 09:30</div>
+                  <h3>0000786-05.2025.5.06.0122</h3>
+                </div>
+                <p>Mesmo cenário de necessidade de leitura qualificada do ato antes da providência. O risco aqui é tratar a agenda como se já houvesse comando processual fechado sem ler o conteúdo efetivo.</p>
+              </div>
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">14/05 10:00</div>
+                  <h3>0007127-84.2026.8.17.2990</h3>
+                </div>
+                <p>Há manifestação cabível até <strong>15/05/2026 às 23:59</strong>. Pela compressão da agenda, é recomendável adiantar leitura, estratégia e estrutura da peça ainda em 13/05.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="list">
+          <article class="section">
+            <div class="section-header">
+              <div>
+                <h2>Monitoramento</h2>
+              </div>
+              <p>Itens sem impacto fatal imediato, mas que não devem sair do radar.</p>
+            </div>
+            <div class="list">
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge medium">Monitorar</span>
+                  <span class="badge medium">TRT6</span>
+                </div>
+                <h3>0000584-94.2026.5.06.0121</h3>
+                <p>Registro de documento sigiloso em 11/05/2026. O e-mail não traz providência explícita, mas vale abertura no PJe se o movimento repercutir em nova exigência processual.</p>
+              </div>
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge medium">Monitorar</span>
+                  <span class="badge medium">TRT6</span>
+                </div>
+                <h3>0000581-39.2026.5.06.0122</h3>
+                <p>Processo concluso para despacho em 11/05/2026. Ainda não há ato exigível identificado, mas o caso merece acompanhamento para captura tempestiva do próximo movimento.</p>
+              </div>
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge low">Administrativo</span>
+                </div>
+                <h3>Banco Toyota - Protocolo 03799348</h3>
+                <p>Foi recebido formulário de solicitação de gravação com exigência de assinatura do titular, reconhecimento de firma e envio físico da via original. É item administrativo relevante, mas sem impacto processual imediato neste horizonte de 48 horas.</p>
+              </div>
+              <div class="item">
+                <div class="badge-row">
+                  <span class="badge low">Triagem concluída</span>
+                </div>
+                <h3>Demais e-mails recentes sem reflexo processual imediato</h3>
+                <p>As demais mensagens não lidas analisadas são predominantemente notificações automáticas, newsletters e alertas técnicos, sem efeito direto sobre o fluxo processual dos próximos dois dias.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="section">
+            <div class="section-header">
+              <div>
+                <h2>Prazos e compromissos por data</h2>
+              </div>
+              <p>Agenda processual consolidada com foco em vencimento fatal, leitura do ato e preparação antecipada.</p>
+            </div>
+            <div class="list">
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">12/05</div>
+                  <h3>Prazos fatais do dia</h3>
+                </div>
+                <p>Processos <strong>0000439-72.2026.5.06.0142</strong> e <strong>0000223-05.2024.5.06.0103</strong>, ambos com vencimento fatal hoje. A única gestão segura é conferir protocolo e, na ausência dele, tratar como pendência máxima.</p>
+              </div>
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">13/05</div>
+                  <h3>Leitura e qualificação de atos</h3>
+                </div>
+                <p>Processo <strong>0007599-45.2026.8.17.2001</strong> às 08:00, mais revisão da publicação de <strong>0000212-48.2026.5.06.0121</strong> e da intimação de <strong>0000338-95.2026.5.06.0122</strong>.</p>
+              </div>
+              <div class="item">
+                <div class="date-line">
+                  <div class="date-time">14/05</div>
+                  <h3>Manhã congestionada</h3>
+                </div>
+                <p>07:00 processo <strong>0002351-26.2024.8.17.4990</strong>; 07:30 processo <strong>0006873-06.2025.8.17.2810</strong>; 08:00 audiência CEJUSC - Olinda; 09:00 processo <strong>0000483-57.2026.5.06.0121</strong>; 09:30 processo <strong>0000786-05.2025.5.06.0122</strong>; 10:00 processo <strong>0007127-84.2026.8.17.2990</strong>.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="section">
+            <div class="section-header">
+              <div>
+                <h2>Prioridades práticas</h2>
+              </div>
+              <p>Ordem recomendada para execução real, com foco em eliminação de risco e descompressão de agenda.</p>
+            </div>
+            <div class="list">
+              <div class="item">
+                <h3>1. Confirmar ainda hoje o fechamento dos prazos fatais de 12/05/2026.</h3>
+                <p>Os processos <strong>0000439-72.2026.5.06.0142</strong> e <strong>0000223-05.2024.5.06.0103</strong> devem ser encerrados apenas após prova objetiva de cumprimento no sistema.</p>
+              </div>
+              <div class="item">
+                <h3>2. Abrir na primeira hora de 13/05 o teor do despacho de 0007599-45.2026.8.17.2001.</h3>
+                <p>Sem leitura do ato, não há como definir a manifestação com segurança. É o primeiro movimento produtivo do dia seguinte.</p>
+              </div>
+              <div class="item">
+                <h3>3. Ler logo no início de 13/05 a publicação de 0000212-48.2026.5.06.0121 e a intimação de 0000338-95.2026.5.06.0122.</h3>
+                <p>Esses dois atos podem criar nova carga de prazo e precisam ser convertidos rapidamente em organização operacional útil.</p>
+              </div>
+              <div class="item">
+                <h3>4. Preparar em 13/05 a documentação e a estratégia mínima da audiência de 14/05 às 08:00.</h3>
+                <p>O objetivo é impedir que a audiência concorra com a própria montagem da pasta ou com decisões de última hora em meio aos demais blocos da manhã.</p>
+              </div>
+              <div class="item">
+                <h3>5. Adiantar em 13/05 os processos com fatal em 15/05/2026.</h3>
+                <p>Priorizar os processos <strong>0002351-26.2024.8.17.4990</strong>, <strong>0006873-06.2025.8.17.2810</strong>, <strong>0000483-57.2026.5.06.0121</strong>, <strong>0000786-05.2025.5.06.0122</strong> e <strong>0007127-84.2026.8.17.2990</strong>.</p>
+              </div>
+              <div class="item">
+                <h3>6. Tratar o formulário do Banco Toyota como item administrativo apartado.</h3>
+                <p>Separar do fluxo processual principal evita contaminar a priorização jurídica com demanda física que não gera risco fatal imediato.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="callout">
+            <h2>Leitura final</h2>
+            <p>
+              O risco real não está apenas no volume. Está na combinação entre fatal de hoje sem baixa confirmada, ato novo que pode gerar reação imediata e uma manhã seguinte já congestionada. A leitura correta é fechar 12/05 com prova de cumprimento e abrir 13/05 como dia de antecipação.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="footnote">
+        Consolidação realizada em <strong>12/05/2026</strong>, com base em agenda, Gmail e registros operacionais já organizados. A leitura executiva prioriza prazo fatal, ato novo, pressão de agenda e ação prática imediata.
+      </section>
+    </main>
+  </body>
+</html>
