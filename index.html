@@ -9,7 +9,7 @@
     <title>Relatório do Gestor de Prazos Processuais - 13/05/2026</title>
     <meta
       name="description"
-      content="Relatório do Gestor de Prazos Processuais com foco em prazos fatais, intimações recentes, agenda crítica e providências prioritárias."
+      content="Relatório do Gestor de Prazos Processuais com foco em prazos fatais, agenda crítica, atos novos e providências prioritárias."
     />
     <meta name="theme-color" content="#16090b" />
     <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 13/05/2026" />
@@ -30,9 +30,7 @@
         --bg-top: #15090b;
         --bg-mid: #2c0a10;
         --bg-bottom: #07090d;
-        --blood: #8b101d;
         --blood-strong: #b31322;
-        --blood-soft: #cf5562;
         --gold: #bb9d6d;
         --gold-soft: #d7c098;
         --ink: #f5f2f1;
@@ -40,7 +38,6 @@
         --line: rgba(255, 232, 235, 0.12);
         --panel: rgba(17, 10, 12, 0.82);
         --panel-strong: rgba(24, 12, 15, 0.94);
-        --danger: #ff7d8a;
         --danger-strong: #ff4b5d;
         --warning: #f3bf67;
         --success: #9ac8a4;
@@ -117,6 +114,7 @@
 
       .brand-mark {
         max-width: 760px;
+        min-width: 0;
       }
 
       .brandbar {
@@ -142,10 +140,6 @@
         flex: 0 0 auto;
       }
 
-      .brand-copy {
-        min-width: 0;
-      }
-
       .eyebrow {
         font-size: 10px;
         letter-spacing: 0.16em;
@@ -158,17 +152,8 @@
       .office-name {
         margin: 0;
         font-size: 22px;
-        line-height: 1;
+        line-height: 1.1;
         font-weight: 800;
-        color: #ffffff;
-      }
-
-      .office-name small {
-        display: block;
-        margin-top: 2px;
-        font-size: 12px;
-        line-height: 1.15;
-        font-weight: 700;
         color: #ffffff;
       }
 
@@ -204,7 +189,8 @@
       }
 
       .stamp h2,
-      .section h2 {
+      .section h2,
+      .callout h2 {
         margin: 0 0 10px;
         font-size: 14px;
         color: var(--gold-soft);
@@ -217,6 +203,28 @@
         font-size: 15px;
         line-height: 1.62;
         color: #f2e8ea;
+      }
+
+      .search-window {
+        margin-top: 14px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(243, 191, 103, 0.24);
+        background: rgba(243, 191, 103, 0.08);
+      }
+
+      .search-window span {
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #ffe2ab;
+        margin-bottom: 6px;
+      }
+
+      .search-window strong {
+        display: block;
+        line-height: 1.6;
       }
 
       .grid {
@@ -376,16 +384,6 @@
         font-weight: 700;
       }
 
-      .source-list,
-      .meta {
-        margin-top: 10px;
-        padding-top: 10px;
-        border-top: 1px solid rgba(255, 240, 242, 0.08);
-        font-size: 12px;
-        line-height: 1.55;
-        color: var(--muted);
-      }
-
       .callout {
         background: var(--panel-strong);
       }
@@ -409,10 +407,38 @@
         box-shadow: var(--shadow);
       }
 
+      .top-alert p,
+      .subtitle,
+      .stamp p,
+      .metric .desc,
+      .section-header p,
+      .item p,
+      .callout p,
+      .footnote {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+      }
+
+      @media (max-width: 1100px) {
+        .brand {
+          flex-direction: column;
+        }
+
+        .stamp {
+          width: 100%;
+          max-width: none;
+        }
+      }
+
       @media (max-width: 980px) {
         .grid.summary,
         .grid.main {
           grid-template-columns: 1fr;
+        }
+
+        .grid.summary {
+          gap: 14px;
         }
       }
 
@@ -429,6 +455,10 @@
           border-radius: 15px;
         }
 
+        .brandbar {
+          align-items: flex-start;
+        }
+
         .brand-seal {
           width: 42px;
           height: 42px;
@@ -439,10 +469,6 @@
           font-size: 19px;
         }
 
-        .office-name small {
-          font-size: 11px;
-        }
-
         .title {
           font-size: clamp(36px, 10.6vw, 50px);
         }
@@ -451,8 +477,10 @@
         .top-alert p,
         .stamp p,
         .item p,
-        .callout p {
+        .callout p,
+        .footnote {
           font-size: 14px;
+          text-align: left;
         }
 
         .metric .value {
@@ -463,6 +491,16 @@
           width: 100%;
           max-width: none;
         }
+
+        .date-line {
+          display: block;
+        }
+
+        .date-time {
+          display: inline-block;
+          margin-bottom: 6px;
+          min-width: 0;
+        }
       }
     </style>
   </head>
@@ -470,7 +508,7 @@
     <main class="page">
       <section class="top-alert">
         <p>
-          <strong>Alerta de risco:</strong> hoje, 13/05/2026, há um prazo operacional que precisa abrir o dia, mas o risco maior está em deixar para amanhã a qualificação de atos novos e a preparação da audiência. O e-mail-resumo do PJe recebido em 12/05 ainda aponta <strong>21 itens vencidos e 2 urgentes</strong>, o que aumenta o risco de dispersão se a fila não for tratada por ordem rigorosa.
+          <strong>Alerta de risco:</strong> hoje, 13/05/2026, há uma providência operacional que precisa abrir o dia, mas o risco maior está em deixar para amanhã a qualificação de atos novos e a preparação da audiência. O relatório automatizado do PJe recebido em 12/05 ainda aponta <strong>21 itens vencidos e 2 urgentes</strong>, o que aumenta o risco de dispersão se a fila não for tratada por ordem rigorosa.
         </p>
       </section>
 
@@ -479,14 +517,14 @@
           <div class="brand-mark">
             <div class="brandbar">
               <div class="brand-seal">PS</div>
-              <div class="brand-copy">
-                <span class="eyebrow">Petrônio Souza Advogados Associados</span>
-                <h1 class="office-name">Petrônio Souza<small>Advogados Associados</small></h1>
+              <div>
+                <span class="eyebrow">Relatório jurídico-operacional</span>
+                <h1 class="office-name">Petrônio Souza Advogados Associados</h1>
               </div>
             </div>
             <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
             <p class="subtitle">
-              Consolidação realizada em <strong>13/05/2026 às 00:56</strong>, no fuso <strong>America/Sao_Paulo</strong>, com base em Google Agenda, Gmail, relatório automatizado do PJe e registros operacionais já organizados. A leitura abaixo prioriza o que exige ação hoje, o que precisa ser antecipado para aliviar 14/05 e o que pede confirmação humana antes de qualquer passo irreversível.
+              Consolidação realizada em <strong>13/05/2026 às 01:26</strong>, no fuso <strong>America/Sao_Paulo</strong>, com base em Google Agenda, Gmail, relatório automatizado do PJe e registros operacionais já organizados. Este painel prioriza o que exige ação hoje, o que precisa ser antecipado para aliviar 14/05 e o que ainda depende de confirmação humana para virar providência segura.
             </p>
             <div class="rule"></div>
           </div>
@@ -495,6 +533,10 @@
             <p><strong>Risco dominante:</strong> a manhã de 14/05 já está comprimida por audiência e cinco blocos operacionais.</p>
             <p><strong>Ponto de partida do dia:</strong> abrir o processo 0007599-45.2026.8.17.2001 e qualificar os atos novos de 0000212-48.2026.5.06.0121 e 0000338-95.2026.5.06.0122.</p>
             <p><strong>Estratégia segura:</strong> usar 13/05 para preparar a audiência, depurar divergências e esvaziar a carga de 14/05 antes que ela comece.</p>
+            <div class="search-window">
+              <span>Janela de pesquisa</span>
+              <strong>De 13/05/2026 00:00 até 15/05/2026 23:59</strong>
+            </div>
           </aside>
         </div>
       </section>
@@ -513,12 +555,12 @@
         <article class="metric">
           <div class="value gold">2</div>
           <div class="label">Blocos já marcados em 15/05</div>
-          <div class="desc">Sexta-feira já começa com preparação antecipada para vencimentos fatais de 18/05/2026.</div>
+          <div class="desc">A sexta-feira já começa com preparação antecipada para vencimentos fatais de 18/05/2026.</div>
         </article>
         <article class="metric">
           <div class="value info">21</div>
           <div class="label">Itens vencidos no relatório PJe</div>
-          <div class="desc">O painel automático recebido em 12/05 também apontou 2 itens urgentes, reforçando a necessidade de triagem por criticidade.</div>
+          <div class="desc">O painel automático recebido em 12/05 também apontou 2 itens urgentes, reforçando a necessidade de triagem separada por criticidade.</div>
         </article>
       </section>
 
@@ -534,7 +576,7 @@
             <div class="list">
               <div class="item">
                 <h3>1. Hoje não há conflito duro de agenda, mas há uma fila jurídica que precisa começar cedo.</h3>
-                <p>O Google Agenda mostra apenas um bloco operacional hoje, às 08:00, para o processo <strong>0007599-45.2026.8.17.2001</strong>. Isso deixa espaço para usar o restante do dia como janela real de antecipação para a manhã de 14/05.</p>
+                <p>O Google Agenda mostra apenas um bloco operacional explícito hoje, às 08:00, para o processo <strong>0007599-45.2026.8.17.2001</strong>. Isso deixa espaço para usar o restante do dia como janela real de antecipação para a manhã de 14/05.</p>
               </div>
               <div class="item">
                 <h3>2. Dois atos novos surgidos por e-mail precisam ser transformados em ação organizada ainda hoje.</h3>
@@ -773,7 +815,7 @@
       </section>
 
       <section class="footnote">
-        Consolidação realizada em <strong>13/05/2026 às 00:56</strong>, no fuso <strong>America/Sao_Paulo</strong>, com base em Google Agenda, Gmail, relatório automatizado do PJe e registros operacionais já organizados. Novo registro criado nesta rodada: audiência por videoconferência do processo <strong>0000212-48.2026.5.06.0121</strong> em 25/05/2026 às 12:00, com término estimado e necessidade de conferência humana do teor completo.
+        Consolidação realizada em <strong>13/05/2026 às 01:26</strong>, no fuso <strong>America/Sao_Paulo</strong>, com base em Google Agenda, Gmail, relatório automatizado do PJe e registros operacionais já organizados. A leitura executiva prioriza prazo fatal, ato novo, pressão de agenda, capacidade operacional e necessidade de conferência humana quando o teor do ato ainda não está claro.
       </section>
     </main>
   </body>
