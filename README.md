@@ -1,4 +1,4 @@
-# Relatório do Gestor de Prazos Processuais
+# Relatório do Gestor de Prazos Processuais.
 
 Este repositório está pronto para publicação no GitHub Pages.
 
