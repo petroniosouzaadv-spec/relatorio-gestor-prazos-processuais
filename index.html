@@ -1,30 +1,24 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang='pt-BR'>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relatório do Gestor de Prazos Processuais - 17/05/2026</title>
-    <meta
-      name="description"
-      content="Relatório do Gestor de Prazos Processuais com foco em prazos fatais, passivo vencido, agenda crítica e providências prioritárias."
-    />
-    <meta name="theme-color" content="#16090b" />
-    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 17/05/2026" />
-    <meta
-      property="og:description"
-      content="Painel executivo de prazos fatais, agenda crítica e providências processuais prioritárias."
-    />
-    <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <meta charset='UTF-8' />
+    <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+    <meta http-equiv='Pragma' content='no-cache' />
+    <meta http-equiv='Expires' content='0' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Relatorio do Gestor de Prazos Processuais - 18/05/2026</title>
+    <meta name='description' content='Relatorio do Gestor de Prazos Processuais com foco em prazos fatais, passivo vencido, agenda critica e providencias prioritarias.' />
+    <meta name='theme-color' content='#16090b' />
+    <meta property='og:title' content='Relatorio do Gestor de Prazos Processuais - 18/05/2026' />
+    <meta property='og:description' content='Painel executivo de prazos fatais, agenda critica e providencias processuais prioritarias.' />
+    <meta property='og:type' content='website' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap' rel='stylesheet' />
+    <link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png' />
+    <link rel='icon' type='image/png' sizes='192x192' href='android-chrome-192x192.png' />
+    <link rel='apple-touch-icon' sizes='180x180' href='apple-touch-icon.png' />
+    <link rel='manifest' href='site.webmanifest' />
     <style>
       :root {
         --bg-top: #15090b;
@@ -47,769 +41,391 @@
         --info: #9fb8d8;
         --shadow: 0 26px 64px rgba(0, 0, 0, 0.34);
       }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
       body {
         margin: 0;
-        font-family: Montserrat, "Segoe UI", Arial, sans-serif;
+        font-family: Montserrat, 'Segoe UI', Arial, sans-serif;
         color: var(--ink);
         background:
           radial-gradient(circle at top right, rgba(179, 19, 34, 0.18), transparent 22%),
           linear-gradient(180deg, rgba(139, 16, 29, 0.22) 0%, rgba(139, 16, 29, 0) 20%),
           linear-gradient(135deg, var(--bg-top) 0%, var(--bg-mid) 44%, var(--bg-bottom) 100%);
       }
-
-      a {
-        color: var(--gold-soft);
-        text-decoration: none;
-      }
-
-      strong {
-        color: #fff6f7;
-      }
-
-      .page {
-        max-width: 1240px;
-        margin: 0 auto;
-        padding: 28px 20px 64px;
-      }
-
+      a { color: var(--gold-soft); text-decoration: none; }
+      strong { color: #fff6f7; }
+      .page { max-width: 1240px; margin: 0 auto; padding: 28px 20px 64px; }
       .top-alert {
-        margin-bottom: 18px;
-        padding: 16px 18px;
-        border: 1px solid rgba(255, 125, 138, 0.2);
+        margin-bottom: 18px; padding: 16px 18px; border: 1px solid rgba(255, 125, 138, 0.2);
         background: linear-gradient(90deg, rgba(179, 19, 34, 0.24), rgba(179, 19, 34, 0.08));
-        border-radius: 16px;
-        box-shadow: var(--shadow);
+        border-radius: 16px; box-shadow: var(--shadow);
       }
-
-      .top-alert p {
-        margin: 0;
-        font-size: 16px;
-        line-height: 1.7;
-        color: #fff1f2;
-      }
-
+      .top-alert p { margin: 0; font-size: 16px; line-height: 1.7; color: #fff1f2; }
       .hero {
-        border-radius: 22px;
-        padding: 30px;
-        border: 1px solid rgba(187, 157, 109, 0.24);
+        border-radius: 22px; padding: 30px; border: 1px solid rgba(187, 157, 109, 0.24);
         background:
           linear-gradient(140deg, rgba(50, 9, 16, 0.95), rgba(14, 12, 16, 0.95)),
           linear-gradient(180deg, rgba(187, 157, 109, 0.08), rgba(187, 157, 109, 0));
         box-shadow: var(--shadow);
       }
-
-      .brand {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 26px;
-        flex-wrap: wrap;
-      }
-
-      .brand-mark {
-        max-width: 760px;
-        min-width: 0;
-      }
-
-      .brandbar {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 16px;
-      }
-
+      .brand { display: flex; justify-content: space-between; align-items: flex-start; gap: 26px; flex-wrap: wrap; }
+      .brand-mark { max-width: 760px; min-width: 0; }
+      .brandbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
       .brand-seal {
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
+        width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center;
         border: 1px solid rgba(187, 157, 109, 0.42);
         background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95));
-        color: var(--gold-soft);
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        box-shadow: var(--shadow);
-        flex: 0 0 auto;
+        color: var(--gold-soft); font-size: 15px; font-weight: 700; letter-spacing: 0.04em;
+        box-shadow: var(--shadow); flex: 0 0 auto;
       }
-
-      .brand-copy {
-        min-width: 0;
-      }
-
-      .eyebrow {
-        font-size: 10px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: #d9c8cc;
-        margin-bottom: 4px;
-        display: block;
-      }
-
-      .office-name {
-        margin: 0;
-        font-size: 22px;
-        line-height: 1;
-        font-weight: 800;
-        color: #ffffff;
-      }
-
-      .office-name small {
-        display: block;
-        margin-top: 2px;
-        font-size: 12px;
-        line-height: 1.15;
-        font-weight: 700;
-        color: #ffffff;
-      }
-
-      .title {
-        margin: 0;
-        font-size: clamp(38px, 4.4vw, 64px);
-        line-height: 0.95;
-        font-weight: 800;
-      }
-
-      .subtitle {
-        margin: 18px 0 0;
-        max-width: 760px;
-        line-height: 1.75;
-        font-size: 16px;
-        color: #e4dadd;
-      }
-
-      .rule {
-        margin-top: 22px;
-        width: 136px;
-        height: 2px;
-        background: linear-gradient(90deg, var(--danger-strong), rgba(255, 75, 93, 0));
-      }
-
+      .brand-copy { min-width: 0; }
+      .eyebrow { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #d9c8cc; margin-bottom: 4px; display: block; }
+      .office-name { margin: 0; font-size: 22px; line-height: 1; font-weight: 800; color: #ffffff; }
+      .office-name small { display: block; margin-top: 2px; font-size: 12px; line-height: 1.15; font-weight: 700; color: #ffffff; }
+      .title { margin: 0; font-size: clamp(38px, 4.4vw, 64px); line-height: 0.95; font-weight: 800; }
+      .subtitle { margin: 18px 0 0; max-width: 760px; line-height: 1.75; font-size: 16px; color: #e4dadd; }
+      .rule { margin-top: 22px; width: 136px; height: 2px; background: linear-gradient(90deg, var(--danger-strong), rgba(255, 75, 93, 0)); }
       .stamp {
-        min-width: 290px;
-        max-width: 340px;
-        padding: 20px;
-        border-radius: 18px;
-        border: 1px solid rgba(255, 125, 138, 0.16);
-        background: rgba(255, 255, 255, 0.035);
+        min-width: 290px; max-width: 340px; padding: 20px; border-radius: 18px;
+        border: 1px solid rgba(255, 125, 138, 0.16); background: rgba(255, 255, 255, 0.035);
       }
-
-      .stamp h2,
-      .section h2 {
-        margin: 0 0 10px;
-        font-size: 14px;
-        color: var(--gold-soft);
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .stamp p {
-        margin: 7px 0;
-        font-size: 15px;
-        line-height: 1.62;
-        color: #f2e8ea;
-      }
-
+      .stamp h2, .section h2 { margin: 0 0 10px; font-size: 14px; color: var(--gold-soft); letter-spacing: 0.08em; text-transform: uppercase; }
+      .stamp p { margin: 7px 0; font-size: 15px; line-height: 1.62; color: #f2e8ea; }
       .search-window {
-        margin-top: 14px;
-        padding: 12px 14px;
-        border-radius: 14px;
-        border: 1px solid rgba(243, 191, 103, 0.24);
-        background: rgba(243, 191, 103, 0.08);
+        margin-top: 14px; padding: 12px 14px; border-radius: 14px;
+        border: 1px solid rgba(243, 191, 103, 0.24); background: rgba(243, 191, 103, 0.08);
       }
-
-      .search-window span {
-        display: block;
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #ffe2ab;
-        margin-bottom: 6px;
+      .search-window span { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #ffe2ab; margin-bottom: 6px; }
+      .search-window strong { display: block; line-height: 1.6; }
+      .grid { display: grid; gap: 18px; margin-top: 22px; }
+      .grid.summary { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .grid.main { grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.92fr); align-items: start; }
+      .metric, .section, .callout {
+        background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px;
+        backdrop-filter: blur(12px); box-shadow: var(--shadow);
       }
-
-      .search-window strong {
-        display: block;
-        line-height: 1.6;
-      }
-
-      .grid {
-        display: grid;
-        gap: 18px;
-        margin-top: 22px;
-      }
-
-      .grid.summary {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .grid.main {
-        grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.92fr);
-        align-items: start;
-      }
-
-      .metric,
-      .section,
-      .callout {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 22px;
-        backdrop-filter: blur(12px);
-        box-shadow: var(--shadow);
-      }
-
-      .metric .value {
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 1;
-        margin-bottom: 8px;
-      }
-
-      .metric .label {
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #d5c0c5;
-      }
-
-      .metric .desc {
-        margin-top: 10px;
-        color: var(--muted);
-        font-size: 14px;
-        line-height: 1.62;
-      }
-
-      .value.danger {
-        color: var(--danger-strong);
-      }
-
-      .value.warning {
-        color: var(--warning);
-      }
-
-      .value.gold {
-        color: var(--gold);
-      }
-
-      .value.info {
-        color: var(--info);
-      }
-
-      .section-header {
-        display: flex;
-        justify-content: space-between;
-        gap: 14px;
-        align-items: flex-start;
-        margin-bottom: 16px;
-      }
-
-      .section-header p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.55;
-      }
-
-      .list {
-        display: grid;
-        gap: 12px;
-      }
-
-      .item {
-        padding: 15px 16px;
-        border-radius: 15px;
-        border: 1px solid rgba(255, 240, 242, 0.08);
-        background: rgba(255, 255, 255, 0.03);
-      }
-
-      .item h3 {
-        margin: 0 0 8px;
-        font-size: 16px;
-        line-height: 1.5;
-      }
-
-      .item p {
-        margin: 0;
-        font-size: 15px;
-        line-height: 1.72;
-        color: #e6dbde;
-      }
-
-      .badge-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 10px;
-      }
-
-      .badge {
-        padding: 6px 10px;
-        border-radius: 999px;
-        font-size: 11px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        background: rgba(255, 255, 255, 0.05);
-      }
-
-      .badge.critical {
-        color: #ffd5da;
-        border-color: rgba(255, 75, 93, 0.38);
-        background: rgba(255, 75, 93, 0.11);
-      }
-
-      .badge.high {
-        color: #ffe0aa;
-        border-color: rgba(243, 191, 103, 0.24);
-        background: rgba(243, 191, 103, 0.08);
-      }
-
-      .badge.medium {
-        color: #e7dfe2;
-        border-color: rgba(231, 223, 226, 0.16);
-      }
-
-      .badge.low {
-        color: #d6eadb;
-        border-color: rgba(154, 200, 164, 0.2);
-        background: rgba(154, 200, 164, 0.08);
-      }
-
-      .date-line {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: 12px;
-      }
-
-      .date-time {
-        min-width: 92px;
-        color: var(--warning);
-        font-size: 14px;
-        font-weight: 700;
-      }
-
-      .callout {
-        background: var(--panel-strong);
-      }
-
-      .callout p {
-        margin: 0;
-        color: #e9dfe2;
-        line-height: 1.72;
-        font-size: 15px;
-      }
-
+      .metric .value { font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 8px; }
+      .metric .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #d5c0c5; }
+      .metric .desc { margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.62; }
+      .value.danger { color: var(--danger-strong); }
+      .value.warning { color: var(--warning); }
+      .value.gold { color: var(--gold); }
+      .value.info { color: var(--info); }
+      .section-header { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; margin-bottom: 16px; }
+      .section-header p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
+      .list { display: grid; gap: 12px; }
+      .item { padding: 15px 16px; border-radius: 15px; border: 1px solid rgba(255, 240, 242, 0.08); background: rgba(255, 255, 255, 0.03); }
+      .item h3 { margin: 0 0 8px; font-size: 16px; line-height: 1.5; }
+      .item p { margin: 0; font-size: 15px; line-height: 1.72; color: #e6dbde; }
+      .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+      .badge { padding: 6px 10px; border-radius: 999px; font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(255, 255, 255, 0.05); }
+      .badge.critical { color: #ffd5da; border-color: rgba(255, 75, 93, 0.38); background: rgba(255, 75, 93, 0.11); }
+      .badge.high { color: #ffe0aa; border-color: rgba(243, 191, 103, 0.24); background: rgba(243, 191, 103, 0.08); }
+      .badge.medium { color: #e7dfe2; border-color: rgba(231, 223, 226, 0.16); }
+      .badge.low { color: #d6eadb; border-color: rgba(154, 200, 164, 0.2); background: rgba(154, 200, 164, 0.08); }
+      .date-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; }
+      .date-time { min-width: 92px; color: var(--warning); font-size: 14px; font-weight: 700; }
+      .callout { background: var(--panel-strong); }
+      .callout p { margin: 0; color: #e9dfe2; line-height: 1.72; font-size: 15px; }
       .footnote {
-        margin-top: 20px;
-        padding: 18px 20px;
-        border-radius: 16px;
-        background: rgba(17, 10, 12, 0.92);
-        border: 1px solid rgba(187, 157, 109, 0.14);
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.72;
-        box-shadow: var(--shadow);
+        margin-top: 20px; padding: 18px 20px; border-radius: 16px; background: rgba(17, 10, 12, 0.92);
+        border: 1px solid rgba(187, 157, 109, 0.14); color: var(--muted); font-size: 13px; line-height: 1.72; box-shadow: var(--shadow);
       }
-
-      .top-alert p,
-      .subtitle,
-      .stamp p,
-      .metric .desc,
-      .section-header p,
-      .item p,
-      .callout p,
-      .footnote {
-        text-align: justify;
-        text-justify: inter-word;
-        hyphens: auto;
+      .top-alert p, .subtitle, .stamp p, .metric .desc, .section-header p, .item p, .callout p, .footnote {
+        text-align: justify; text-justify: inter-word; hyphens: auto;
       }
-
-      @media (max-width: 1100px) {
-        .brand {
-          flex-direction: column;
-        }
-
-        .stamp {
-          width: 100%;
-          max-width: none;
-        }
-      }
-
-      @media (max-width: 980px) {
-        .grid.summary,
-        .grid.main {
-          grid-template-columns: 1fr;
-        }
-
-        .grid.summary {
-          gap: 14px;
-        }
-      }
-
+      @media (max-width: 1100px) { .brand { flex-direction: column; } .stamp { width: 100%; max-width: none; } }
+      @media (max-width: 980px) { .grid.summary, .grid.main { grid-template-columns: 1fr; } .grid.summary { gap: 14px; } }
       @media (max-width: 640px) {
-        .page {
-          padding: 18px 14px 40px;
-        }
-
-        .hero,
-        .metric,
-        .section,
-        .callout {
-          padding: 18px;
-          border-radius: 15px;
-        }
-
-        .brandbar {
-          align-items: flex-start;
-        }
-
-        .brand-seal {
-          width: 42px;
-          height: 42px;
-          font-size: 14px;
-        }
-
-        .office-name {
-          font-size: 19px;
-        }
-
-        .office-name small {
-          font-size: 11px;
-        }
-
-        .title {
-          font-size: clamp(36px, 10.6vw, 50px);
-        }
-
-        .subtitle,
-        .top-alert p,
-        .stamp p,
-        .item p,
-        .callout p,
-        .footnote {
-          font-size: 14px;
-          text-align: justify;
-          text-justify: inter-word;
-          hyphens: auto;
-        }
-
-        .metric .value {
-          font-size: 34px;
-        }
-
-        .stamp {
-          width: 100%;
-          max-width: none;
-        }
-
-        .date-line {
-          display: block;
-        }
-
-        .date-time {
-          display: inline-block;
-          margin-bottom: 6px;
-          min-width: 0;
-        }
+        .page { padding: 18px 14px 40px; }
+        .hero, .metric, .section, .callout { padding: 18px; border-radius: 15px; }
+        .brandbar { align-items: flex-start; }
+        .brand-seal { width: 42px; height: 42px; font-size: 14px; }
+        .office-name { font-size: 19px; }
+        .office-name small { font-size: 11px; }
+        .title { font-size: clamp(36px, 10.6vw, 50px); }
+        .subtitle, .top-alert p, .stamp p, .item p, .callout p, .footnote { font-size: 14px; text-align: justify; text-justify: inter-word; hyphens: auto; }
+        .metric .value { font-size: 34px; }
+        .stamp { width: 100%; max-width: none; }
+        .date-line { display: block; }
+        .date-time { display: inline-block; margin-bottom: 6px; min-width: 0; }
       }
     </style>
   </head>
   <body>
-    <main class="page">
-      <section class="top-alert">
+    <main class='page'>
+      <section class='top-alert'>
         <p>
-          <strong>Alerta de risco:</strong> o dia <strong>17/05/2026</strong> amanheceu sem audiência ou prazo fatal novo na agenda, mas o relatório automatizado do PJe desta manhã trouxe <strong>5 vencidos</strong>. Além disso, a manhã de <strong>18/05/2026</strong> já ficou praticamente linear entre <strong>08:00 e 10:55</strong>, com revisão semanal, processo <strong>0000338-95.2026.5.06.0122</strong>, leitura das publicações <strong>0000742-23.2024.5.06.0121</strong> e <strong>0000579-69.2026.5.06.0122</strong>, e triagem dos pushes de 15/05 e 16/05.
+          <strong>Alerta de risco:</strong> o dia <strong>18/05/2026</strong> ja comecou com um corredor operacional continuo entre <strong>08:00 e 12:05</strong>, seguido por duas frentes novas a tarde. O ponto mais sensivel agora e proteger o processo <strong>0000338-95.2026.5.06.0122</strong>, conter os <strong>5 vencidos</strong> do relatorio PJe e nao deixar a triagem de publicacoes e pushes invadir a margem de preparacao para <strong>19/05</strong> e <strong>20/05</strong>.
         </p>
       </section>
 
-      <section class="hero">
-        <div class="brand">
-          <div class="brand-mark">
-            <div class="brandbar">
-              <div class="brand-seal">PS</div>
-              <div class="brand-copy">
-                <span class="eyebrow">Relatório jurídico operacional</span>
-                <h1 class="office-name">Petrônio Souza<small>Advogados Associados</small></h1>
+      <section class='hero'>
+        <div class='brand'>
+          <div class='brand-mark'>
+            <div class='brandbar'>
+              <div class='brand-seal'>PS</div>
+              <div class='brand-copy'>
+                <span class='eyebrow'>Relatorio juridico operacional</span>
+                <h1 class='office-name'>Petronio Souza<small>Advogados Associados</small></h1>
               </div>
             </div>
-            <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
-            <p class="subtitle">
-              Consolidação realizada em <strong>17/05/2026 às 07:15</strong>, no fuso
-              <strong>America/Sao_Paulo</strong>, com base em Google Agenda, Gmail, memória operacional
-              e registros já organizados pelo agente. <strong>Janela principal de pesquisa:</strong>
-              <strong>17/05/2026 00:00 até 19/05/2026 23:59</strong>. <strong>Janela complementar de e-mails jurídicos lidos:</strong>
-              <strong>15/05/2026 00:00 até 17/05/2026 07:15</strong>.
+            <h2 class='title'>Relatorio do Gestor de<br />Prazos Processuais</h2>
+            <p class='subtitle'>
+              Consolidacao realizada em <strong>18/05/2026 as 07:18</strong>, no fuso <strong>America/Sao_Paulo</strong>, com base em Google Agenda, Gmail, memoria operacional e registros ja organizados pelo agente. <strong>Janela principal de pesquisa:</strong> <strong>18/05/2026 00:00 ate 20/05/2026 23:59</strong>. <strong>Janela complementar de e-mails juridicos lidos:</strong> <strong>15/05/2026 00:00 ate 18/05/2026 07:18</strong>.
             </p>
-            <div class="rule"></div>
+            <div class='rule'></div>
           </div>
-          <aside class="stamp">
+          <aside class='stamp'>
             <h2>Leitura executiva</h2>
-            <p><strong>Risco dominante:</strong> conter ainda hoje o passivo do PJe com 5 vencidos para que a segunda-feira não comece já atrasada.</p>
-            <p><strong>Próximo gargalo:</strong> 18/05/2026 ficou operacionalmente comprimido de 08:00 a 10:55, com poucos intervalos curtos.</p>
-            <p><strong>Estratégia segura:</strong> usar o domingo para contenção e triagem mínima, e deixar a segunda apenas para execução qualificada do que já estiver pré-classificado.</p>
-            <div class="search-window">
+            <p><strong>Risco dominante:</strong> a manha de hoje ja esta praticamente desenhada e nao comporta improviso sem empurrar carga para amanha.</p>
+            <p><strong>Proximo gargalo:</strong> 19/05 ja comeca ocupado entre 08:00 e 09:05, e 20/05 abre com tres blocos seguidos antes de 08:20.</p>
+            <p><strong>Estrategia segura:</strong> usar 18/05 para executar o que ja esta marcado, classificar o passivo do PJe e chegar em 19/05 com o maximo possivel pre-qualificado.</p>
+            <div class='search-window'>
               <span>Janela de pesquisa utilizada</span>
-              <strong>De 17/05/2026 00:00 até 19/05/2026 23:59</strong>
-              <strong style="margin-top: 8px">Complemento de e-mails: 15/05/2026 00:00 até 17/05/2026 07:15</strong>
+              <strong>De 18/05/2026 00:00 ate 20/05/2026 23:59</strong>
+              <strong style='margin-top: 8px'>Complemento de e-mails: 15/05/2026 00:00 ate 18/05/2026 07:18</strong>
             </div>
           </aside>
         </div>
       </section>
 
-      <section class="grid summary">
-        <article class="metric">
-          <div class="value danger">5</div>
-          <div class="label">Vencidos no relatório PJe de hoje</div>
-          <div class="desc">O principal risco do domingo não é agenda cheia, e sim o passivo já vencido que exige triagem de contenção imediata.</div>
+      <section class='grid summary'>
+        <article class='metric'>
+          <div class='value danger'>5</div>
+          <div class='label'>Vencidos no relatorio PJe de hoje</div>
+          <div class='desc'>O principal risco desta segunda nao esta apenas no que vence; esta tambem no passivo que ja amanheceu vencido e precisa de classificacao imediata.</div>
         </article>
-        <article class="metric">
-          <div class="value warning">2</div>
-          <div class="label">Novos blocos operacionais criados</div>
-          <div class="desc">Foi criado um bloco hoje para o passivo PJe e outro na manhã de 19/05 para qualificar os pushes novos do TRT6.</div>
+        <article class='metric'>
+          <div class='value warning'>1</div>
+          <div class='label'>Prazo fatal ja encostando</div>
+          <div class='desc'>O processo 0000338-95.2026.5.06.0122 tem fatal em 19/05 e ja ocupa a primeira faixa critica da manha de hoje.</div>
         </article>
-        <article class="metric">
-          <div class="value gold">2</div>
-          <div class="label">Processos com ação já marcada até 19/05</div>
-          <div class="desc">0000338-95.2026.5.06.0122 segue com fatal em 19/05, e 0000982-27.2026.8.17.8223 já tem data operacional em 19/05 para manifestação.</div>
+        <article class='metric'>
+          <div class='value gold'>3</div>
+          <div class='label'>Blocos novos criados nesta rodada</div>
+          <div class='desc'>Foram adicionados hoje um bloco para os 5 vencidos do PJe, um para o push novo do TRT6 em 0001662 e um para a thread extrajudicial sensivel com Cicero.</div>
         </article>
-        <article class="metric">
-          <div class="value info">3</div>
-          <div class="label">Fontes críticas da rodada</div>
-          <div class="desc">Relatório PJe das 07:09, pushes TRT6 da madrugada e publicação Jusbrasil com data de circulação em 18/05 compõem o núcleo do risco atual.</div>
+        <article class='metric'>
+          <div class='value info'>3</div>
+          <div class='label'>Processos com acao marcada em 20/05</div>
+          <div class='desc'>0000396-46.2023.5.06.0141, 0000252-11.2022.5.06.0011 e 0008658-70.2024.8.17.3090 ja tomam a primeira hora util de 20/05.</div>
         </article>
       </section>
 
-      <section class="grid main">
-        <div class="list">
-          <article class="section">
-            <div class="section-header">
-              <div>
-                <h2>Panorama do dia</h2>
-              </div>
-              <p>Leitura executiva do que vence, do que já está pressionando a agenda e do que ainda depende de leitura qualificada antes de virar providência definitiva.</p>
+      <section class='grid main'>
+        <div class='list'>
+          <article class='section'>
+            <div class='section-header'>
+              <div><h2>Panorama do dia</h2></div>
+              <p>Leitura executiva do risco imediato, da pressao de agenda e do que precisa ser preparado antes de virar urgencia sem margem.</p>
             </div>
-            <div class="list">
-              <div class="item">
-                <h3>1. O domingo começou sem compromisso processual prévio, mas não está livre de risco.</h3>
-                <p>O relatório automatizado do PJe recebido em <strong>17/05/2026 às 07:09</strong> apontou <strong>5 vencidos</strong>, <strong>0 urgentes</strong>, <strong>0 atenção</strong> e <strong>129 movimentos diversos</strong>. Por isso, foi organizado para hoje o bloco <strong>09:00 às 09:50</strong> de contenção imediata.</p>
+            <div class='list'>
+              <div class='item'>
+                <h3>1. A segunda-feira ja comecou desenhada quase sem folga na parte da manha.</h3>
+                <p>Entre <strong>08:00 e 12:05</strong> ha revisao semanal, o bloco do processo <strong>0000338-95.2026.5.06.0122</strong>, leitura das publicacoes <strong>0000742-23.2024.5.06.0121</strong> e <strong>0000579-69.2026.5.06.0122</strong>, triagem ampla dos pushes de 15/05 e 16/05 e o bloco novo para os <strong>5 vencidos do PJe</strong>. O efeito pratico e simples: qualquer atraso pela manha contamina a tarde e reduz a preparacao dos proximos dois dias.</p>
               </div>
-              <div class="item">
-                <h3>2. O maior ganho tático desta rodada é impedir que o passivo de hoje escorra para a segunda e para a terça.</h3>
-                <p>Se os vencidos forem deixados para depois, a manhã de <strong>18/05/2026</strong> perde margem para o processo <strong>0000338-95.2026.5.06.0122</strong> e para a leitura das publicações já marcadas, enquanto <strong>19/05/2026</strong> começa pressionado pelo processo <strong>0000982-27.2026.8.17.8223</strong> e pela triagem nova dos pushes do TRT6.</p>
+              <div class='item'>
+                <h3>2. O prazo fatal mais proximo e o processo 0000338-95.2026.5.06.0122.</h3>
+                <p>O vencimento fatal registrado e <strong>19/05/2026</strong>, com data operacional sugerida e ja organizada para hoje, das <strong>09:15 as 09:35</strong>. Ele nao deve perder prioridade para triagens mais abertas, porque e o unico prazo efetivamente delimitado dentro da faixa mais curta desta rodada.</p>
               </div>
-              <div class="item">
-                <h3>3. As publicações e pushes mais novos trouxeram sinais relevantes, mas nem todos já são prazo fechado.</h3>
-                <p>Os e-mails de <strong>0001434-63.2016.5.06.0101</strong>, <strong>0000483-57.2026.5.06.0121</strong> e <strong>0000786-05.2025.5.06.0122</strong> mostram movimentação sensível, inclusive decurso de prazo. A providência segura é abrir o teor no sistema antes de tratar qualquer conclusão como definitiva.</p>
+              <div class='item'>
+                <h3>3. O relatorio PJe de 18/05 adicionou uma frente critica que nao estava visivel so pela agenda.</h3>
+                <p>As <strong>07:09</strong>, o relatorio automatizado trouxe <strong>5 vencidos</strong>, <strong>0 urgentes</strong>, <strong>0 atencao</strong> e <strong>129 movimentos diversos</strong>. Por isso, foi criado o bloco de <strong>11:10 as 12:05</strong> para separar o que ainda admite reacao util do que virou passivo historico ou mera necessidade de baixa de risco.</p>
               </div>
-              <div class="item">
-                <h3>4. A segunda-feira já nasce com uma faixa quase contínua de execução.</h3>
-                <p>Entre <strong>08:00 e 10:55</strong> há revisão semanal, o bloco do processo <strong>0000338-95.2026.5.06.0122</strong>, a leitura das publicações <strong>0000742-23.2024.5.06.0121</strong> e <strong>0000579-69.2026.5.06.0122</strong>, além da triagem ampla dos pushes recebidos em 15/05 e 16/05. Já <strong>19/05/2026</strong> começa com <strong>0000982</strong> e a triagem nova dos pushes lidos hoje.</p>
+              <div class='item'>
+                <h3>4. O horizonte de 48 horas ja tem pressao antecipada suficiente para exigir preparo hoje.</h3>
+                <p>Em <strong>19/05</strong>, ha o processo <strong>0000982-27.2026.8.17.8223</strong> as 08:00 e a triagem qualificada dos pushes TRT6 as 08:25. Em <strong>20/05</strong>, tres blocos seguidos entre <strong>07:00 e 08:20</strong> ja cobrem os processos <strong>0000396</strong>, <strong>0000252</strong> e <strong>0008658</strong>, todos com fatal em 21/05.</p>
               </div>
             </div>
           </article>
 
-          <article class="section">
-            <div class="section-header">
-              <div>
-                <h2>Crítico</h2>
-              </div>
-              <p>Itens vencendo hoje, com risco alto, conflito operacional ou necessidade de ação imediata.</p>
+          <article class='section'>
+            <div class='section-header'>
+              <div><h2>Critico</h2></div>
+              <p>Itens vencendo hoje, com risco alto, com conflito de agenda ou com necessidade de acao imediata.</p>
             </div>
-            <div class="list">
-              <div class="item">
-                <div class="badge-row">
-                  <span class="badge critical">Ação imediata</span>
-                  <span class="badge medium">PJe</span>
-                </div>
-                <h3>Passivo do relatório PJe de 17/05/2026</h3>
-                <p><strong>Horário organizado:</strong> 17/05/2026, das <strong>09:00 às 09:50</strong>. <strong>Processos vencidos destacados:</strong> 0000536-68.2025.8.17.9901, 0051393-53.2025.8.17.2001, 0017706-81.2019.8.17.0001, 0000021-06.2024.8.17.2420 e 0000982-27.2026.8.17.8223. <strong>Providência:</strong> separar o que ainda admite reação útil, o que depende de medida corretiva e o que deve ficar apenas em monitoramento defensivo.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row">
-                  <span class="badge critical">Prazo fatal identificado</span>
-                  <span class="badge medium">TRT6</span>
+            <div class='list'>
+              <div class='item'>
+                <div class='badge-row'>
+                  <span class='badge critical'>Prazo fatal proximo</span>
+                  <span class='badge medium'>TRT6</span>
                 </div>
                 <h3>Processo 0000338-95.2026.5.06.0122</h3>
-                <p><strong>Vencimento fatal:</strong> 19/05/2026. <strong>Data operacional já marcada:</strong> 18/05/2026, das <strong>09:15 às 09:35</strong>. <strong>Risco:</strong> é o único prazo fatal claramente delimitado até agora dentro da janela principal, e por isso não deve perder prioridade para triagens acessórias.</p>
+                <p><strong>Vencimento fatal:</strong> 19/05/2026. <strong>Data operacional ja marcada:</strong> 18/05/2026, das <strong>09:15 as 09:35</strong>. <strong>Providencia:</strong> abrir o andamento correspondente no PJe/TRT e cumprir a providencia correlata antes do fatal. O risco aqui e deixar uma triagem aberta consumir o espaco do unico prazo inequivoco da rodada curta.</p>
               </div>
-              <div class="item">
-                <div class="badge-row">
-                  <span class="badge critical">Agenda comprimida</span>
-                  <span class="badge medium">18/05</span>
+              <div class='item'>
+                <div class='badge-row'>
+                  <span class='badge critical'>Acao imediata</span>
+                  <span class='badge medium'>PJe</span>
                 </div>
-                <h3>Janela de 08:00 a 10:55 praticamente tomada na segunda-feira</h3>
-                <p>Há apenas intervalos muito curtos entre os blocos da manhã de 18/05. Qualquer atraso na revisão semanal, no processo <strong>0000338</strong> ou na leitura das publicações empurra a triagem ampla dos pushes para uma faixa já pressionada.</p>
+                <h3>Revisar 5 vencidos do PJe</h3>
+                <p><strong>Bloco criado:</strong> 18/05/2026, das <strong>11:10 as 12:05</strong>. <strong>Processos destacados:</strong> 0000536-68.2025.8.17.9901, 0051393-53.2025.8.17.2001, 0017706-81.2019.8.17.0001, 0000021-06.2024.8.17.2420 e 0000982-27.2026.8.17.8223. A meta e sair desse bloco com classificacao minima do passivo e definicao do que ainda pede reacao util.</p>
+              </div>
+              <div class='item'>
+                <div class='badge-row'>
+                  <span class='badge critical'>Agenda comprimida</span>
+                  <span class='badge medium'>18/05</span>
+                </div>
+                <h3>Faixa continua de 08:00 a 12:05</h3>
+                <p>A manha de hoje ficou quase linear entre revisao semanal, prazo operacional, leitura de publicacoes, triagem ampla de pushes e bloco de vencidos do PJe. O risco material e simples: se o teor das publicacoes ou dos pushes gerar prazo novo, a margem desaparece e a tarde passa a ser de absorcao emergencial.</p>
               </div>
             </div>
           </article>
 
-          <article class="section">
-            <div class="section-header">
-              <div>
-                <h2>Atenção</h2>
-              </div>
-              <p>Itens dos próximos 2 dias ou que exigem preparação antecipada para não virarem urgência tardia.</p>
+          <article class='section'>
+            <div class='section-header'>
+              <div><h2>Atencao</h2></div>
+              <p>Itens dos proximos 2 dias ou que exigem preparacao antecipada para nao virarem urgencia sem lastro.</p>
             </div>
-            <div class="list">
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">18/05 09:40</div>
-                  <h3>Publicações TRT6/Jusbrasil - 0000742 e 0000579</h3>
+            <div class='list'>
+              <div class='item'>
+                <div class='date-line'>
+                  <div class='date-time'>18/05 09:40</div>
+                  <h3>Publicacoes TRT6/Jusbrasil - 0000742 e 0000579</h3>
                 </div>
-                <p><strong>Origem:</strong> e-mail Jusbrasil de 15/05/2026. <strong>Data de publicação indicada:</strong> 18/05/2026. <strong>Providência:</strong> abrir o teor integral para saber se há prazo da parte, ato meramente informativo ou apenas formalização do arquivamento apontado nos pushes do TRT6.</p>
+                <p><strong>Origem:</strong> e-mail Jusbrasil recebido em 15/05/2026. <strong>Data de publicacao indicada:</strong> 18/05/2026. <strong>Providencia:</strong> abrir o teor integral das publicacoes para identificar se ha prazo da parte, intimação util ou mera formalizacao do arquivamento ja sugerido no caso 0000579. Ate a leitura integral, nao convem presumir contagem.</p>
               </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">19/05 08:00</div>
+              <div class='item'>
+                <div class='date-line'>
+                  <div class='date-time'>18/05 14:30</div>
+                  <h3>Triagem TRT6 - 0001662-98.2017.5.06.0102</h3>
+                </div>
+                <p><strong>Origem:</strong> push TRT6 recebido as 00:09 de hoje. <strong>Ato identificado:</strong> juntada de peticao de manifestacao com documentos sigilosos em 17/05/2026. <strong>Providencia:</strong> abrir o andamento no PJe/TRT6 para saber se houve prazo de resposta, ciencia simples ou apenas movimento interno. <strong>Fatal:</strong> nao confirmado com seguranca no e-mail.</p>
+              </div>
+              <div class='item'>
+                <div class='date-line'>
+                  <div class='date-time'>19/05 08:00</div>
                   <h3>Processo 0000982-27.2026.8.17.8223</h3>
                 </div>
-                <p><strong>Vencimento fatal informado no registro:</strong> 20/05/2026 às 23:59. <strong>Data operacional já agendada:</strong> 19/05/2026, das <strong>08:00 às 08:20</strong>. <strong>Providência:</strong> analisar o teor da intimação e definir a manifestação cabível com segurança.</p>
+                <p><strong>Vencimento fatal informado no registro:</strong> 20/05/2026 as 23:59. <strong>Data operacional ja agendada:</strong> 19/05/2026, das <strong>08:00 as 08:20</strong>. <strong>Providencia:</strong> analisar o teor da intimacao e preparar a manifestacao cabivel com seguranca, sem depender da primeira hora de 20/05.</p>
               </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">19/05 08:25</div>
-                  <h3>Triagem qualificada dos pushes TRT6 de hoje</h3>
+              <div class='item'>
+                <div class='date-line'>
+                  <div class='date-time'>19/05 08:25</div>
+                  <h3>Triagem qualificada - pushes TRT6/PJe de 17/05</h3>
                 </div>
-                <p><strong>Processos principais:</strong> <strong>0001434-63.2016.5.06.0101</strong>, <strong>0000483-57.2026.5.06.0121</strong> e <strong>0000786-05.2025.5.06.0122</strong>. <strong>Providência:</strong> verificar se a juntada de manifestação em 0001434 pede contrarrazão ou simples ciência, e confirmar se os decursos de prazo em 0000483 e 0000786 atingiram a parte representada ou apenas terceiros/processuais adversos.</p>
+                <p><strong>Processos principais:</strong> 0001434-63.2016.5.06.0101, 0000483-57.2026.5.06.0121 e 0000786-05.2025.5.06.0122. O ponto de atencao e distinguir se houve prazo perdido da parte representada, mero decurso da parte contraria ou so juntada de manifestacao para ciencia.</p>
               </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">18/05 10:15</div>
-                  <h3>Triagem dos pushes recebidos em 15/05 e 16/05</h3>
+              <div class='item'>
+                <div class='date-line'>
+                  <div class='date-time'>20/05 07:00</div>
+                  <h3>Primeira hora util de 20/05 ja ocupada por tres processos</h3>
                 </div>
-                <p><strong>Grupo principal:</strong> 0000581-39.2026.5.06.0122, 0000474-36.2018.5.06.0102, 0000439-72.2026.5.06.0142, 0000145-51.2024.5.06.0122, 0001891-81.2026.8.17.9480, 0033541-68.2025.8.17.9000, 0002716-44.2025.8.17.9000 e 0837703-80.2022.8.15.2001. O risco aqui é deixar passar um ato útil escondido sob push automático.</p>
+                <p><strong>07:00:</strong> 0000396-46.2023.5.06.0141. <strong>07:30:</strong> 0000252-11.2022.5.06.0011. <strong>08:00:</strong> 0008658-70.2024.8.17.3090. Todos ja tem data operacional em 20/05 para fatal em 21/05, o que exige entrar em 19/05 com pelo menos leitura previa e direcao de peca.</p>
               </div>
             </div>
           </article>
         </div>
 
-        <div class="list">
-          <article class="section">
-            <div class="section-header">
-              <div>
-                <h2>Monitoramento</h2>
-              </div>
-              <p>Itens sem prazo imediato fechado, mas que merecem radar e acompanhamento.</p>
+        <div class='list'>
+          <article class='section'>
+            <div class='section-header'>
+              <div><h2>Monitoramento</h2></div>
+              <p>Itens sem prazo imediato fechado, mas que merecem radar e acompanhamento humano.</p>
             </div>
-            <div class="list">
-              <div class="item">
-                <div class="badge-row">
-                  <span class="badge medium">Monitorar</span>
-                  <span class="badge medium">PJe/TJPE</span>
+            <div class='list'>
+              <div class='item'>
+                <div class='badge-row'>
+                  <span class='badge medium'>Conversa aberta</span>
+                  <span class='badge medium'>Hoje 15:00</span>
                 </div>
-                <h3>Movimentos sensíveis dentro do relatório PJe de hoje</h3>
-                <p>Os processos <strong>0002413-78.2022.8.17.2810</strong>, <strong>0005573-23.2022.8.17.2710</strong>, <strong>0034762-42.2019.8.17.2810</strong> e <strong>0002716-44.2025.8.17.9000</strong> aparecem com embargos, decisões, publicação de acórdão ou possível prazo recursal, mas exigem leitura do teor para confirmação do próximo passo.</p>
+                <h3>Thread extrajudicial - Cicero / 0003440-92.2022.8.17.2100</h3>
+                <p><strong>Bloco criado:</strong> 18/05/2026, das <strong>15:00 as 15:30</strong>. <strong>Referencia cruzada:</strong> tambem tangencia o processo 0002321-91.2025.8.17.2100. <strong>Leitura prudente:</strong> nao apareceu pedido novo de resposta formal nesta manha, mas a conversa segue sensivel e pode exigir consolidacao de pendencias, separacao de providencias em autos e eventual preparo de posicionamento.</p>
               </div>
-              <div class="item">
-                <div class="badge-row">
-                  <span class="badge low">Conversa aberta</span>
+              <div class='item'>
+                <div class='badge-row'>
+                  <span class='badge low'>Ler com calma</span>
+                  <span class='badge medium'>PJe/TJPE</span>
                 </div>
-                <h3>Thread extrajudicial com Cícero Marcos Lucas Sobrinho</h3>
-                <p>A conversa segue aberta em caixa de entrada, mas o último e-mail útil de <strong>15/05/2026</strong> teve tom de ciência e registro, sem pedido novo de resposta imediata. O ponto sensível continua sendo o processo <strong>0003440-92.2022.8.17.2100</strong> e a alegação de documentos ainda sob sigilo, o que recomenda acompanhamento humano, mas não intervenção instantânea hoje.</p>
+                <h3>Movimentos sensiveis dentro do relatorio PJe de 18/05</h3>
+                <p>Os processos 0002413-78.2022.8.17.2810, 0005573-23.2022.8.17.2710, 0034762-42.2019.8.17.2810 e 0002716-44.2025.8.17.9000 aparecem com embargos, decisao, publicacao de acórdão ou possivel prazo recursal. Eles merecem monitoramento, mas ainda dependem de leitura do teor para virarem tarefa ou prazo fechado.</p>
               </div>
-              <div class="item">
-                <div class="badge-row">
-                  <span class="badge low">Administrativo</span>
+              <div class='item'>
+                <div class='badge-row'>
+                  <span class='badge low'>Sem prazo novo</span>
                 </div>
-                <h3>Portal OAB informa: Documento Finalizado</h3>
-                <p>O e-mail de 15/05/2026 confirma conclusão do documento <strong>ACORDO CELEBRADO</strong>. É item de acompanhamento administrativo útil, sem reflexo processual fatal identificado nesta manhã.</p>
+                <h3>Relatorio PJe de hoje nao trouxe urgentes nem itens de atencao</h3>
+                <p>O dado relevante desta rodada nao foi aparicao de prazo fatal novo dentro do relatorio automatizado, e sim o acumulo de <strong>5 vencidos</strong> e a massa de movimentos diversos. Isso muda o foco do dia: menos reatividade a alerta vermelho e mais classificacao executiva do passivo.</p>
               </div>
-              <div class="item">
-                <div class="badge-row">
-                  <span class="badge low">Sem conflito hoje</span>
+              <div class='item'>
+                <div class='badge-row'>
+                  <span class='badge low'>Sob controle</span>
                 </div>
-                <h3>Domingo, 17/05/2026, fora do bloco criado às 09:00</h3>
-                <p>Não há outro compromisso processual já agendado para hoje. Isso preserva o restante do dia como reserva para concluir a contenção do PJe e adiantar leitura mínima do que vai apertar a segunda e a terça.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="section">
-            <div class="section-header">
-              <div>
-                <h2>Prazos e compromissos por data</h2>
-              </div>
-              <p>Agenda consolidada com foco em vencimento fatal, preparação necessária e pressão real de execução.</p>
-            </div>
-            <div class="list">
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">17/05</div>
-                  <h3>Contenção imediata e classificação mínima do passivo</h3>
-                </div>
-                <p><strong>09:00 às 09:50</strong>: bloco criado para estabilizar os 5 vencidos do relatório PJe e separar o que ainda admite reação do que deve seguir apenas em monitoramento.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">18/05</div>
-                  <h3>Data de preparação concentrada no processo 0000338 e nas publicações do TRT6</h3>
-                </div>
-                <p><strong>09:15 às 09:35</strong>: processo <strong>0000338-95.2026.5.06.0122</strong>. <strong>09:40 às 10:10</strong>: leitura das publicações <strong>0000742</strong> e <strong>0000579</strong>. Ainda não há audiência, mas é uma manhã de execução objetiva.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">19/05</div>
-                  <h3>Início da manhã ocupado com ação operacional e triagem nova</h3>
-                </div>
-                <p><strong>08:00 às 08:20</strong>: processo <strong>0000982</strong>. <strong>08:25 às 09:05</strong>: triagem nova dos pushes TRT6 lidos em 17/05. É uma faixa mais curta que a de 18/05, mas já nasce sem folga para começar o dia reativamente.</p>
+                <h3>Agenda da tarde ainda tem espaco util</h3>
+                <p>Apesar da manha comprimida, o periodo apos 12:05 ainda preserva espaco para absorver desdobramentos da leitura das publicacoes, qualificar o push novo de 0001662 e tratar com calma a frente extrajudicial sem invadir a primeira hora de 19/05.</p>
               </div>
             </div>
           </article>
 
-          <article class="section">
-            <div class="section-header">
-              <div>
-                <h2>Prioridades práticas</h2>
-              </div>
-              <p>Ordem sugerida de execução para reduzir risco, proteger a agenda e evitar que triagem automática se confunda com prazo já qualificado.</p>
+          <article class='section'>
+            <div class='section-header'>
+              <div><h2>Prazos e compromissos por data</h2></div>
+              <p>Agenda consolidada com foco em vencimento fatal, preparacao necessaria e pressao real de execucao.</p>
             </div>
-            <div class="list">
-              <div class="item">
-                <h3>1. Fechar hoje o bloco das 09:00 com uma classificação mínima dos 5 vencidos do PJe.</h3>
-                <p>O objetivo é sair do domingo sabendo o que ainda admite reação útil, o que precisa de conferência humana imediata e o que já é só passivo histórico.</p>
+            <div class='list'>
+              <div class='item'>
+                <div class='date-line'>
+                  <div class='date-time'>18/05</div>
+                  <h3>Hoje e dia de execucao quase continua</h3>
+                </div>
+                <p><strong>08:00 as 09:00</strong> revisao semanal. <strong>09:15 as 09:35</strong> processo 0000338. <strong>09:40 as 10:10</strong> publicacoes 0000742 e 0000579. <strong>10:15 as 10:55</strong> triagem ampla dos pushes. <strong>11:10 as 12:05</strong> revisao dos 5 vencidos do PJe. <strong>14:30 as 14:55</strong> push 0001662. <strong>15:00 as 15:30</strong> thread extrajudicial com Cicero.</p>
               </div>
-              <div class="item">
-                <h3>2. Proteger o processo 0000338-95.2026.5.06.0122 como eixo da manhã de 18/05.</h3>
-                <p>Ele permanece como o prazo fatal mais claro e mais próximo dentro da janela principal desta rodada.</p>
+              <div class='item'>
+                <div class='date-line'>
+                  <div class='date-time'>19/05</div>
+                  <h3>Inicio da manha ja ocupado</h3>
+                </div>
+                <p><strong>08:00 as 08:20</strong> processo 0000982-27.2026.8.17.8223, com fatal em 20/05. <strong>08:25 as 09:05</strong> triagem qualificada dos pushes TRT6/PJe de 17/05. Sem preparacao hoje, a terça comeca reativa e sem margem.</p>
               </div>
-              <div class="item">
-                <h3>3. Entrar em 19/05 já com noção prévia dos pushes de 0001434, 0000483 e 0000786.</h3>
-                <p>Se a triagem começar do zero na terça, há risco de consumir a margem que hoje ainda existe entre os blocos da manhã.</p>
-              </div>
-              <div class="item">
-                <h3>4. Ler as publicações de 0000742 e 0000579 sem presumir prazo apenas pelo alerta do Jusbrasil.</h3>
-                <p>A confirmação do teor integral continua indispensável antes de qualquer tomada de posição sobre prazo, arquivamento ou intimação útil.</p>
-              </div>
-              <div class="item">
-                <h3>5. Manter a thread extrajudicial de Cícero sob radar, mas fora da frente crítica de hoje.</h3>
-                <p>O cenário atual sugere monitoramento humano e eventual preparo estratégico, não resposta urgente nesta manhã.</p>
+              <div class='item'>
+                <div class='date-line'>
+                  <div class='date-time'>20/05</div>
+                  <h3>Tres blocos seguidos antes de 08:20</h3>
+                </div>
+                <p><strong>07:00</strong> processo 0000396-46.2023.5.06.0141. <strong>07:30</strong> processo 0000252-11.2022.5.06.0011. <strong>08:00</strong> processo 0008658-70.2024.8.17.3090. Todos com fatal em 21/05 e dependentes de leitura do ato para definicao segura da providencia.</p>
               </div>
             </div>
           </article>
 
-          <article class="callout">
+          <article class='section'>
+            <div class='section-header'>
+              <div><h2>Prioridades praticas</h2></div>
+              <p>Ordem sugerida de execucao para reduzir risco, proteger a agenda e evitar que triagem automatica se confunda com prazo ja qualificado.</p>
+            </div>
+            <div class='list'>
+              <div class='item'>
+                <h3>1. Executar a faixa da manha sem deixar o processo 0000338 perder protagonismo.</h3>
+                <p>Ele segue como o prazo fatal mais claro da rodada e precisa ser tratado antes que a manha se dissolva em leitura dispersa de push e publicacao.</p>
+              </div>
+              <div class='item'>
+                <h3>2. Sair do bloco das 11:10 com classificacao minima dos 5 vencidos do PJe.</h3>
+                <p>Sem isso, o passivo segue invisivel e consome a primeira margem util de 19/05 e 20/05 sem aviso previo.</p>
+              </div>
+              <div class='item'>
+                <h3>3. Ler 0000742 e 0000579 sem presumir prazo apenas pelo alerta do Jusbrasil.</h3>
+                <p>O teor integral precisa ser conferido para distinguir publicacao relevante de mero aviso que nao cria providencia imediata.</p>
+              </div>
+              <div class='item'>
+                <h3>4. Usar a tarde para fechar 0001662 e separar o que a thread extrajudicial realmente exige.</h3>
+                <p>O objetivo e encerrar o dia com as duas frentes novas minimamente qualificadas, sem deixar a terca abrir com duvida bruta.</p>
+              </div>
+              <div class='item'>
+                <h3>5. Entrar em 19/05 ja com orientacao para 20/05.</h3>
+                <p>Os processos 0000396, 0000252 e 0008658 ja tomam a primeira hora util do dia 20/05, entao a preparacao precisa comecar antes.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class='callout'>
             <h2>Leitura final</h2>
-            <p>
-              O quadro desta manhã é menos sobre volume bruto e mais sobre sequência certa de combate. Hoje, o domingo precisa estabilizar o passivo vencido do PJe. Depois disso, a prioridade passa a ser proteger a manhã de 18/05 para o processo 0000338 e para a leitura das publicações já marcadas, sem esquecer que 19/05 já começa com 0000982 e a triagem nova dos pushes do TRT6.
-            </p>
+            <p>O quadro de hoje pede menos improviso e mais cadencia. A manha ja esta ocupada, o PJe entregou passivo vencido, e os proximos dois dias ja comecam com blocos fixos. A melhor leitura executiva e simples: cumprir 0000338, classificar os 5 vencidos, decidir o peso real das publicacoes e chegar em 19/05 com o minimo possivel ainda em aberto.</p>
           </article>
         </div>
       </section>
 
-      <section class="footnote">
-        Consolidação realizada em <strong>17/05/2026</strong>, com base em Google Agenda, Gmail, memória operacional e registros já organizados. <strong>Janela principal de pesquisa considerada:</strong> <strong>17/05/2026 00:00 até 19/05/2026 23:59</strong>. <strong>Complemento de e-mails jurídicos:</strong> <strong>15/05/2026 00:00 até 17/05/2026 07:15</strong>. A leitura executiva prioriza prazo fatal, passivo vencido, ato novo, conflito de agenda e ação prática imediata.
-      </section>
+      <section class='footnote'>
+        Consolidacao realizada em <strong>18/05/2026</strong>, com base em Google Agenda, Gmail, memoria operacional e registros ja organizados. <strong>Janela principal de pesquisa considerada:</strong> <strong>18/05/2026 00:00 ate 20/05/2026 23:59</strong>. <strong>Complemento de e-mails juridicos:</strong> <strong>15/05/2026 00:00 ate 18/05/2026 07:18</strong>. A leitura executiva prioriza prazo fatal, passivo vencido, ato novo, conflito de agenda e acao pratica imediata.</section>
     </main>
   </body>
 </html>
