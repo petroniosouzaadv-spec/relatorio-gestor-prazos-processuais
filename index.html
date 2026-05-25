@@ -6,17 +6,11 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relatório do Gestor de Prazos Processuais - 24/05/2026</title>
-    <meta
-      name="description"
-      content="Relatório do Gestor de Prazos Processuais com foco no passivo pós-prazo, na triagem dos decursos TJPE da madrugada, na audiência de 25/05 e na carga operacional dos próximos 2 dias."
-    />
+    <title>Relatório do Gestor de Prazos Processuais - 25/05/2026</title>
+    <meta name="description" content="Relatório do Gestor de Prazos Processuais com foco na agenda de 25/05, nos vencidos do PJe, na audiência de hoje, nas publicações de 25/05, na intimação de 27/05 e nos riscos operacionais da rodada." />
     <meta name="theme-color" content="#16090b" />
-    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 24/05/2026" />
-    <meta
-      property="og:description"
-      content="Painel executivo com agenda do dia, pós-prazo crítico, publicações de 25/05, audiência de 25/05 e riscos operacionais da rodada."
-    />
+    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 25/05/2026" />
+    <meta property="og:description" content="Painel executivo com agenda do dia, vencidos do PJe, audiência de 25/05, próximos 2 dias e riscos operacionais da rodada." />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,9 +24,6 @@
         --bg-top: #15090b;
         --bg-mid: #2c0a10;
         --bg-bottom: #07090d;
-        --blood: #8b101d;
-        --blood-strong: #b31322;
-        --blood-soft: #cf5562;
         --gold: #bb9d6d;
         --gold-soft: #d7c098;
         --ink: #f5f2f1;
@@ -40,22 +31,13 @@
         --line: rgba(255, 232, 235, 0.12);
         --panel: rgba(17, 10, 12, 0.82);
         --panel-strong: rgba(24, 12, 15, 0.94);
-        --danger: #ff7d8a;
         --danger-strong: #ff4b5d;
         --warning: #f3bf67;
-        --success: #9ac8a4;
         --info: #9fb8d8;
         --shadow: 0 26px 64px rgba(0, 0, 0, 0.34);
       }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
       body {
         margin: 0;
         font-family: Montserrat, "Segoe UI", Arial, sans-serif;
@@ -65,463 +47,91 @@
           linear-gradient(180deg, rgba(139, 16, 29, 0.22) 0%, rgba(139, 16, 29, 0) 20%),
           linear-gradient(135deg, var(--bg-top) 0%, var(--bg-mid) 44%, var(--bg-bottom) 100%);
       }
-
-      a {
-        color: var(--gold-soft);
-        text-decoration: none;
-      }
-
-      strong {
-        color: #fff6f7;
-      }
-
-      .page {
-        max-width: 1240px;
-        margin: 0 auto;
-        padding: 28px 20px 64px;
-      }
-
+      a { color: var(--gold-soft); text-decoration: none; }
+      strong { color: #fff6f7; }
+      .page { max-width: 1240px; margin: 0 auto; padding: 28px 20px 64px; }
       .top-alert {
-        margin-bottom: 18px;
-        padding: 16px 18px;
-        border: 1px solid rgba(255, 125, 138, 0.2);
+        margin-bottom: 18px; padding: 16px 18px; border: 1px solid rgba(255, 125, 138, 0.2);
         background: linear-gradient(90deg, rgba(179, 19, 34, 0.24), rgba(179, 19, 34, 0.08));
-        border-radius: 16px;
-        box-shadow: var(--shadow);
+        border-radius: 16px; box-shadow: var(--shadow);
       }
-
-      .top-alert p {
-        margin: 0;
-        font-size: 16px;
-        line-height: 1.7;
-        color: #fff1f2;
-      }
-
+      .top-alert p { margin: 0; font-size: 16px; line-height: 1.7; color: #fff1f2; }
       .hero {
-        border-radius: 22px;
-        padding: 30px;
-        border: 1px solid rgba(187, 157, 109, 0.24);
-        background:
-          linear-gradient(140deg, rgba(50, 9, 16, 0.95), rgba(14, 12, 16, 0.95)),
-          linear-gradient(180deg, rgba(187, 157, 109, 0.08), rgba(187, 157, 109, 0));
+        border-radius: 22px; padding: 30px; border: 1px solid rgba(187, 157, 109, 0.24);
+        background: linear-gradient(140deg, rgba(50, 9, 16, 0.95), rgba(14, 12, 16, 0.95)), linear-gradient(180deg, rgba(187, 157, 109, 0.08), rgba(187, 157, 109, 0));
         box-shadow: var(--shadow);
       }
-
-      .brand {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 26px;
-        flex-wrap: wrap;
-      }
-
-      .brand-mark {
-        max-width: 760px;
-        min-width: 0;
-      }
-
-      .brandbar {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 16px;
-      }
-
+      .brand { display: flex; justify-content: space-between; align-items: flex-start; gap: 26px; flex-wrap: wrap; }
+      .brand-mark { max-width: 760px; min-width: 0; }
+      .brandbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
       .brand-seal {
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        border: 1px solid rgba(187, 157, 109, 0.42);
-        background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95));
-        color: var(--gold-soft);
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        box-shadow: var(--shadow);
-        flex: 0 0 auto;
+        width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center;
+        border: 1px solid rgba(187, 157, 109, 0.42); background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95));
+        color: var(--gold-soft); font-size: 15px; font-weight: 700; letter-spacing: 0.04em; box-shadow: var(--shadow); flex: 0 0 auto;
       }
-
-      .brand-copy {
-        min-width: 0;
-      }
-
-      .eyebrow {
-        font-size: 10px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: #d9c8cc;
-        margin-bottom: 4px;
-        display: block;
-      }
-
-      .office-name {
-        margin: 0;
-        font-size: 22px;
-        line-height: 1;
-        font-weight: 800;
-        color: #ffffff;
-      }
-
-      .office-name small {
-        display: block;
-        margin-top: 2px;
-        font-size: 12px;
-        line-height: 1.15;
-        font-weight: 700;
-        color: #ffffff;
-      }
-
-      .title {
-        margin: 0;
-        font-size: clamp(38px, 4.4vw, 64px);
-        line-height: 0.95;
-        font-weight: 800;
-      }
-
-      .subtitle {
-        margin: 18px 0 0;
-        max-width: 760px;
-        line-height: 1.75;
-        font-size: 16px;
-        color: #e4dadd;
-      }
-
-      .rule {
-        margin-top: 22px;
-        width: 136px;
-        height: 2px;
-        background: linear-gradient(90deg, var(--danger-strong), rgba(255, 75, 93, 0));
-      }
-
+      .eyebrow { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #d9c8cc; margin-bottom: 4px; display: block; }
+      .office-name { margin: 0; font-size: 22px; line-height: 1; font-weight: 800; color: #ffffff; }
+      .office-name small { display: block; margin-top: 2px; font-size: 12px; line-height: 1.15; font-weight: 700; color: #ffffff; }
+      .title { margin: 0; font-size: clamp(38px, 4.4vw, 64px); line-height: 0.95; font-weight: 800; }
+      .subtitle { margin: 18px 0 0; max-width: 760px; line-height: 1.75; font-size: 16px; color: #e4dadd; }
+      .rule { margin-top: 22px; width: 136px; height: 2px; background: linear-gradient(90deg, var(--danger-strong), rgba(255, 75, 93, 0)); }
       .stamp {
-        min-width: 290px;
-        max-width: 340px;
-        padding: 20px;
-        border-radius: 18px;
-        border: 1px solid rgba(255, 125, 138, 0.16);
-        background: rgba(255, 255, 255, 0.035);
+        min-width: 290px; max-width: 340px; padding: 20px; border-radius: 18px;
+        border: 1px solid rgba(255, 125, 138, 0.16); background: rgba(255, 255, 255, 0.035);
       }
-
-      .stamp h2,
-      .section h2 {
-        margin: 0 0 10px;
-        font-size: 14px;
-        color: var(--gold-soft);
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .stamp p {
-        margin: 7px 0;
-        font-size: 15px;
-        line-height: 1.62;
-        color: #f2e8ea;
-      }
-
+      .stamp h2, .section h2 { margin: 0 0 10px; font-size: 14px; color: var(--gold-soft); letter-spacing: 0.08em; text-transform: uppercase; }
+      .stamp p { margin: 7px 0; font-size: 15px; line-height: 1.62; color: #f2e8ea; }
       .search-window {
-        margin-top: 14px;
-        padding: 12px 14px;
-        border-radius: 14px;
-        border: 1px solid rgba(243, 191, 103, 0.24);
-        background: rgba(243, 191, 103, 0.08);
+        margin-top: 14px; padding: 12px 14px; border-radius: 14px; border: 1px solid rgba(243, 191, 103, 0.24); background: rgba(243, 191, 103, 0.08);
       }
-
-      .search-window span {
-        display: block;
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #ffe2ab;
-        margin-bottom: 6px;
+      .search-window span { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #ffe2ab; margin-bottom: 6px; }
+      .search-window strong { display: block; line-height: 1.6; }
+      .grid { display: grid; gap: 18px; margin-top: 22px; }
+      .grid.summary { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .grid.main { grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.92fr); align-items: start; }
+      .metric, .section, .callout {
+        background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; backdrop-filter: blur(12px); box-shadow: var(--shadow);
       }
-
-      .search-window strong {
-        display: block;
-        line-height: 1.6;
-      }
-
-      .grid {
-        display: grid;
-        gap: 18px;
-        margin-top: 22px;
-      }
-
-      .grid.summary {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .grid.main {
-        grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.92fr);
-        align-items: start;
-      }
-
-      .metric,
-      .section,
-      .callout {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 22px;
-        backdrop-filter: blur(12px);
-        box-shadow: var(--shadow);
-      }
-
-      .metric .value {
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 1;
-        margin-bottom: 8px;
-      }
-
-      .metric .label {
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #d5c0c5;
-      }
-
-      .metric .desc {
-        margin-top: 10px;
-        color: var(--muted);
-        font-size: 14px;
-        line-height: 1.62;
-      }
-
-      .value.danger {
-        color: var(--danger-strong);
-      }
-
-      .value.warning {
-        color: var(--warning);
-      }
-
-      .value.gold {
-        color: var(--gold);
-      }
-
-      .value.info {
-        color: var(--info);
-      }
-
-      .section-header {
-        display: flex;
-        justify-content: space-between;
-        gap: 14px;
-        align-items: flex-start;
-        margin-bottom: 16px;
-      }
-
-      .section-header p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.55;
-      }
-
-      .list {
-        display: grid;
-        gap: 12px;
-      }
-
-      .item {
-        padding: 15px 16px;
-        border-radius: 15px;
-        border: 1px solid rgba(255, 240, 242, 0.08);
-        background: rgba(255, 255, 255, 0.03);
-      }
-
-      .item h3 {
-        margin: 0 0 8px;
-        font-size: 16px;
-        line-height: 1.5;
-      }
-
-      .item p {
-        margin: 0;
-        font-size: 15px;
-        line-height: 1.72;
-        color: #e6dbde;
-      }
-
-      .badge-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 10px;
-      }
-
-      .badge {
-        padding: 6px 10px;
-        border-radius: 999px;
-        font-size: 11px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        background: rgba(255, 255, 255, 0.05);
-      }
-
-      .badge.critical {
-        color: #ffd5da;
-        border-color: rgba(255, 75, 93, 0.38);
-        background: rgba(255, 75, 93, 0.11);
-      }
-
-      .badge.high {
-        color: #ffe0aa;
-        border-color: rgba(243, 191, 103, 0.24);
-        background: rgba(243, 191, 103, 0.08);
-      }
-
-      .badge.medium {
-        color: #e7dfe2;
-        border-color: rgba(231, 223, 226, 0.16);
-      }
-
-      .badge.low {
-        color: #d6eadb;
-        border-color: rgba(154, 200, 164, 0.2);
-        background: rgba(154, 200, 164, 0.08);
-      }
-
-      .date-line {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: 12px;
-      }
-
-      .date-time {
-        min-width: 92px;
-        color: var(--warning);
-        font-size: 14px;
-        font-weight: 700;
-      }
-
-      .callout {
-        background: var(--panel-strong);
-      }
-
-      .callout p {
-        margin: 0;
-        color: #e9dfe2;
-        line-height: 1.72;
-        font-size: 15px;
-      }
-
-      .footnote {
-        margin-top: 20px;
-        padding: 18px 20px;
-        border-radius: 16px;
-        background: rgba(17, 10, 12, 0.92);
-        border: 1px solid rgba(187, 157, 109, 0.14);
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.72;
-        box-shadow: var(--shadow);
-      }
-
-      .top-alert p,
-      .subtitle,
-      .stamp p,
-      .metric .desc,
-      .section-header p,
-      .item p,
-      .callout p,
-      .footnote {
-        text-align: justify;
-        text-justify: inter-word;
-        hyphens: auto;
-      }
-
-      @media (max-width: 1100px) {
-        .brand {
-          flex-direction: column;
-        }
-
-        .stamp {
-          width: 100%;
-          max-width: none;
-        }
-      }
-
-      @media (max-width: 980px) {
-        .grid.summary,
-        .grid.main {
-          grid-template-columns: 1fr;
-        }
-
-        .grid.summary {
-          gap: 14px;
-        }
-      }
-
+      .metric .value { font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 8px; }
+      .metric .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #d5c0c5; }
+      .metric .desc { margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.62; }
+      .value.danger { color: var(--danger-strong); }
+      .value.warning { color: var(--warning); }
+      .value.gold { color: var(--gold); }
+      .value.info { color: var(--info); }
+      .section-header { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; margin-bottom: 16px; }
+      .section-header p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
+      .list { display: grid; gap: 12px; }
+      .item { padding: 15px 16px; border-radius: 15px; border: 1px solid rgba(255, 240, 242, 0.08); background: rgba(255, 255, 255, 0.03); }
+      .item h3 { margin: 0 0 8px; font-size: 16px; line-height: 1.5; }
+      .item p { margin: 0; font-size: 15px; line-height: 1.72; color: #e6dbde; }
+      .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+      .badge { padding: 6px 10px; border-radius: 999px; font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(255, 255, 255, 0.05); }
+      .badge.critical { color: #ffd5da; border-color: rgba(255, 75, 93, 0.38); background: rgba(255, 75, 93, 0.11); }
+      .badge.high { color: #ffe0aa; border-color: rgba(243, 191, 103, 0.24); background: rgba(243, 191, 103, 0.08); }
+      .badge.medium { color: #e7dfe2; border-color: rgba(231, 223, 226, 0.16); }
+      .badge.low { color: #d6eadb; border-color: rgba(154, 200, 164, 0.2); background: rgba(154, 200, 164, 0.08); }
+      .date-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; }
+      .date-time { min-width: 92px; color: var(--warning); font-size: 14px; font-weight: 700; }
+      .callout { background: var(--panel-strong); }
+      .callout p { margin: 0; color: #e9dfe2; line-height: 1.72; font-size: 15px; }
+      .footnote { margin-top: 20px; padding: 18px 20px; border-radius: 16px; background: rgba(17, 10, 12, 0.92); border: 1px solid rgba(187, 157, 109, 0.14); color: var(--muted); font-size: 13px; line-height: 1.72; box-shadow: var(--shadow); }
+      .top-alert p, .subtitle, .stamp p, .metric .desc, .section-header p, .item p, .callout p, .footnote { text-align: justify; text-justify: inter-word; hyphens: auto; }
+      @media (max-width: 1100px) { .brand { flex-direction: column; } .stamp { width: 100%; max-width: none; } }
+      @media (max-width: 980px) { .grid.summary, .grid.main { grid-template-columns: 1fr; } .grid.summary { gap: 14px; } }
       @media (max-width: 640px) {
-        .page {
-          padding: 18px 14px 40px;
-        }
-
-        .hero,
-        .metric,
-        .section,
-        .callout {
-          padding: 18px;
-          border-radius: 15px;
-        }
-
-        .brandbar {
-          align-items: flex-start;
-        }
-
-        .brand-seal {
-          width: 42px;
-          height: 42px;
-          font-size: 14px;
-        }
-
-        .office-name {
-          font-size: 19px;
-        }
-
-        .office-name small {
-          font-size: 11px;
-        }
-
-        .title {
-          font-size: clamp(36px, 10.6vw, 50px);
-        }
-
-        .subtitle,
-        .top-alert p,
-        .stamp p,
-        .item p,
-        .callout p,
-        .footnote {
-          font-size: 14px;
-          text-align: justify;
-          text-justify: inter-word;
-          hyphens: auto;
-        }
-
-        .metric .value {
-          font-size: 34px;
-        }
-
-        .stamp {
-          width: 100%;
-          max-width: none;
-        }
-
-        .date-line {
-          display: block;
-        }
-
-        .date-time {
-          display: inline-block;
-          margin-bottom: 6px;
-          min-width: 0;
-        }
+        .page { padding: 18px 14px 40px; }
+        .hero, .metric, .section, .callout { padding: 18px; border-radius: 15px; }
+        .brandbar { align-items: flex-start; }
+        .brand-seal { width: 42px; height: 42px; font-size: 14px; }
+        .office-name { font-size: 19px; }
+        .office-name small { font-size: 11px; }
+        .title { font-size: clamp(36px, 10.6vw, 50px); }
+        .subtitle, .top-alert p, .stamp p, .item p, .callout p, .footnote { font-size: 14px; text-align: justify; text-justify: inter-word; hyphens: auto; }
+        .metric .value { font-size: 34px; }
+        .stamp { width: 100%; max-width: none; }
+        .date-line { display: block; }
+        .date-time { display: inline-block; margin-bottom: 6px; min-width: 0; }
       }
     </style>
   </head>
@@ -529,10 +139,9 @@
     <main class="page">
       <section class="top-alert">
         <p>
-          <strong>Alerta de risco:</strong> são <strong>24/05/2026 às 07:19</strong> em <strong>America/Recife</strong>. Não apareceu novo prazo fatal seguro para hoje, mas o risco da manhã está concentrado em <strong>pós-prazo já vencido</strong>, nos <strong>novos decursos TJPE da madrugada</strong> e no fato de que a manhã útil de <strong>25/05/2026</strong> já nasce carregada antes da audiência de <strong>0000212-48.2026.5.06.0121</strong> ao meio-dia.
+          <strong>Alerta de risco:</strong> hoje, <strong>25/05/2026</strong>, a manhã já nasceu comprimida por <strong>revisão semanal às 08:00</strong>, <strong>leitura de publicações às 09:10</strong> e <strong>audiência por videoconferência às 12:00</strong>. O risco dominante da rodada está na combinação entre <strong>5 vencidos já apontados pelo PJe</strong>, novos despachos publicados sem prazo ainda qualificado e a necessidade de preparar desde já a <strong>intimação presencial de 27/05</strong>.
         </p>
       </section>
-
       <section class="hero">
         <div class="brand">
           <div class="brand-mark">
@@ -545,262 +154,180 @@
             </div>
             <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
             <p class="subtitle">
-              Consolidação realizada em <strong>24/05/2026 às 07:19</strong>, no fuso <strong>America/Recife</strong>, com base em Google Agenda, Gmail, memória operacional, briefing executivo recente e conversas abertas relevantes. <strong>Janela principal de pesquisa:</strong> <strong>24/05/2026 00:00 até 26/05/2026 23:59</strong>. O objetivo desta rodada é sair do domingo com o passivo sensível enquadrado, com os novos decursos TJPE já classificados e com a audiência de <strong>25/05/2026 às 12:00</strong> preparada sem esmagar a manhã útil de segunda-feira.
+              Consolidação realizada em <strong>25/05/2026 às 07:18</strong>, no fuso <strong>America/Recife</strong>, com base em Google Agenda, Gmail, memória operacional e registros já organizados pelo agente. <strong>Janela principal de pesquisa:</strong> <strong>25/05/2026 00:00 até 27/05/2026 23:59</strong>. A leitura abaixo prioriza o que exige ação hoje, o que pode vencer ou nascer nos próximos 2 dias e o que precisa de preparo antecipado para não virar atraso por compressão de agenda.
             </p>
             <div class="rule"></div>
           </div>
           <aside class="stamp">
             <h2>Leitura executiva</h2>
-            <p><strong>Risco dominante:</strong> o ponto mais sensível continua sendo o processo <strong>0020001-64.2023.8.17.2810</strong>, porque o fatal já venceu em <strong>22/05/2026 às 23:59</strong> e ainda exige confirmação objetiva do desfecho.</p>
-            <p><strong>Gargalo do dia:</strong> o <strong>1º Exame de Suficiência do CFC das 10:00 às 14:00</strong> comprime a janela útil de trabalho jurídico para o meio e o fim da tarde.</p>
-            <p><strong>Estratégia segura:</strong> usar a sequência <strong>14:20-16:25</strong> para limpar contenção, triagem de decursos e preparo da audiência antes que a segunda-feira comece já tomada.</p>
+            <p><strong>Risco dominante:</strong> o PJe abriu o dia com <strong>5 processos vencidos</strong>, o que exige triagem imediata e contenção, não mera leitura passiva.</p>
+            <p><strong>Gargalo do dia:</strong> a manhã já está tomada antes da audiência de <strong>0000212-48.2026.5.06.0121</strong>, e a tarde recebeu 2 blocos novos de triagem para não empurrar pendência para amanhã.</p>
+            <p><strong>Estratégia segura:</strong> fechar ainda hoje a leitura dos novos despachos de <strong>0004782</strong> e <strong>0024248</strong>, regularizar o risco operacional do certificado digital e deixar preparada a intimação presencial de <strong>27/05</strong>.</p>
             <div class="search-window">
               <span>Janela de pesquisa utilizada</span>
-              <strong>Principal: 24/05/2026 00:00 até 26/05/2026 23:59</strong>
-              <strong>Complementar: e-mails jurídicos de 22/05/2026 00:00 até 24/05/2026 07:19</strong>
-              <strong>Conversas abertas e frentes sensíveis: 17/05/2026 00:00 até 24/05/2026 07:19</strong>
+              <strong>Principal: 25/05/2026 00:00 até 27/05/2026 23:59</strong>
+              <strong>Complementar: e-mails jurídicos e operacionais de 24/05/2026 00:00 até 25/05/2026 07:18</strong>
+              <strong>Conversas e frentes sensíveis reaproveitadas: memória operacional e andamentos relevantes de 23/05/2026 a 25/05/2026 07:18</strong>
             </div>
           </aside>
         </div>
       </section>
-
       <section class="grid summary">
         <article class="metric">
-          <div class="value danger">1</div>
-          <div class="label">Passivo crítico pós-prazo</div>
-          <div class="desc">O processo 0020001-64.2023.8.17.2810 segue sem confirmação externa nova de protocolo, perda reconhecida ou medida de contenção.</div>
+          <div class="value danger">5</div>
+          <div class="label">Vencidos apontados hoje pelo PJe</div>
+          <div class="desc">O relatório automático das 07:08 não trouxe urgentes novos, mas confirmou 5 processos já vencidos que precisam de triagem e contenção.</div>
         </article>
         <article class="metric">
-          <div class="value warning">3</div>
-          <div class="label">Decursos TJPE novos</div>
-          <div class="desc">0007599, 0007127 e 0006873 entraram na madrugada de 24/05 e já receberam bloco próprio na agenda para leitura prática.</div>
+          <div class="value warning">2</div>
+          <div class="label">Despachos novos para abrir hoje</div>
+          <div class="desc">Os processos 0004782-07.2023.8.17.2100 e 0024248-24.2023.8.17.3090 tiveram publicação/intimação e ainda não têm prazo qualificado no inteiro teor.</div>
         </article>
         <article class="metric">
-          <div class="value gold">3</div>
-          <div class="label">Blocos operacionais criados hoje</div>
-          <div class="desc">Foram lançados novos blocos para contenção, triagem dos decursos e preparo final da audiência de 25/05.</div>
+          <div class="value gold">1</div>
+          <div class="label">Audiência hoje às 12:00</div>
+          <div class="desc">A audiência por videoconferência de 0000212-48.2026.5.06.0121 exige manhã enxuta e tarde anterior já sem passivos abertos.</div>
         </article>
         <article class="metric">
           <div class="value info">1</div>
-          <div class="label">Audiência amanhã</div>
-          <div class="desc">A audiência por videoconferência do processo 0000212-48.2026.5.06.0121 ocorre em 25/05/2026 às 12:00 e não deve entrar em segunda-feira sem preparo.</div>
+          <div class="label">Comparecimento presencial em 27/05</div>
+          <div class="desc">A intimação da Delegacia de Abreu e Lima já ganhou bloco preparatório na véspera para reduzir risco de atraso ou falta de documento.</div>
         </article>
       </section>
-
       <section class="grid main">
         <div class="list">
           <article class="section">
             <div class="section-header">
-              <div>
-                <h2>Panorama do dia</h2>
-              </div>
-              <p>Leitura executiva do que vence hoje, do que já exige preparação para os próximos 2 dias e de onde estão os riscos reais desta manhã.</p>
+              <div><h2>Panorama do dia</h2></div>
+              <p>Leitura executiva do risco imediato, da pressão de agenda e do que não deve ser empurrado para a terça-feira.</p>
             </div>
             <div class="list">
               <div class="item">
-                <h3>1. Hoje, 24/05/2026, não apareceu novo prazo fatal processual com data segura nas fontes lidas.</h3>
-                <p>O centro de gravidade do dia não está em um fatal novo, e sim em <strong>três movimentos de contenção e preparação</strong>: conferir o passivo de <strong>0020001-64.2023.8.17.2810</strong>, qualificar os decursos TJPE da madrugada e fechar o preparo da audiência de amanhã.</p>
+                <h3>1. A prioridade estrutural de hoje é reduzir incerteza.</h3>
+                <p>O relatório PJe de <strong>25/05/2026 às 07:08</strong> confirmou <strong>5 vencidos</strong> e 137 movimentos diversos. Isso desloca o foco do dia para triagem crítica: descobrir o que ainda admite contenção, o que é só monitoramento e o que precisa de resposta prática imediata.</p>
               </div>
               <div class="item">
-                <h3>2. O domingo ficou operacionalmente curto.</h3>
-                <p>O compromisso <strong>1º Exame de Suficiência do CFC das 10:00 às 14:00</strong> ocupa a maior faixa contínua do dia. Por isso, os blocos novos foram concentrados entre <strong>14:20 e 16:25</strong>, que é a janela mais racional para reduzir risco jurídico real sem espalhar a atenção.</p>
+                <h3>2. A manhã está funcionalmente fechada.</h3>
+                <p>Entre <strong>08:00</strong> e <strong>13:00</strong> já há revisão semanal, leitura de publicações e audiência. Por isso, os novos blocos úteis foram jogados para a tarde: primeiro a abertura dos despachos novos, depois o risco operacional do certificado digital.</p>
               </div>
               <div class="item">
-                <h3>3. A segunda-feira já está quase sem gordura.</h3>
-                <p>Há <strong>revisão semanal às 08:00</strong>, <strong>leitura das publicações às 09:10</strong> e <strong>audiência às 12:00</strong>. Se o preparo escorregar para amanhã cedo, ele vai disputar espaço com tarefas que já têm hora marcada.</p>
+                <h3>3. O processo 0804087-46.2025.8.18.0152 entrou no radar com ato novo, mas sem prazo seguro ainda.</h3>
+                <p>O push do TJPI de <strong>25/05/2026 00:09</strong> confirmou <strong>publicação de citação e intimação</strong>. A leitura prudente é abrir o inteiro teor no bloco já marcado às <strong>09:10</strong> e só então qualificar prazo, ato e medida cabível.</p>
               </div>
               <div class="item">
-                <h3>4. O material novo da madrugada é relevante, mas ainda não autoriza inventar prazo fatal.</h3>
-                <p>Os pushes dos processos <strong>0007599-45.2026.8.17.2001</strong>, <strong>0007127-84.2026.8.17.2990</strong> e <strong>0006873-06.2025.8.17.2810</strong> só confirmam <strong>decurso de prazo já certificado</strong>. A providência correta agora é abrir o andamento oficial e classificar impacto, não presumir conteúdo além do que o push mostrou.</p>
+                <h3>4. Há um risco operacional fora do processo que pode travar atividade relevante.</h3>
+                <p>O e-mail de <strong>25/05/2026 às 06:33</strong> informou <strong>certificado digital expirado no gov.br</strong>. Isso não é prazo processual em si, mas pode interferir em acesso e assinatura, então foi tratado como pendência real do dia.</p>
               </div>
             </div>
           </article>
-
           <article class="section">
             <div class="section-header">
-              <div>
-                <h2>Crítico</h2>
-              </div>
-              <p>Itens vencendo hoje por efeito prático, com risco alto de perda de controle, compressão de agenda ou necessidade de ação imediata.</p>
+              <div><h2>Crítico</h2></div>
+              <p>Itens vencendo hoje, com alto risco, conflito de agenda ou necessidade de ação imediata.</p>
             </div>
             <div class="list">
               <div class="item">
-                <div class="badge-row">
-                  <span class="badge critical">Pós-prazo</span>
-                  <span class="badge medium">TJPE</span>
-                </div>
-                <h3>Processo 0020001-64.2023.8.17.2810</h3>
-                <p><strong>Origem do material analisado:</strong> briefing executivo de 24/05/2026 e memória operacional. <strong>Prazo ou ato identificado:</strong> checagem do resultado após vencimento fatal. <strong>Data do vencimento fatal:</strong> 22/05/2026 às 23:59. <strong>Data operacional sugerida:</strong> 24/05/2026 às 14:20, em bloco criado hoje. <strong>Providência necessária:</strong> confirmar se houve protocolo efetivo, perda reconhecida ou necessidade de medida de contenção. <strong>Nível de urgência:</strong> crítico.</p>
+                <div class="badge-row"><span class="badge critical">Risco máximo</span><span class="badge medium">PJe</span></div>
+                <h3>Relatório PJe — 25/05/2026: 5 vencidos</h3>
+                <p><strong>Origem do material analisado:</strong> e-mail automático do sistema PJe. <strong>Prazo ou ato identificado:</strong> existência de 5 processos com prazo já vencido. <strong>Data do vencimento fatal:</strong> não uniforme; o e-mail lista vencidos anteriores que exigem checagem individual. <strong>Data operacional sugerida:</strong> hoje, 25/05/2026, ainda no primeiro ciclo útil do dia. <strong>Providência necessária:</strong> classificar rapidamente se ainda cabe justa causa, relevação, contenção ou simples monitoramento em cada um dos 5 casos. <strong>Nível de urgência:</strong> crítico.</p>
               </div>
               <div class="item">
-                <div class="badge-row">
-                  <span class="badge critical">Triagem imediata</span>
-                  <span class="badge medium">TJPE</span>
-                </div>
-                <h3>Decursos TJPE da madrugada de 24/05/2026</h3>
-                <p><strong>Processos:</strong> 0007599-45.2026.8.17.2001, 0007127-84.2026.8.17.2990 e 0006873-06.2025.8.17.2810. <strong>Origem do material analisado:</strong> pushes TJPE recebidos entre 04:00 e 07:30. <strong>Prazo ou ato identificado:</strong> certificação de decurso de prazo em sistema. <strong>Data operacional sugerida:</strong> 24/05/2026 às 15:00, em bloco criado hoje. <strong>Providência necessária:</strong> abrir o andamento oficial, medir o impacto real e registrar se o efeito é mera ciência, perda consumada ou ponto de contenção. <strong>Observação:</strong> o processo 0007599 merece atenção especial por envolver mandado de segurança cível.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row">
-                  <span class="badge critical">Preparo obrigatório</span>
-                  <span class="badge medium">TRT6</span>
-                </div>
+                <div class="badge-row"><span class="badge critical">Audiência hoje</span><span class="badge medium">TRT6</span></div>
                 <h3>Processo 0000212-48.2026.5.06.0121</h3>
-                <p><strong>Origem do material analisado:</strong> evento já organizado no Google Agenda e briefing executivo de 24/05/2026. <strong>Prazo ou ato identificado:</strong> audiência por videoconferência. <strong>Data do compromisso:</strong> 25/05/2026 às 12:00. <strong>Data operacional sugerida:</strong> 24/05/2026 às 15:50, em bloco criado hoje. <strong>Providência necessária:</strong> revisar pauta, link, documentos, estratégia e pontos de negociação. <strong>Nível de urgência:</strong> crítico por proximidade e por falta de folga amanhã cedo.</p>
+                <p><strong>Origem do material analisado:</strong> evento já organizado na agenda e briefing executivo. <strong>Prazo ou ato identificado:</strong> audiência de conciliação por videoconferência. <strong>Data do vencimento/ato:</strong> 25/05/2026 às 12:00. <strong>Data operacional sugerida:</strong> manhã de hoje, com tudo revisado antes do bloco das 09:10 terminar. <strong>Providência necessária:</strong> validar link, documentos, pauta e estratégia. <strong>Nível de urgência:</strong> crítico.</p>
+              </div>
+              <div class="item">
+                <div class="badge-row"><span class="badge critical">Triagem hoje</span><span class="badge medium">TJPI</span></div>
+                <h3>Processo 0804087-46.2025.8.18.0152</h3>
+                <p><strong>Origem do material analisado:</strong> push TJPI recebido em 25/05/2026 às 00:09. <strong>Prazo ou ato identificado:</strong> publicação de citação e intimação. <strong>Data do vencimento fatal:</strong> ainda não confiável sem leitura do inteiro teor. <strong>Data operacional sugerida:</strong> hoje, no bloco já marcado às 09:10. <strong>Providência necessária:</strong> abrir o teor e transformar o ato em prazo organizado só depois da confirmação humana do conteúdo. <strong>Nível de urgência:</strong> crítico por potencial de inaugurar prazo.</p>
               </div>
             </div>
           </article>
-
           <article class="section">
             <div class="section-header">
-              <div>
-                <h2>Atenção</h2>
-              </div>
-              <p>Itens dos próximos 2 dias ou que já exigem preparo antecipado para evitar efeito cascata na segunda-feira.</p>
+              <div><h2>Atenção</h2></div>
+              <p>Itens dos próximos 2 dias ou que exigem preparação antecipada.</p>
             </div>
             <div class="list">
               <div class="item">
-                <div class="date-line">
-                  <div class="date-time">25/05 08:00</div>
-                  <h3>⏰ Revisão semanal — Projuris + PJe + Google Calendar</h3>
-                </div>
-                <p><strong>Origem:</strong> compromisso recorrente já existente na agenda. <strong>Providência necessária:</strong> entrar no bloco com os pontos sensíveis de hoje já classificados, para que a revisão semanal sirva de conferência e não de descoberta atrasada.</p>
+                <div class="date-line"><div class="date-time">25/05 14:30</div><h3>Leitura dos despachos de 24/05 - 0004782 / 0024248</h3></div>
+                <p><strong>Origem:</strong> pushes TJPE de 24/05/2026 à noite e briefing executivo de 25/05/2026. <strong>Providência necessária:</strong> abrir o inteiro teor dos despachos/intimações para confirmar conteúdo, prazo, responsável e eventual medida imediata. <strong>Observação:</strong> o push só confirma publicação, não o prazo fatal.</p>
               </div>
               <div class="item">
-                <div class="date-line">
-                  <div class="date-time">25/05 09:10</div>
-                  <h3>Leitura das publicações de 25/05 - 0018996 / 0804087 / 0025000</h3>
-                </div>
-                <p><strong>Origem:</strong> alerta Jusbrasil de 22/05/2026 e push TJPE de 23/05/2026. <strong>Prazo ou ato identificado:</strong> publicações com data de 25/05/2026. <strong>Providência necessária:</strong> abrir o inteiro teor e confirmar prazo, ato e medida cabível logo no começo da manhã. <strong>Observação:</strong> até aqui o material lido só confirma a publicação, não o prazo fatal.</p>
+                <div class="date-line"><div class="date-time">25/05 15:30</div><h3>Regularizar certificado digital gov.br</h3></div>
+                <p><strong>Origem:</strong> e-mail operacional de 25/05/2026 às 06:33. <strong>Providência necessária:</strong> validar impacto e regularizar o certificado expirado ou definir método alternativo de autenticação. <strong>Risco:</strong> acesso e assinatura em serviços públicos.</p>
               </div>
               <div class="item">
-                <div class="date-line">
-                  <div class="date-time">25/05 12:00</div>
-                  <h3>Audiência por videoconferência - 0000212-48.2026.5.06.0121</h3>
-                </div>
-                <p><strong>Origem:</strong> compromisso já lançado na agenda. <strong>Órgão/local:</strong> CEJUSC Paulista - videoconferência. <strong>Providência necessária:</strong> chegar ao horário com link, documentos e posição negocial validados hoje, para que a manhã de segunda fique dedicada apenas à revisão final.</p>
+                <div class="date-line"><div class="date-time">26/05 16:00</div><h3>Preparar comparecimento na Delegacia - TCO 2026.0027.000387-16</h3></div>
+                <p><strong>Origem:</strong> mandado de intimação já interpretado e evento principal já lançado para 27/05/2026 às 09:00. <strong>Data operacional sugerida:</strong> 26/05/2026, um dia antes. <strong>Providência necessária:</strong> separar documento, confirmar endereço, deslocamento e estratégia. <strong>Nível de urgência:</strong> atenção alta.</p>
               </div>
               <div class="item">
-                <div class="date-line">
-                  <div class="date-time">26/05</div>
-                  <h3>Janela de absorção pós-publicações e pós-audiência</h3>
-                </div>
-                <p><strong>Leitura prudente:</strong> não há compromisso formal na agenda dentro da janela consultada, mas o dia 26/05 pode virar faixa de absorção para providências que nasçam da leitura das publicações de 25/05 ou da audiência do processo 0000212. Vale preservar margem.</p>
+                <div class="date-line"><div class="date-time">27/05 09:00</div><h3>Intimação - Delegacia de Abreu e Lima</h3></div>
+                <p><strong>Origem:</strong> mandado de intimação presencial. <strong>Prazo ou ato identificado:</strong> comparecimento na Delegacia da 27ª Circunscrição - Abreu e Lima. <strong>Observação:</strong> o horário e o endereço já estão na agenda, e o preparo da véspera foi criado para evitar deslocamento sem checagem.</p>
               </div>
             </div>
           </article>
         </div>
-
         <div class="list">
           <article class="section">
             <div class="section-header">
-              <div>
-                <h2>Monitoramento</h2>
-              </div>
-              <p>Itens sem prazo imediato confirmado, mas que merecem radar claro para evitar surpresa operacional.</p>
+              <div><h2>Monitoramento</h2></div>
+              <p>Itens sem prazo imediato confirmado, mas que merecem radar claro.</p>
             </div>
             <div class="list">
               <div class="item">
-                <div class="badge-row">
-                  <span class="badge low">Conversa aberta</span>
-                </div>
-                <h3>Pasta compartilhada "Edilsa - processo trabalhista"</h3>
-                <p><strong>Origem:</strong> compartilhamento recebido por Google Drive em 21/05/2026. <strong>Providência necessária:</strong> classificar se a pasta virou frente ativa do escritório ou se ainda é apenas material de contexto. <strong>Observação:</strong> o aviso lido não trouxe prazo seguro.</p>
+                <div class="badge-row"><span class="badge low">Conversa aberta</span></div>
+                <h3>Processo 0003440-92.2022.8.17.2100</h3>
+                <p><strong>Origem:</strong> push TJPE de 23/05/2026 e histórico de frente sensível. <strong>Ato identificado:</strong> despacho/intimação publicado em 18/05/2026. <strong>Providência necessária:</strong> manter a leitura prudente do teor no radar, mas sem ultrapassar hoje o eixo mais crítico da rodada.</p>
               </div>
               <div class="item">
-                <div class="badge-row">
-                  <span class="badge low">Operacional</span>
-                </div>
-                <h3>Falha do canal jurídico por e-mail e recorte digital da OAB/PE</h3>
-                <p><strong>Origem:</strong> briefing executivo recente. <strong>Risco:</strong> continuidade de falha em <strong>juridico@petroniosouza.com.br</strong> e interrupção do Recorte Digital da OAB/PE por necessidade de atualização cadastral. <strong>Providência necessária:</strong> manter em radar porque isso pode esconder novas intimações fora do fluxo principal.</p>
+                <div class="badge-row"><span class="badge low">Monitorar</span></div>
+                <h3>Fila jurídica complementar</h3>
+                <p>O briefing executivo manteve menção de atenção para <strong>0007599-45.2026.8.17.2001</strong>, <strong>0004782-07.2023.8.17.2100</strong>, <strong>0024248-24.2023.8.17.3090</strong> e <strong>0815844-52.2026.8.15.0001</strong>. Nesta rodada, 0004782 e 0024248 já viraram bloco concreto; os demais ficam em monitoramento até leitura mais profunda.</p>
               </div>
               <div class="item">
-                <div class="badge-row">
-                  <span class="badge low">Acompanhamento</span>
-                </div>
-                <h3>Frentes processuais que já estavam sensíveis</h3>
-                <p>O briefing executivo também manteve em borda de atenção os processos <strong>0003440-92.2022.8.17.2100</strong>, <strong>0002413-78.2022.8.17.2810</strong> e <strong>0005844-05.2023.8.17.4001</strong>. Nesta rodada, eles não superaram o eixo crítico principal, mas não devem sair do radar operacional.</p>
+                <div class="badge-row"><span class="badge low">Carga de agenda</span></div>
+                <h3>Manhã de 26/05 ainda sem excesso formal</h3>
+                <p>Isso é bom e ruim ao mesmo tempo: há espaço para absorver desdobramentos da audiência e das publicações de hoje, mas esse espaço pode sumir se a triagem de 25/05 não sair classificada até o fim da tarde.</p>
               </div>
             </div>
           </article>
-
           <article class="section">
             <div class="section-header">
-              <div>
-                <h2>Prazos e compromissos de hoje</h2>
-              </div>
-              <p>Agenda de 24/05/2026, priorizada pelo relógio atual e pela necessidade de reduzir risco antes da segunda-feira.</p>
+              <div><h2>Prazos e compromissos de hoje</h2></div>
+              <p>Agenda consolidada de 25/05/2026, com foco no que já está marcado e no que foi criado nesta rodada.</p>
             </div>
             <div class="list">
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">10:00-14:00</div>
-                  <h3>1º Exame de Suficiência de 2026 do CFC</h3>
-                </div>
-                <p>Compromisso já existente na agenda. É o principal fator de compressão do dia e explica por que a estratégia jurídica foi concentrada no meio e no fim da tarde.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">14:20-14:50</div>
-                  <h3>Checagem pós-prazo - 0020001-64.2023.8.17.2810</h3>
-                </div>
-                <p>Bloco novo criado hoje para fechar o passivo mais sensível da rodada e registrar o desfecho real com segurança.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">15:00-15:40</div>
-                  <h3>Triagem dos decursos TJPE - 0007599 / 0007127 / 0006873</h3>
-                </div>
-                <p>Bloco novo criado hoje para transformar os pushes da madrugada em ação operacional concreta, com destaque reforçado para 0007599.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">15:50-16:25</div>
-                  <h3>Preparo final da audiência - 0000212-48.2026.5.06.0121</h3>
-                </div>
-                <p>Bloco novo criado hoje para que a audiência de amanhã não concorra com a revisão semanal nem com a leitura das publicações do começo da manhã.</p>
-              </div>
+              <div class="item"><div class="date-line"><div class="date-time">08:00-09:00</div><h3>⏰ Revisão semanal — Projuris + PJe + Google Calendar</h3></div><p>Bloco recorrente para checagem sistêmica de prazos e intimações. Hoje ele serve como conferência do terreno antes da sequência crítica da manhã.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">09:10-09:45</div><h3>Leitura das publicações de 25/05 - 0018996 / 0804087 / 0025000</h3></div><p>Bloco já existente na agenda para confirmar prazo, ato e medida cabível nas publicações com data de hoje.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">12:00-13:00</div><h3>Audiência por videoconferência - 0000212-48.2026.5.06.0121</h3></div><p>Compromisso crítico do dia. O horário final segue estimado na agenda e merece conferência humana do teor completo.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">14:30-15:20</div><h3>Leitura dos despachos de 24/05 - 0004782 / 0024248</h3></div><p>Bloco novo criado hoje para não deixar os pushes de ontem à noite contaminarem a terça-feira sem leitura qualificada.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">15:30-16:00</div><h3>Regularizar certificado digital gov.br</h3></div><p>Bloco novo criado hoje por risco operacional concreto de acesso e assinatura.</p></div>
             </div>
           </article>
-
           <article class="section">
             <div class="section-header">
-              <div>
-                <h2>Prioridades práticas</h2>
-              </div>
-              <p>Ordem sugerida de execução real, pensando no relógio de agora e na carga que já está marcada para amanhã.</p>
+              <div><h2>Prioridades práticas</h2></div>
+              <p>Ordem sugerida de execução real para hoje.</p>
             </div>
             <div class="list">
-              <div class="item">
-                <h3>1. Fechar hoje a checagem de 0020001-64.2023.8.17.2810.</h3>
-                <p>Esse é o ponto mais sensível porque já não é prevenção; é contenção e registro de desfecho.</p>
-              </div>
-              <div class="item">
-                <h3>2. Usar o bloco das 15:00 para qualificar os três decursos TJPE de 24/05.</h3>
-                <p>O objetivo é separar perda efetiva, ciência simples e necessidade de reação, sem deixar o tema cru para segunda-feira.</p>
-              </div>
-              <div class="item">
-                <h3>3. Preservar o bloco das 15:50 para o preparo da audiência de 25/05.</h3>
-                <p>Se esse preparo escorregar, ele vai disputar espaço com a revisão semanal, com as publicações de 25/05 e com a própria audiência.</p>
-              </div>
-              <div class="item">
-                <h3>4. Amanhã cedo, usar a revisão semanal e a leitura das publicações como conferência, não como triagem inicial.</h3>
-                <p>Isso só funciona se os temas sensíveis de hoje já saírem deste domingo classificados e reduzidos a próximos passos claros.</p>
-              </div>
+              <div class="item"><h3>1. Usar a primeira metade da manhã para revisar o que já está marcado, não para abrir novas frentes.</h3><p>A revisão semanal e a leitura das publicações já consomem a faixa útil antes da audiência. O ganho aqui é disciplina de foco.</p></div>
+              <div class="item"><h3>2. Fechar a audiência de 12:00 com link, documentos e estratégia já conferidos antes do meio-dia.</h3><p>Isso reduz o risco mais imediato da rodada.</p></div>
+              <div class="item"><h3>3. Abrir ainda hoje os despachos de 0004782 e 0024248.</h3><p>Sem inteiro teor, não há como qualificar prazo ou responsável com segurança.</p></div>
+              <div class="item"><h3>4. Tratar o certificado digital como pendência operacional real do dia.</h3><p>Mesmo fora do processo, ele pode travar atuação futura se continuar ignorado.</p></div>
+              <div class="item"><h3>5. Entrar em 26/05 com a intimação presencial de 27/05 já preparada.</h3><p>O bloco da véspera foi criado justamente para evitar correria, esquecimento de documento ou erro de deslocamento.</p></div>
             </div>
           </article>
-
           <article class="callout">
             <h2>Leitura final</h2>
             <p>
-              O domingo não está pesado em quantidade de prazos fatais novos, mas está delicado em qualidade de risco. A combinação de um pós-prazo ainda sem desfecho confirmado, três decursos TJPE frescos e uma segunda-feira já travada por revisão, publicações e audiência pede um movimento simples e firme: usar a tarde de hoje para limpar o essencial e impedir que amanhã comece em modo reativo.
+              O risco desta segunda não está em um único prazo fatal novo; está na soma entre passivo vencido, manhã comprimida, atos publicados sem teor ainda aberto e uma obrigação presencial já desenhada para quarta-feira. A leitura segura é simples: sair de hoje com a audiência cumprida, os despachos de ontem qualificados e a frente operacional do certificado digital domada.
             </p>
           </article>
         </div>
       </section>
-
       <section class="footnote">
-        Consolidação realizada em <strong>24/05/2026 às 07:19</strong>, com base em Google Agenda, Gmail, memória operacional, briefing executivo recente e conversas abertas relevantes. <strong>Janela principal de pesquisa considerada:</strong> <strong>24/05/2026 00:00 até 26/05/2026 23:59</strong>. <strong>Janela complementar destacada:</strong> <strong>e-mails jurídicos de 22/05/2026 00:00 até 24/05/2026 07:19 e conversas abertas relevantes de 17/05/2026 00:00 até 24/05/2026 07:19</strong>. Os itens sem teor integral lido foram mantidos como atenção ou monitoramento prudente, sem inventar prazo fatal.
+        Consolidação realizada em <strong>25/05/2026 às 07:18</strong>, com base em agenda, Gmail, memória operacional e registros já organizados. <strong>Janela principal de pesquisa considerada:</strong> <strong>25/05/2026 00:00 até 27/05/2026 23:59</strong>. <strong>Janela complementar destacada:</strong> <strong>e-mails jurídicos e operacionais de 24/05/2026 00:00 até 25/05/2026 07:18</strong>. Os itens sem inteiro teor lido foram mantidos como atenção ou monitoramento prudente, sem invenção de prazo fatal.
       </section>
     </main>
   </body>
