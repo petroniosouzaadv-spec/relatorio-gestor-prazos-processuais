@@ -6,10 +6,10 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relatório do Gestor de Prazos Processuais - 29/05/2026</title>
+    <title>Relatório do Gestor de Prazos Processuais - 30/05/2026</title>
     <meta name="description" content="Relatório diário do Gestor de Prazos Processuais com foco em prazos fatais, acompanhamentos críticos, agenda e próximos 2 dias." />
     <meta name="theme-color" content="#16090b" />
-    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 29/05/2026" />
+    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 30/05/2026" />
     <meta property="og:description" content="Painel executivo com panorama do dia, próximos 2 dias, riscos, conflitos de agenda e prioridades práticas." />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +32,6 @@
         --muted: #c7bcc0;
         --line: rgba(255, 232, 235, 0.12);
         --panel: rgba(17, 10, 12, 0.82);
-        --panel-strong: rgba(24, 12, 15, 0.94);
         --danger: #ff7d8a;
         --danger-strong: #ff4b5d;
         --warning: #f3bf67;
@@ -72,11 +71,7 @@
       .brand { display: flex; justify-content: space-between; align-items: flex-start; gap: 26px; flex-wrap: wrap; }
       .brand-mark { max-width: 780px; min-width: 0; }
       .brandbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-      .brand-seal {
-        width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center;
-        border: 1px solid rgba(187, 157, 109, 0.42); background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95));
-        color: var(--gold-soft); font-size: 15px; font-weight: 700; letter-spacing: 0.04em; box-shadow: var(--shadow); flex: 0 0 auto;
-      }
+      .brand-seal { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; border: 1px solid rgba(187, 157, 109, 0.42); background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95)); color: var(--gold-soft); font-size: 15px; font-weight: 700; letter-spacing: 0.04em; box-shadow: var(--shadow); flex: 0 0 auto; }
       .eyebrow { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #d9c8cc; margin-bottom: 4px; display: block; }
       .office-name { margin: 0; font-size: 22px; line-height: 1; font-weight: 800; color: #fff; }
       .office-name small { display: block; margin-top: 2px; font-size: 12px; line-height: 1.15; font-weight: 700; }
@@ -86,46 +81,42 @@
       .stamp { min-width: 290px; max-width: 360px; padding: 20px; border-radius: 18px; border: 1px solid rgba(255, 125, 138, 0.16); background: rgba(255, 255, 255, 0.035); }
       .stamp h2, .section h2 { margin: 0 0 10px; font-size: 14px; color: var(--gold-soft); letter-spacing: 0.08em; text-transform: uppercase; }
       .stamp p { margin: 7px 0; font-size: 15px; line-height: 1.62; color: #f2e8ea; }
+      .search-window { margin-top: 14px; padding: 12px 14px; border-radius: 14px; border: 1px solid rgba(243, 191, 103, 0.24); background: rgba(243, 191, 103, 0.08); }
+      .search-window span { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #ffe2ab; margin-bottom: 6px; }
+      .search-window strong { display: block; line-height: 1.6; }
       .grid { display: grid; gap: 18px; margin-top: 18px; }
       .summary { grid-template-columns: repeat(4, minmax(0, 1fr)); }
       .metric { padding: 18px; border-radius: 16px; background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); }
       .metric .value { font-size: 32px; font-weight: 800; line-height: 1; }
       .metric .label { margin-top: 8px; color: var(--muted); font-size: 13px; line-height: 1.45; }
       .main { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
-      .section, .callout, .footnote {
-        border-radius: 18px;
-        border: 1px solid var(--line);
-        background: var(--panel);
-        box-shadow: var(--shadow);
-      }
-      .section { padding: 22px; }
-      .section-header { display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; margin-bottom: 12px; }
-      .section-header p { margin: 0; max-width: 390px; color: var(--muted); font-size: 13px; line-height: 1.6; text-align: justify; }
+      .section, .callout { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: var(--shadow); }
+      .section-header { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; margin-bottom: 16px; }
+      .section-header p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; max-width: 340px; }
       .list { display: grid; gap: 12px; }
-      .item { padding: 14px 15px; border-radius: 14px; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(255, 255, 255, 0.035); }
-      .item h3 { margin: 0 0 8px; font-size: 16px; line-height: 1.35; }
-      .item p { margin: 0; color: #e6dfe1; font-size: 14px; line-height: 1.68; text-align: justify; }
-      .danger { border-color: rgba(255, 75, 93, 0.36); background: rgba(179, 19, 34, 0.15); }
-      .warning { border-color: rgba(243, 191, 103, 0.34); background: rgba(243, 191, 103, 0.1); }
-      .monitor { border-color: rgba(159, 184, 216, 0.28); background: rgba(159, 184, 216, 0.08); }
-      .tag { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 8px; padding: 5px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
-      .tag.danger-tag { color: #ffe8eb; background: rgba(255, 75, 93, 0.2); }
-      .tag.warning-tag { color: #fff3d9; background: rgba(243, 191, 103, 0.18); }
-      .tag.monitor-tag { color: #e7f1ff; background: rgba(159, 184, 216, 0.16); }
-      .date-line { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
-      .date-time { min-width: 66px; padding: 7px 9px; border-radius: 10px; background: rgba(187, 157, 109, 0.13); color: var(--gold-soft); font-weight: 800; text-align: center; }
-      .callout { grid-column: 1 / -1; padding: 22px; background: linear-gradient(90deg, rgba(187, 157, 109, 0.14), rgba(187, 157, 109, 0.04)); }
-      .callout h2 { margin: 0 0 10px; font-size: 18px; color: var(--gold-soft); }
-      .callout p { margin: 0; color: #f2e8ea; line-height: 1.76; text-align: justify; }
-      .footnote { margin-top: 18px; padding: 18px 20px; color: var(--muted); font-size: 13px; line-height: 1.7; text-align: justify; }
-      @media (max-width: 900px) { .summary, .main { grid-template-columns: 1fr; } .stamp { max-width: none; width: 100%; } .section-header { display: block; } .section-header p { max-width: none; margin-top: 8px; } }
-      @media (max-width: 620px) { .page { padding: 18px 12px 42px; } .hero { padding: 22px; border-radius: 18px; } .title { font-size: 38px; } .top-alert p, .subtitle { font-size: 14px; } .metric .value { font-size: 28px; } }
+      .item { padding: 15px 16px; border-radius: 15px; border: 1px solid rgba(255, 240, 242, 0.08); background: rgba(255, 255, 255, 0.03); }
+      .item h3 { margin: 0 0 8px; font-size: 16px; line-height: 1.5; }
+      .item p { margin: 0; font-size: 15px; line-height: 1.72; color: #e6dbde; text-align: justify; }
+      .danger { border-color: rgba(255, 75, 93, 0.32); background: rgba(255, 75, 93, 0.08); }
+      .warning { border-color: rgba(243, 191, 103, 0.28); background: rgba(243, 191, 103, 0.07); }
+      .monitor { border-color: rgba(159, 184, 216, 0.22); background: rgba(159, 184, 216, 0.06); }
+      .tag { display: inline-flex; margin-bottom: 10px; padding: 6px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+      .critical-tag { color: #ffd5da; border: 1px solid rgba(255, 75, 93, 0.42); background: rgba(255, 75, 93, 0.11); }
+      .attention-tag { color: #ffe0aa; border: 1px solid rgba(243, 191, 103, 0.32); background: rgba(243, 191, 103, 0.1); }
+      .monitor-tag { color: #dce9ff; border: 1px solid rgba(159, 184, 216, 0.3); background: rgba(159, 184, 216, 0.1); }
+      .date-line { display: flex; gap: 12px; align-items: flex-start; }
+      .date-time { min-width: 62px; color: var(--gold-soft); font-weight: 800; }
+      .callout { border-color: rgba(187, 157, 109, 0.26); background: linear-gradient(135deg, rgba(187, 157, 109, 0.12), rgba(255, 255, 255, 0.035)); }
+      .callout p { margin: 0; line-height: 1.78; color: #f2e8ea; text-align: justify; }
+      .footnote { margin-top: 18px; color: var(--muted); font-size: 13px; line-height: 1.7; text-align: justify; }
+      @media (max-width: 920px) { .summary, .main { grid-template-columns: 1fr; } .stamp { max-width: none; width: 100%; } .section-header { display: block; } .section-header p { max-width: none; margin-top: 6px; } }
+      @media (max-width: 560px) { .page { padding: 18px 12px 44px; } .hero, .section, .callout { padding: 18px; border-radius: 16px; } .title { font-size: 36px; } .date-line { display: block; } .date-time { margin-bottom: 4px; } }
     </style>
   </head>
   <body>
     <main class="page">
       <section class="top-alert">
-        <p><strong>Alerta da manhã:</strong> a sexta-feira concentra um prazo operacional que antecipa vencimento fatal de segunda-feira, 5 vencidos ainda exigindo conferência no PJe e duas frentes de alto risco por falta de inteiro teor: documentos sigilosos TRT6 e a thread extrajudicial Cícero/despejo.</p>
+        <p><strong>Alerta executivo:</strong> a manhã deve começar pela confirmação do prazo fatal de <strong>01/06/2026</strong> no processo <strong>0043310-48.2025.8.17.2001</strong>. A providência operacional estava antecipada para 29/05, mas as fontes conectadas desta rodada não trouxeram prova de protocolo ou baixa.</p>
       </section>
 
       <section class="hero">
@@ -134,100 +125,101 @@
             <div class="brandbar">
               <div class="brand-seal">PS</div>
               <div>
-                <span class="eyebrow">Relatório jurídico-operacional</span>
-                <p class="office-name">Gestor de Prazos <small>Processuais</small></p>
+                <span class="eyebrow">Relatório jurídico operacional</span>
+                <h1 class="office-name">Petrônio Souza <small>Advocacia</small></h1>
               </div>
             </div>
-            <h1 class="title">Relatório do Gestor de<br />Prazos Processuais</h1>
-            <p class="subtitle">Consolidação realizada em <strong>29/05/2026 às 07:15</strong>, no fuso <strong>America/Recife</strong>, com base em Google Agenda, Gmail, relatório PJe automatizado, memória operacional e acompanhamentos já organizados. <strong>Janela de pesquisa:</strong> <strong>29/05/2026 00:00 até 31/05/2026 23:59</strong>, com leitura complementar de e-mails e conversas relevantes de <strong>28/05/2026 00:00 até 29/05/2026 07:15</strong>.</p>
+            <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
+            <p class="subtitle">Consolidação realizada em <strong>30/05/2026 às 07:15</strong>, no fuso <strong>America/Recife</strong>, com base em Google Agenda, Gmail, relatório PJe automatizado, memória operacional e acompanhamentos já organizados. Este painel prioriza prazo fatal, ato novo, abertura de inteiro teor e redução de risco antes do próximo dia útil.</p>
             <div class="rule"></div>
           </div>
           <aside class="stamp">
-            <h2>Leitura executiva</h2>
-            <p><strong>Hoje:</strong> foco em cumprimento/qualificação antes do fim de semana.</p>
-            <p><strong>Crítico:</strong> 5 vencidos no PJe e thread Cícero com prazo defensivo informado para 03/06.</p>
-            <p><strong>Próximos 2 dias:</strong> baixa carga formal, mas segunda-feira tem fatal de 0043310.</p>
-            <p><strong>Publicação:</strong> HTML atualizado no link estável do relatório.</p>
+            <h2>Controle da rodada</h2>
+            <p><strong>Hoje:</strong> sábado, 30/05/2026</p>
+            <p><strong>Próximo gargalo:</strong> segunda-feira, 01/06/2026, com revisão semanal às 08:00, prazo operacional de 0070650 às 09:15 e vencimento fatal de 0043310 às 23:59.</p>
+            <div class="search-window">
+              <span>Janela de pesquisa</span>
+              <strong>30/05/2026 00:00 até 01/06/2026 23:59</strong>
+              <strong>Complemento: e-mails e conversas relevantes de 29/05/2026 00:00 até 30/05/2026 07:15</strong>
+            </div>
           </aside>
         </div>
       </section>
 
       <section class="grid summary">
-        <div class="metric"><div class="value">5</div><div class="label">vencidos no relatório PJe de 29/05, todos exigindo conferência e baixa ou providência.</div></div>
-        <div class="metric"><div class="value">1</div><div class="label">prazo fatal conhecido em 01/06, com data operacional antecipada para hoje.</div></div>
-        <div class="metric"><div class="value">4</div><div class="label">blocos operacionais criados hoje para reduzir risco antes do fim de semana.</div></div>
-        <div class="metric"><div class="value">0</div><div class="label">prazos fatais novos confirmados para 30/05 ou 31/05, sem prejuízo da leitura do inteiro teor.</div></div>
+        <div class="metric"><div class="value" style="color: var(--danger-strong)">2</div><div class="label">frentes críticas: 0043310 e 5 vencidos PJe</div></div>
+        <div class="metric"><div class="value" style="color: var(--warning)">3</div><div class="label">blocos operacionais criados para hoje</div></div>
+        <div class="metric"><div class="value" style="color: var(--info)">6</div><div class="label">pushs processuais recentes para inteiro teor</div></div>
+        <div class="metric"><div class="value" style="color: var(--gold)">01/06</div><div class="label">dia de maior pressão nos próximos 2 dias</div></div>
       </section>
 
       <section class="grid main">
         <article class="section">
-          <div class="section-header"><div><h2>Panorama do dia</h2></div><p>A sexta-feira deve ser tratada como dia de fechamento, não apenas de triagem, porque o próximo dia útil já traz prazo fatal.</p></div>
+          <div class="section-header"><div><h2>Panorama do dia</h2></div><p>Leitura rápida para decidir o que fazer primeiro.</p></div>
           <div class="list">
-            <div class="item danger"><h3>1. O processo 0043310-48.2025.8.17.2001 precisa sair do radar hoje.</h3><p>Há bloco às <strong>08:00</strong> para manifestação em inventário, com vencimento fatal indicado para <strong>01/06/2026 às 23:59</strong>. Como a véspera cai no domingo, a antecipação para hoje é a margem operacional segura.</p></div>
-            <div class="item danger"><h3>2. O relatório PJe mantém 5 vencidos e exige conferência objetiva.</h3><p>O e-mail de <strong>29/05/2026 às 07:09</strong> lista 5 processos vencidos e nenhum urgente novo. A providência não é recontar prazo por hipótese, mas abrir os autos e verificar cumprimento, parte responsável e medida possível.</p></div>
-            <div class="item warning"><h3>3. Pushes com documentos sigilosos não permitem conclusão sem PJe.</h3><p>TRT6 informa documentos sigilosos nos processos <strong>0002076-96.2017.5.06.0102</strong>, <strong>0000338-95.2026.5.06.0122</strong> e <strong>0000011-94.2018.5.06.0102</strong>. Até a abertura do inteiro teor, o risco é de prazo oculto ou providência não qualificada.</p></div>
-            <div class="item warning"><h3>4. A conversa Cícero/despejo virou frente de resposta formal.</h3><p>Os e-mails de 28/05 reiteram risco de revelia, preclusão e despejo no processo <strong>0002321-91.2025.8.17.2100</strong>, com prazo defensivo indicado para <strong>03/06/2026</strong>. É item sensível por prazo, escopo contratual e relação cliente/escritório.</p></div>
+            <div class="item danger"><span class="tag critical-tag">Crítico</span><h3>Prazo 0043310 precisa de confirmação objetiva</h3><p>O processo <strong>0043310-48.2025.8.17.2001</strong> tem vencimento fatal informado para <strong>01/06/2026 às 23:59</strong>. A data operacional segura foi <strong>29/05/2026</strong>, por antecipação da véspera que cairia em domingo. Como não há prova conectada de baixa/protocolo, a providência foi reorganizada para hoje às <strong>09:00</strong>.</p></div>
+            <div class="item danger"><span class="tag critical-tag">Crítico</span><h3>Relatório PJe de 30/05 aponta 5 vencidos</h3><p>O relatório automatizado indica <strong>5 vencidos</strong>, <strong>0 urgentes</strong>, <strong>0 atenção</strong>, <strong>140 movimentos diversos</strong> e <strong>145 registros totais</strong>. A leitura prudente é conferir cada item nos portais oficiais antes de concluir se há prazo próprio, prazo de terceiro, ato já cumprido ou risco real.</p></div>
+            <div class="item warning"><span class="tag attention-tag">Atenção</span><h3>Pushs TRT6/TJPE exigem inteiro teor</h3><p>Há intimações, despachos, documentos sigilosos e conclusões em processos trabalhistas e estaduais. O e-mail não permite fixar prazo fatal com segurança, mas impõe triagem no PJe/TJPE para transformar movimentação em tarefa concreta quando houver comando processual.</p></div>
+            <div class="item monitor"><span class="tag monitor-tag">Agenda</span><h3>Agenda do sábado está controlável</h3><p>Após a organização desta rodada, a manhã ficou reservada para três blocos operacionais. O único compromisso pessoal identificado é <strong>Aplicação mounjaro</strong>, das <strong>19:00 às 20:00</strong>, sem conflito direto com as providências jurídicas da manhã.</p></div>
           </div>
         </article>
 
         <article class="section">
-          <div class="section-header"><div><h2>Crítico</h2></div><p>Itens que exigem ação imediata, confirmação humana ou abertura de inteiro teor antes de qualquer baixa.</p></div>
+          <div class="section-header"><div><h2>Crítico</h2></div><p>Itens com risco alto, vencimento próximo ou necessidade de ação imediata.</p></div>
           <div class="list">
-            <div class="item danger"><span class="tag danger-tag">Crítico</span><h3>Relatório PJe - 5 vencidos</h3><p><strong>Processos:</strong> 0000536-68.2025.8.17.9901; 0051393-53.2025.8.17.2001; 0017706-81.2019.8.17.0001; 0000021-06.2024.8.17.2420; 0000982-27.2026.8.17.8223. <strong>Ação:</strong> conferir autos e classificar se houve cumprimento, se o prazo era efetivamente do escritório ou se há medida residual.</p></div>
-            <div class="item danger"><span class="tag danger-tag">Crítico</span><h3>0043310-48.2025.8.17.2001</h3><p><strong>Fatal:</strong> 01/06/2026 às 23:59. <strong>Operacional:</strong> 29/05/2026. <strong>Ação:</strong> analisar a intimação e protocolar ou encaminhar a manifestação cabível ainda hoje, por conta do fim de semana.</p></div>
-            <div class="item danger"><span class="tag danger-tag">Crítico</span><h3>Cícero Marcos / 0002321-91.2025.8.17.2100</h3><p><strong>Prazo informado pelo remetente:</strong> 03/06/2026. <strong>Ação:</strong> responder com posição objetiva sobre atuação, contratação, documentos e próximos passos. Se não houver atuação, deixar expressa a necessidade de assistência imediata.</p></div>
-            <div class="item danger"><span class="tag danger-tag">Crítico</span><h3>0002076-96.2017.5.06.0102 e 0000338-95.2026.5.06.0122</h3><p><strong>Risco:</strong> documentos sigilosos em pushes TRT6 sem teor no e-mail. <strong>Ação:</strong> abrir PJe e qualificar se há prazo, manifestação contrária, despacho ou providência defensiva.</p></div>
+            <div class="item danger"><span class="tag critical-tag">Vence 01/06</span><h3>0043310-48.2025.8.17.2001</h3><p><strong>Providência:</strong> confirmar protocolo/baixa e, se não houver prova, preparar e protocolar a manifestação cabível antes do fatal de <strong>01/06/2026 às 23:59</strong>. <strong>Risco:</strong> perda de prazo se o item for deixado para segunda-feira sem margem operacional.</p></div>
+            <div class="item danger"><span class="tag critical-tag">Ação imediata</span><h3>5 vencidos do relatório PJe</h3><p>Processos listados: <strong>0000536-68.2025.8.17.9901</strong>, <strong>0051393-53.2025.8.17.2001</strong>, <strong>0017706-81.2019.8.17.0001</strong>, <strong>0000021-06.2024.8.17.2420</strong> e <strong>0000982-27.2026.8.17.8223</strong>. <strong>Ação:</strong> classificar cada um como cumprido, prazo de terceiro, pendente, risco real ou sem providência atual.</p></div>
+            <div class="item danger"><span class="tag critical-tag">Publicação 01/06</span><h3>0000011-94.2018.5.06.0102</h3><p>Push TRT6 informa intimação publicada em <strong>01/06/2026</strong> e documentos sigilosos. <strong>Ação:</strong> abrir o inteiro teor no PJe no primeiro bloco útil; sem essa leitura, não há como contar prazo nem definir providência com segurança.</p></div>
           </div>
         </article>
 
         <article class="section">
-          <div class="section-header"><div><h2>Atenção</h2></div><p>Itens dos próximos 2 dias ou que exigem preparo antecipado para não chegar a segunda-feira com fila oculta.</p></div>
+          <div class="section-header"><div><h2>Atenção</h2></div><p>Itens dos próximos 2 dias ou que exigem preparo antes de virar urgência.</p></div>
           <div class="list">
-            <div class="item warning"><span class="tag warning-tag">Atenção</span><h3>0000011-94.2018.5.06.0102</h3><p>Push TRT6 indica juntada de manifestação, documento sigiloso, expedição de intimação e encerramento/revogação de suspensão em 28/05. Precisa de leitura para confirmar efeito prático e eventual prazo.</p></div>
-            <div class="item warning"><span class="tag warning-tag">Atenção</span><h3>0000649-86.2023.8.17.8221 e 0002671-24.2022.8.17.3090</h3><p>Ambos tiveram <strong>Despacho/Intimação</strong> publicado em 29/05. O 0002671 também apareceu em alerta Jusbrasil com publicação em 27/05. Abrir o inteiro teor antes de classificar como simples acompanhamento.</p></div>
-            <div class="item warning"><span class="tag warning-tag">Atenção</span><h3>0000439-72.2026.5.06.0142</h3><p>TRT6 informou decurso do prazo de <strong>M & R Serviços e Telecomunicações Ltda.</strong> em 27/05. Em princípio o decurso é da parte adversa, mas deve ser conferido para avaliar próxima providência ou impulso.</p></div>
-            <div class="item warning"><span class="tag warning-tag">Atenção</span><h3>0075599-05.2023.8.17.2001 e 0041008-46.2025.8.17.2001</h3><p>O primeiro teve juntada de apelação em 28/05; o segundo teve despacho de mero expediente em 2º grau. Ambos pedem triagem, especialmente para identificar contrarrazões, ciência ou providência de acompanhamento.</p></div>
+            <div class="item warning"><span class="tag attention-tag">Operacional 01/06</span><h3>0070650-06.2021.8.17.2001</h3><p>Há evento em <strong>01/06/2026 às 09:15</strong> para analisar intimação e providenciar manifestação. O fatal informado é <strong>02/06/2026 às 23:59</strong>; por isso, embora o vencimento esteja fora da janela de 2 dias, a preparação entra na segunda-feira como prioridade.</p></div>
+            <div class="item warning"><span class="tag attention-tag">Sigilosos/intimações</span><h3>0000580-54.2026.5.06.0122 e 0000730-43.2023.5.06.0121</h3><p>Os pushs TRT6 indicam despacho/intimação e documento sigiloso. <strong>Ação:</strong> abrir o teor no sistema e registrar eventual prazo; não presumir vencimento apenas pelo assunto do e-mail.</p></div>
+            <div class="item warning"><span class="tag attention-tag">Conclusos/andamentos</span><h3>0000396-46.2023.5.06.0141 e 0011527-56.2025.8.17.2480</h3><p>O primeiro está concluso para decisão no TRT6; o segundo está concluso para despacho no TJPE. Não há prazo de resposta extraído do e-mail, mas ambos merecem monitoramento porque podem gerar decisão/intimação subsequente.</p></div>
+            <div class="item warning"><span class="tag attention-tag">Prazo de terceiros</span><h3>0028651-97.2021.8.17.8201</h3><p>Push TJPE informa prazos decorridos de José Carlos de Andrade e Luciana Carneiro da Cunha em <strong>29/05/2026 às 23:59</strong>. Ação recomendada: confirmar se são prazos de parte adversa/terceiro e se há consequência processual útil a requerer.</p></div>
           </div>
         </article>
 
         <article class="section">
-          <div class="section-header"><div><h2>Monitoramento</h2></div><p>Itens sem vencimento imediato confirmado, mas que merecem controle para não virarem urgência silenciosa.</p></div>
+          <div class="section-header"><div><h2>Monitoramento</h2></div><p>Itens sem prazo imediato confirmado, mas relevantes para controle operacional.</p></div>
           <div class="list">
-            <div class="item monitor"><span class="tag monitor-tag">Monitoramento</span><h3>0002351-26.2024.8.17.4990</h3><p>Push TJPE informa arquivamento provisório em 28/05. Sem prazo imediato aparente, mas convém verificar se há baixa interna ou orientação ao cliente.</p></div>
-            <div class="item monitor"><span class="tag monitor-tag">Monitoramento</span><h3>Audiência 0000417-34.2026.5.06.0006</h3><p>A audiência ocorreu em 28/05 às 15:05 e há referência a recap/ata. A ação de hoje é registrar desfecho, documentos e eventual prazo decorrente, se ainda não tiver sido feito.</p></div>
-            <div class="item monitor"><span class="tag monitor-tag">Monitoramento</span><h3>Compromissos pessoais do fim de semana</h3><p>Há apenas compromisso pessoal em 30/05 às 19:00. A janela de 30/05 e 31/05 fica como contingência, mas a gestão prudente é concluir hoje o que depende de portal e protocolo.</p></div>
+            <div class="item monitor"><span class="tag monitor-tag">Controle semanal</span><h3>Revisão Projuris + PJe + Google Calendar</h3><p>Evento recorrente em <strong>01/06/2026 das 08:00 às 09:00</strong>. Deve ser usado para conferir novos lançamentos, validar se os prazos ativos estão no calendário e arquivar o que já foi vencido/cumprido.</p></div>
+            <div class="item monitor"><span class="tag monitor-tag">Movimento diverso</span><h3>0000786-05.2025.5.06.0122</h3><p>Push TRT6 informa autos conclusos para despacho e encerramento de conclusão em 29/05. Sem prazo extraído do e-mail, mas manter no radar porque já apareceu em relatórios recentes.</p></div>
+            <div class="item monitor"><span class="tag monitor-tag">Limitação de fonte</span><h3>Documentos sigilosos e inteiro teor</h3><p>Os e-mails de push não substituem leitura nos portais oficiais. Sempre que o corpo mencionar documento sigiloso, despacho ou intimação sem conteúdo, o relatório classifica como risco de triagem, não como prazo definitivo.</p></div>
           </div>
         </article>
 
         <article class="section">
           <div class="section-header"><div><h2>Prazos e compromissos por data</h2></div><p>Agenda consolidada após criação dos blocos operacionais desta execução.</p></div>
           <div class="list">
-            <div class="item danger"><div class="date-line"><div class="date-time">29/05</div><h3>Hoje</h3></div><p><strong>08:00</strong> prazo processual 0043310; <strong>09:00</strong> pagamento do aluguel; <strong>10:10</strong> triagem dos 5 vencidos PJe; <strong>11:00</strong> abrir inteiro teor TRT6; <strong>11:50</strong> resposta objetiva Cícero/despejo; <strong>12:35</strong> triagem TJPE/Jusbrasil.</p></div>
-            <div class="item warning"><div class="date-line"><div class="date-time">30/05</div><h3>Sábado</h3></div><p>Sem prazo processual fatal confirmado na agenda. Compromisso pessoal às <strong>19:00</strong>. Usar apenas como contingência, não como data principal de cumprimento.</p></div>
-            <div class="item warning"><div class="date-line"><div class="date-time">31/05</div><h3>Domingo</h3></div><p>Sem compromisso processual confirmado. Como a segunda-feira tem vencimento fatal em 0043310, o domingo não deve ser a única margem de revisão.</p></div>
-            <div class="item danger"><div class="date-line"><div class="date-time">01/06</div><h3>Próximo dia útil</h3></div><p>Vencimento fatal conhecido do processo <strong>0043310-48.2025.8.17.2001</strong>. Por isso a data operacional segura foi fixada e mantida em <strong>29/05</strong>.</p></div>
+            <div class="item danger"><div class="date-line"><div class="date-time">30/05</div><h3>Hoje</h3></div><p><strong>09:00</strong> conferir protocolo/baixa do processo 0043310; <strong>09:40</strong> triar 5 vencidos do relatório PJe; <strong>10:35</strong> abrir inteiro teor dos pushs TRT6/TJPE; <strong>19:00</strong> compromisso pessoal Aplicação mounjaro.</p></div>
+            <div class="item monitor"><div class="date-line"><div class="date-time">31/05</div><h3>Domingo</h3></div><p>Sem compromisso processual identificado na agenda. Não usar o domingo como única margem para o fatal de segunda-feira; a providência de 0043310 deve ficar resolvida antes.</p></div>
+            <div class="item danger"><div class="date-line"><div class="date-time">01/06</div><h3>Segunda-feira</h3></div><p><strong>08:00</strong> revisão semanal Projuris/PJe/Calendar; <strong>09:15</strong> prazo operacional do processo 0070650; <strong>23:59</strong> vencimento fatal informado de 0043310. Há risco de gargalo se a segunda-feira começar sem a baixa/protocolo do 0043310 já confirmada.</p></div>
           </div>
         </article>
 
         <article class="section">
-          <div class="section-header"><div><h2>Prioridades práticas</h2></div><p>Ordem sugerida para execução, priorizando o que reduz perda de prazo e risco de segunda-feira.</p></div>
+          <div class="section-header"><div><h2>Prioridades práticas</h2></div><p>Ordem recomendada para execução real.</p></div>
           <div class="list">
-            <div class="item"><h3>1. Cumprir ou encaminhar a manifestação do processo 0043310 ainda hoje.</h3><p>É a providência mais objetiva da agenda e evita depender do domingo ou da manhã do vencimento fatal.</p></div>
-            <div class="item"><h3>2. Classificar os 5 vencidos do PJe com prova de situação.</h3><p>Para cada processo, registrar: cumprido, prazo de terceiro, prazo perdido com providência possível, ou item sem ação atual.</p></div>
-            <div class="item"><h3>3. Abrir primeiro os sigilosos TRT6.</h3><p>Sem o teor dos documentos, qualquer conclusão sobre risco é incompleta. Priorizar 0002076 e 0000338.</p></div>
-            <div class="item"><h3>4. Responder a thread Cícero/despejo de forma delimitada.</h3><p>A resposta deve reduzir ambiguidade sobre escopo, contratação e responsabilidade pelo prazo defensivo informado para 03/06.</p></div>
-            <div class="item"><h3>5. Fechar os pushes TJPE/Jusbrasil antes do fim do expediente.</h3><p>Especialmente 0000649 e 0002671, que mencionam publicação de despacho/intimação em 29/05.</p></div>
+            <div class="item"><h3>1. Confirmar 0043310 antes de qualquer triagem ampla.</h3><p>Buscar prova objetiva de protocolo ou baixa. Se não existir, tratar como pendência de protocolo para não depender da segunda-feira.</p></div>
+            <div class="item"><h3>2. Separar os 5 vencidos do PJe por responsabilidade e risco.</h3><p>Classificar cada processo com evidência: prazo próprio, prazo de terceiro, já cumprido, pendente ou risco real. Esse filtro evita dispersão e aponta o que exige atuação jurídica.</p></div>
+            <div class="item"><h3>3. Abrir os documentos sigilosos/intimações do TRT6.</h3><p>Priorizar 0000011, 0000580 e 0000730. Se houver ato com prazo, registrar nova tarefa com vencimento fatal e data operacional de 1 dia antes, quando possível.</p></div>
+            <div class="item"><h3>4. Preparar a segunda-feira ainda hoje.</h3><p>Deixar separados os elementos do processo 0070650 e alinhar a revisão semanal para verificar Projuris, PJe e calendário sem conflitar com a análise da intimação.</p></div>
+            <div class="item"><h3>5. Monitorar conclusos e prazos de terceiros sem tratá-los como fatais próprios.</h3><p>0000396, 0011527, 0000786 e 0028651 pedem acompanhamento, mas a providência só deve ser definida após leitura oficial do andamento.</p></div>
           </div>
         </article>
 
         <article class="callout">
           <h2>Leitura final</h2>
-          <p>A execução segura desta sexta-feira depende de transformar alertas em evidência: abrir os autos, confirmar se há prazo real, registrar a providência e concluir o que vence na segunda-feira antes do fim de semana. O principal risco não é excesso de compromissos no sábado ou domingo, mas deixar para a segunda-feira uma fila que hoje ainda pode ser controlada.</p>
+          <p>A agenda do fim de semana está administrável; o risco real é operacional: chegar à segunda-feira com o prazo 0043310 sem prova de cumprimento e com intimações sigilosas ainda fechadas. A melhor estratégia é fechar hoje o que tem vencimento fatal próximo, transformar os 5 vencidos do PJe em uma lista validada por responsabilidade e deixar a segunda-feira reservada para revisão semanal e providência do processo 0070650.</p>
         </article>
       </section>
 
       <section class="footnote">
-        Consolidação realizada em <strong>29/05/2026 às 07:15</strong>, com base em Google Agenda, Gmail, relatório PJe automatizado, memória operacional e acompanhamentos já organizados. <strong>Janela de pesquisa considerada:</strong> <strong>29/05/2026 00:00 até 31/05/2026 23:59</strong>, com leitura complementar de e-mails e conversas relevantes de <strong>28/05/2026 00:00 até 29/05/2026 07:15</strong>. A leitura executiva prioriza prazo fatal, ato novo, pressão de agenda, necessidade de abertura de inteiro teor e ação prática imediata.
+        Consolidação realizada em <strong>30/05/2026 às 07:15</strong>, com base em Google Agenda, Gmail, relatório PJe automatizado, memória operacional e acompanhamentos já organizados. <strong>Janela de pesquisa considerada:</strong> <strong>30/05/2026 00:00 até 01/06/2026 23:59</strong>, com leitura complementar de e-mails e conversas relevantes de <strong>29/05/2026 00:00 até 30/05/2026 07:15</strong>. A leitura executiva prioriza prazo fatal, ato novo, pressão de agenda, necessidade de abertura de inteiro teor e ação prática imediata.
       </section>
     </main>
   </body>
