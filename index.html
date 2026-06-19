@@ -6,17 +6,11 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relatório do Gestor de Prazos Processuais - 18/06/2026</title>
-    <meta
-      name="description"
-      content="Relatório do Gestor de Prazos Processuais com foco em prazos fatais, intimações recentes, agenda crítica e providências prioritárias."
-    />
+    <title>Relatório do Gestor de Prazos Processuais - 19/06/2026</title>
+    <meta name="description" content="Relatório do Gestor de Prazos Processuais com foco em prazos fatais, intimações recentes, agenda crítica e providências prioritárias." />
     <meta name="theme-color" content="#16090b" />
-    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 18/06/2026" />
-    <meta
-      property="og:description"
-      content="Painel executivo de prazos fatais, agenda crítica e providências processuais prioritárias."
-    />
+    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 19/06/2026" />
+    <meta property="og:description" content="Painel executivo de prazos fatais, agenda crítica e providências processuais prioritárias." />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,720 +20,75 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
     <style>
-      :root {
-        --bg-top: #15090b;
-        --bg-mid: #2c0a10;
-        --bg-bottom: #07090d;
-        --blood: #8b101d;
-        --blood-strong: #b31322;
-        --blood-soft: #cf5562;
-        --gold: #bb9d6d;
-        --gold-soft: #d7c098;
-        --ink: #f5f2f1;
-        --muted: #c7bcc0;
-        --line: rgba(255, 232, 235, 0.12);
-        --panel: rgba(17, 10, 12, 0.82);
-        --panel-strong: rgba(24, 12, 15, 0.94);
-        --danger: #ff7d8a;
-        --danger-strong: #ff4b5d;
-        --warning: #f3bf67;
-        --success: #9ac8a4;
-        --info: #9fb8d8;
-        --shadow: 0 26px 64px rgba(0, 0, 0, 0.34);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        font-family: Montserrat, "Segoe UI", Arial, sans-serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at top right, rgba(179, 19, 34, 0.18), transparent 22%),
-          linear-gradient(180deg, rgba(139, 16, 29, 0.22) 0%, rgba(139, 16, 29, 0) 20%),
-          linear-gradient(135deg, var(--bg-top) 0%, var(--bg-mid) 44%, var(--bg-bottom) 100%);
-      }
-
-      a {
-        color: var(--gold-soft);
-        text-decoration: none;
-      }
-
-      strong {
-        color: #fff6f7;
-      }
-
-      .page {
-        max-width: 1240px;
-        margin: 0 auto;
-        padding: 28px 20px 64px;
-      }
-
-      .top-alert {
-        margin-bottom: 18px;
-        padding: 16px 18px;
-        border: 1px solid rgba(255, 125, 138, 0.2);
-        background: linear-gradient(90deg, rgba(179, 19, 34, 0.24), rgba(179, 19, 34, 0.08));
-        border-radius: 16px;
-        box-shadow: var(--shadow);
-      }
-
-      .top-alert p {
-        margin: 0;
-        font-size: 16px;
-        line-height: 1.7;
-        color: #fff1f2;
-      }
-
-      .hero {
-        border-radius: 22px;
-        padding: 30px;
-        border: 1px solid rgba(187, 157, 109, 0.24);
-        background:
-          linear-gradient(140deg, rgba(50, 9, 16, 0.95), rgba(14, 12, 16, 0.95)),
-          linear-gradient(180deg, rgba(187, 157, 109, 0.08), rgba(187, 157, 109, 0));
-        box-shadow: var(--shadow);
-      }
-
-      .brand {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 26px;
-        flex-wrap: wrap;
-      }
-
-      .brand-mark {
-        max-width: 760px;
-        min-width: 0;
-      }
-
-      .brandbar {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 16px;
-      }
-
-      .brand-seal {
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        border: 1px solid rgba(187, 157, 109, 0.42);
-        background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95));
-        color: var(--gold-soft);
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        box-shadow: var(--shadow);
-        flex: 0 0 auto;
-      }
-
-      .brand-copy {
-        min-width: 0;
-      }
-
-      .eyebrow {
-        font-size: 10px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: #d9c8cc;
-        margin-bottom: 4px;
-        display: block;
-      }
-
-      .office-name {
-        margin: 0;
-        font-size: 22px;
-        line-height: 1;
-        font-weight: 800;
-        color: #ffffff;
-      }
-
-      .office-name small {
-        display: block;
-        margin-top: 2px;
-        font-size: 12px;
-        line-height: 1.15;
-        font-weight: 700;
-        color: #ffffff;
-      }
-
-      .title {
-        margin: 0;
-        font-size: clamp(38px, 4.4vw, 64px);
-        line-height: 0.95;
-        font-weight: 800;
-      }
-
-      .subtitle {
-        margin: 18px 0 0;
-        max-width: 760px;
-        line-height: 1.75;
-        font-size: 16px;
-        color: #e4dadd;
-      }
-
-      .rule {
-        margin-top: 22px;
-        width: 136px;
-        height: 2px;
-        background: linear-gradient(90deg, var(--danger-strong), rgba(255, 75, 93, 0));
-      }
-
-      .stamp {
-        min-width: 290px;
-        max-width: 340px;
-        padding: 20px;
-        border-radius: 18px;
-        border: 1px solid rgba(255, 125, 138, 0.16);
-        background: rgba(255, 255, 255, 0.035);
-      }
-
-      .stamp h2,
-      .section h2 {
-        margin: 0 0 10px;
-        font-size: 14px;
-        color: var(--gold-soft);
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .stamp p {
-        margin: 7px 0;
-        font-size: 15px;
-        line-height: 1.62;
-        color: #f2e8ea;
-      }
-
-      .search-window {
-        margin-top: 14px;
-        padding: 12px 14px;
-        border-radius: 14px;
-        border: 1px solid rgba(243, 191, 103, 0.24);
-        background: rgba(243, 191, 103, 0.08);
-      }
-
-      .search-window span {
-        display: block;
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #ffe2ab;
-        margin-bottom: 6px;
-      }
-
-      .search-window strong {
-        display: block;
-        line-height: 1.6;
-      }
-
-      .grid {
-        display: grid;
-        gap: 18px;
-        margin-top: 22px;
-      }
-
-      .grid.summary {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .grid.main {
-        grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.92fr);
-        align-items: start;
-      }
-
-      .metric,
-      .section,
-      .callout {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 22px;
-        backdrop-filter: blur(12px);
-        box-shadow: var(--shadow);
-      }
-
-      .metric .value {
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 1;
-        margin-bottom: 8px;
-      }
-
-      .metric .label {
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #d5c0c5;
-      }
-
-      .metric .desc {
-        margin-top: 10px;
-        color: var(--muted);
-        font-size: 14px;
-        line-height: 1.62;
-      }
-
-      .value.danger {
-        color: var(--danger-strong);
-      }
-
-      .value.warning {
-        color: var(--warning);
-      }
-
-      .value.gold {
-        color: var(--gold);
-      }
-
-      .value.info {
-        color: var(--info);
-      }
-
-      .section-header {
-        display: flex;
-        justify-content: space-between;
-        gap: 14px;
-        align-items: flex-start;
-        margin-bottom: 16px;
-      }
-
-      .section-header p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.55;
-      }
-
-      .list {
-        display: grid;
-        gap: 12px;
-      }
-
-      .item {
-        padding: 15px 16px;
-        border-radius: 15px;
-        border: 1px solid rgba(255, 240, 242, 0.08);
-        background: rgba(255, 255, 255, 0.03);
-      }
-
-      .item h3 {
-        margin: 0 0 8px;
-        font-size: 16px;
-        line-height: 1.5;
-      }
-
-      .item p {
-        margin: 0;
-        font-size: 15px;
-        line-height: 1.72;
-        color: #e6dbde;
-      }
-
-      .badge-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 10px;
-      }
-
-      .badge {
-        padding: 6px 10px;
-        border-radius: 999px;
-        font-size: 11px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        background: rgba(255, 255, 255, 0.05);
-      }
-
-      .badge.critical {
-        color: #ffd5da;
-        border-color: rgba(255, 75, 93, 0.38);
-        background: rgba(255, 75, 93, 0.11);
-      }
-
-      .badge.high {
-        color: #ffe0aa;
-        border-color: rgba(243, 191, 103, 0.24);
-        background: rgba(243, 191, 103, 0.08);
-      }
-
-      .badge.medium {
-        color: #e7dfe2;
-        border-color: rgba(231, 223, 226, 0.16);
-      }
-
-      .badge.low {
-        color: #d6eadb;
-        border-color: rgba(154, 200, 164, 0.2);
-        background: rgba(154, 200, 164, 0.08);
-      }
-
-      .date-line {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: 12px;
-      }
-
-      .date-time {
-        min-width: 92px;
-        color: var(--warning);
-        font-size: 14px;
-        font-weight: 700;
-      }
-
-      .source-list,
-      .meta {
-        margin-top: 10px;
-        padding-top: 10px;
-        border-top: 1px solid rgba(255, 240, 242, 0.08);
-        font-size: 12px;
-        line-height: 1.55;
-        color: var(--muted);
-      }
-
-      .callout {
-        background: var(--panel-strong);
-      }
-
-      .callout p {
-        margin: 0;
-        color: #e9dfe2;
-        line-height: 1.72;
-        font-size: 15px;
-      }
-
-      .footnote {
-        margin-top: 20px;
-        padding: 18px 20px;
-        border-radius: 16px;
-        background: rgba(17, 10, 12, 0.92);
-        border: 1px solid rgba(187, 157, 109, 0.14);
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.72;
-        box-shadow: var(--shadow);
-      }
-
-      .top-alert p,
-      .subtitle,
-      .stamp p,
-      .metric .desc,
-      .section-header p,
-      .item p,
-      .callout p,
-      .footnote {
-        text-align: justify;
-        text-justify: inter-word;
-        hyphens: auto;
-      }
-
-      @media (max-width: 1100px) {
-        .brand {
-          flex-direction: column;
-        }
-
-        .stamp {
-          width: 100%;
-          max-width: none;
-        }
-      }
-
-      @media (max-width: 980px) {
-        .grid.summary,
-        .grid.main {
-          grid-template-columns: 1fr;
-        }
-
-        .grid.summary {
-          gap: 14px;
-        }
-      }
-
-      @media (max-width: 640px) {
-        .page {
-          padding: 18px 14px 40px;
-        }
-
-        .hero,
-        .metric,
-        .section,
-        .callout {
-          padding: 18px;
-          border-radius: 15px;
-        }
-
-        .brandbar {
-          align-items: flex-start;
-        }
-
-        .brand-seal {
-          width: 42px;
-          height: 42px;
-          font-size: 14px;
-        }
-
-        .office-name {
-          font-size: 19px;
-        }
-
-        .office-name small {
-          font-size: 11px;
-        }
-
-        .title {
-          font-size: clamp(36px, 10.6vw, 50px);
-        }
-
-        .subtitle,
-        .top-alert p,
-        .stamp p,
-        .item p,
-        .callout p,
-        .footnote {
-          font-size: 14px;
-          text-align: justify;
-          text-justify: inter-word;
-          hyphens: auto;
-        }
-
-        .metric .value {
-          font-size: 34px;
-        }
-
-        .stamp {
-          width: 100%;
-          max-width: none;
-        }
-
-        .date-line {
-          display: block;
-        }
-
-        .date-time {
-          display: inline-block;
-          margin-bottom: 6px;
-          min-width: 0;
-        }
-      }
+      :root { --bg-top:#15090b; --bg-mid:#2c0a10; --bg-bottom:#07090d; --blood:#8b101d; --blood-strong:#b31322; --blood-soft:#cf5562; --gold:#bb9d6d; --gold-soft:#d7c098; --ink:#f5f2f1; --muted:#c7bcc0; --line:rgba(255,232,235,.12); --panel:rgba(17,10,12,.82); --panel-strong:rgba(24,12,15,.94); --danger:#ff7d8a; --danger-strong:#ff4b5d; --warning:#f3bf67; --success:#9ac8a4; --info:#9fb8d8; --shadow:0 26px 64px rgba(0,0,0,.34); }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; font-family:Montserrat,"Segoe UI",Arial,sans-serif; color:var(--ink); background:radial-gradient(circle at top right,rgba(179,19,34,.18),transparent 22%),linear-gradient(180deg,rgba(139,16,29,.22) 0%,rgba(139,16,29,0) 20%),linear-gradient(135deg,var(--bg-top) 0%,var(--bg-mid) 44%,var(--bg-bottom) 100%); }
+      a { color:var(--gold-soft); text-decoration:none; }
+      strong { color:#fff6f7; }
+      .page { max-width:1240px; margin:0 auto; padding:28px 20px 64px; }
+      .top-alert { margin-bottom:18px; padding:16px 18px; border:1px solid rgba(255,125,138,.2); background:linear-gradient(90deg,rgba(179,19,34,.24),rgba(179,19,34,.08)); border-radius:16px; box-shadow:var(--shadow); }
+      .top-alert p { margin:0; font-size:16px; line-height:1.7; color:#fff1f2; }
+      .hero { border-radius:22px; padding:30px; border:1px solid rgba(187,157,109,.24); background:linear-gradient(140deg,rgba(50,9,16,.95),rgba(14,12,16,.95)),linear-gradient(180deg,rgba(187,157,109,.08),rgba(187,157,109,0)); box-shadow:var(--shadow); }
+      .brand { display:flex; justify-content:space-between; align-items:flex-start; gap:26px; flex-wrap:wrap; }
+      .brand-mark { max-width:760px; min-width:0; }
+      .brandbar { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+      .brand-seal { width:46px; height:46px; border-radius:50%; display:grid; place-items:center; border:1px solid rgba(187,157,109,.42); background:linear-gradient(180deg,rgba(17,10,12,.95),rgba(30,13,16,.95)); color:var(--gold-soft); font-size:15px; font-weight:700; letter-spacing:.04em; box-shadow:var(--shadow); flex:0 0 auto; }
+      .brand-copy { min-width:0; }
+      .eyebrow { font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:#d9c8cc; margin-bottom:4px; display:block; }
+      .office-name { margin:0; font-size:22px; line-height:1; font-weight:800; color:#fff; }
+      .title { margin:0; font-size:clamp(38px,4.4vw,64px); line-height:.95; font-weight:800; }
+      .subtitle { margin:18px 0 0; max-width:760px; line-height:1.75; font-size:16px; color:#e4dadd; }
+      .rule { margin-top:22px; width:136px; height:2px; background:linear-gradient(90deg,var(--danger-strong),rgba(255,75,93,0)); }
+      .stamp { min-width:290px; max-width:340px; padding:20px; border-radius:18px; border:1px solid rgba(255,125,138,.16); background:rgba(255,255,255,.035); }
+      .stamp h2, .section h2 { margin:0 0 10px; font-size:14px; color:var(--gold-soft); letter-spacing:.08em; text-transform:uppercase; }
+      .stamp p { margin:7px 0; font-size:15px; line-height:1.62; color:#f2e8ea; }
+      .search-window { margin-top:14px; padding:12px 14px; border-radius:14px; border:1px solid rgba(243,191,103,.24); background:rgba(243,191,103,.08); }
+      .search-window span { display:block; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#ffe2ab; margin-bottom:6px; }
+      .search-window strong { display:block; line-height:1.6; }
+      .grid { display:grid; gap:18px; margin-top:22px; }
+      .grid.summary { grid-template-columns:repeat(4,minmax(0,1fr)); }
+      .grid.main { grid-template-columns:minmax(0,1.42fr) minmax(320px,.92fr); align-items:start; }
+      .metric, .section, .callout { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:22px; backdrop-filter:blur(12px); box-shadow:var(--shadow); }
+      .metric .value { font-size:40px; font-weight:800; line-height:1; margin-bottom:8px; }
+      .metric .label { font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#d5c0c5; }
+      .metric .desc { margin-top:10px; color:var(--muted); font-size:14px; line-height:1.62; }
+      .value.danger { color:var(--danger-strong); } .value.warning { color:var(--warning); } .value.gold { color:var(--gold); } .value.info { color:var(--info); }
+      .section-header { display:flex; justify-content:space-between; gap:14px; align-items:flex-start; margin-bottom:16px; }
+      .section-header p { margin:0; color:var(--muted); font-size:13px; line-height:1.55; }
+      .list { display:grid; gap:12px; }
+      .item { padding:15px 16px; border-radius:15px; border:1px solid rgba(255,240,242,.08); background:rgba(255,255,255,.03); }
+      .item h3 { margin:0 0 8px; font-size:16px; line-height:1.5; }
+      .item p { margin:0; font-size:15px; line-height:1.72; color:#e6dbde; }
+      .badge-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px; }
+      .badge { padding:6px 10px; border-radius:999px; font-size:11px; letter-spacing:.05em; text-transform:uppercase; border:1px solid rgba(255,255,255,.08); background:rgba(255,255,255,.05); }
+      .badge.critical { color:#ffd5da; border-color:rgba(255,75,93,.38); background:rgba(255,75,93,.11); }
+      .badge.high { color:#ffe0aa; border-color:rgba(243,191,103,.24); background:rgba(243,191,103,.08); }
+      .badge.medium { color:#e7dfe2; border-color:rgba(231,223,226,.16); }
+      .badge.low { color:#d6eadb; border-color:rgba(154,200,164,.2); background:rgba(154,200,164,.08); }
+      .date-line { display:flex; flex-wrap:wrap; align-items:baseline; gap:12px; }
+      .date-time { min-width:92px; color:var(--warning); font-size:14px; font-weight:700; }
+      .callout { background:var(--panel-strong); }
+      .callout p { margin:0; color:#e9dfe2; line-height:1.72; font-size:15px; }
+      .footnote { margin-top:20px; padding:18px 20px; border-radius:16px; background:rgba(17,10,12,.92); border:1px solid rgba(187,157,109,.14); color:var(--muted); font-size:13px; line-height:1.72; box-shadow:var(--shadow); }
+      .top-alert p, .subtitle, .stamp p, .metric .desc, .section-header p, .item p, .callout p, .footnote { text-align:justify; text-justify:inter-word; hyphens:auto; }
+      @media (max-width:1100px){ .brand{flex-direction:column;} .stamp{width:100%;max-width:none;} }
+      @media (max-width:980px){ .grid.summary,.grid.main{grid-template-columns:1fr;} .grid.summary{gap:14px;} }
+      @media (max-width:640px){ .page{padding:18px 14px 40px;} .hero,.metric,.section,.callout{padding:18px;border-radius:15px;} .brandbar{align-items:flex-start;} .brand-seal{width:42px;height:42px;font-size:14px;} .office-name{font-size:19px;} .title{font-size:clamp(36px,10.6vw,50px);} .subtitle,.top-alert p,.stamp p,.item p,.callout p,.footnote{font-size:14px;text-align:justify;text-justify:inter-word;hyphens:auto;} .metric .value{font-size:34px;} .date-line{display:block;} .date-time{display:inline-block;margin-bottom:6px;min-width:0;} }
     </style>
   </head>
   <body>
     <main class="page">
-      <section class="top-alert">
-        <p><strong>Crítico hoje:</strong> validar imediatamente o fechamento do prazo Expedito após decurso registrado às 00:12, cumprir a audiência Una de Jakeline às 09:15 e qualificar os 5 vencidos apontados pelo PJe de 18/06/2026.</p>
-      </section>
-
-      <section class="hero">
-        <div class="brand">
-          <div class="brand-mark">
-            <div class="brandbar">
-              <div class="brand-seal">PS</div>
-              <div class="brand-copy">
-                <span class="eyebrow">Relatório jurídico operacional</span>
-                <p class="office-name">Gestor de Prazos Processuais</p>
-              </div>
-            </div>
-            <h1 class="title">Plano diário de prazos e providências</h1>
-            <p class="subtitle">Consolidação executiva da agenda, alertas processuais recentes, prazos fatais e blocos operacionais criados para reduzir risco de atraso.</p>
-            <div class="rule"></div>
-          </div>
-          <aside class="stamp">
-            <h2>Emissão</h2>
-            <p><strong>Data:</strong> 18/06/2026</p>
-            <p><strong>Horário-base:</strong> 07:15</p>
-            <p><strong>Fuso:</strong> America/Recife</p>
-            <div class="search-window">
-              <span>Janela de pesquisa utilizada</span>
-              <strong>Agenda: 18/06/2026 00:00 até 20/06/2026 23:59</strong><br />
-              <strong>Gmail: 17/06/2026 a 18/06/2026, com consulta complementar dos últimos 7 dias.</strong>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="grid summary">
-        <article class="metric critical">
-          <div class="label">Crítico</div>
-          <div class="value">3</div>
-          <div class="desc">Expedito pós-fatal, audiência Jakeline e 5 vencidos PJe exigem ação imediata.</div>
-        </article>
-        <article class="metric warning">
-          <div class="label">Próximos 2 dias</div>
-          <div class="value">2</div>
-          <div class="desc">Fatais David Marcelo em 19/06 e Renato Mendes em 20/06, ambos já com bloco operacional.</div>
-        </article>
-        <article class="metric info">
-          <div class="label">Blocos criados</div>
-          <div class="value">3</div>
-          <div class="desc">Triagem PJe/Expedito, publicações e pushes, e preparação Renato Mendes.</div>
-        </article>
-        <article class="metric success">
-          <div class="label">Conflitos</div>
-          <div class="value">0</div>
-          <div class="desc">Não há sobreposição direta, mas a manhã fica comprimida até 12:00.</div>
-        </article>
-      </section>
-
-      <section class="grid main">
-        <div class="list">
-          <article class="section">
-            <div class="section-header">
-              <div><h2>Panorama do dia</h2></div>
-              <p>Leitura executiva do risco imediato, da pressão de agenda e da preparação necessária.</p>
-            </div>
-            <div class="list">
-              <div class="item">
-                <h3>1. A manhã concentra o núcleo crítico do dia.</h3>
-                <p>Das <strong>08:00 às 12:00</strong> há triagem PJe/Expedito, audiência presencial de Jakeline, preparação David Marcelo e triagem de publicações/pushes. Não há choque de horário, mas o intervalo entre as tarefas é curto.</p>
-              </div>
-              <div class="item">
-                <h3>2. Expedito exige baixa cautelosa, não automática.</h3>
-                <p>O push do TJPE registrou <strong>decurso em 18/06/2026 00:12</strong>, relativo ao fatal de <strong>17/06/2026 23:59</strong>. O briefing informa manifestação juntada em <strong>17/06/2026 23:10</strong>. A providência segura é conferir protocolo, teor e suficiência no sistema oficial antes de baixar.</p>
-              </div>
-              <div class="item">
-                <h3>3. Jakeline passou da fase de montagem para validação final.</h3>
-                <p>No processo <strong>0000279-38.2026.5.06.0145</strong>, o push TRT6 aponta contestação juntada em <strong>17/06/2026 23:38</strong> e documento sigiloso às <strong>23:37</strong>. Hoje há audiência Una presencial às <strong>09:15</strong>; levar defesa, documentos, procuração/declaracão e estratégia fechada.</p>
-              </div>
-              <div class="item">
-                <h3>4. O relatório PJe mantém passivo de 5 vencidos.</h3>
-                <p>O relatório de <strong>18/06/2026</strong> aponta 5 vencidos, sem urgentes novos. Eles seguem como passivo crítico até qualificação individual e registro de providência.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="section">
-            <div class="section-header">
-              <div><h2>Crítico</h2></div>
-              <p>Itens que não podem permanecer incertos ao fim do dia.</p>
-            </div>
-            <div class="list">
-              <div class="item">
-                <div class="badge-row"><span class="badge critical">Risco máximo</span><span class="badge medium">TJPE</span></div>
-                <h3>Expedito - processo 0003051-29.2026.8.17.9000</h3>
-                <p><strong>Ato identificado:</strong> decurso registrado em 18/06/2026 00:12, com indicação paralela de manifestação juntada em 17/06/2026 23:10. <strong>Providência:</strong> validar protocolo, teor e suficiência no PJe/TJPE. <strong>Risco:</strong> se a manifestação não cobrir integralmente o prazo, há exposição pós-fatal.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge critical">Audiência hoje</span><span class="badge medium">TRT6</span></div>
-                <h3>Jakeline Veríssimo - processo 0000279-38.2026.5.06.0145</h3>
-                <p><strong>Compromisso:</strong> audiência Una presencial em 18/06/2026 às 09:15, 5ª Vara do Trabalho de Jaboatão. <strong>Providência:</strong> comparecer com defesa, documentos, procuração/declaracão e estratégia. <strong>Observação:</strong> contestação e documento sigiloso foram juntados na noite anterior, mas devem ser conferidos antes da audiência.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge critical">Passivo vencido</span><span class="badge medium">PJe</span></div>
-                <h3>5 vencidos no relatório PJe de 18/06</h3>
-                <p><strong>Processos:</strong> 0000536-68.2025.8.17.9901, 0051393-53.2025.8.17.2001, 0017706-81.2019.8.17.0001, 0000021-06.2024.8.17.2420 e 0000982-27.2026.8.17.8223. <strong>Providência:</strong> qualificar um a um, verificar justa causa, nulidade, nova via ou simples monitoramento, conforme o ato.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="section">
-            <div class="section-header">
-              <div><h2>Atenção</h2></div>
-              <p>Itens dos próximos dois dias ou que exigem preparo antecipado.</p>
-            </div>
-            <div class="list">
-              <div class="item">
-                <div class="date-line"><div class="date-time">18/06 10:30</div><h3>David Marcelo - preparação operacional</h3></div>
-                <p><strong>Processo:</strong> 0002671-24.2022.8.17.3090. <strong>Fatal:</strong> 19/06/2026 às 23:59. <strong>Providência:</strong> abrir inteiro teor, validar ciência de 29/05/2026 e preparar manifestação se cabível.</p>
-              </div>
-              <div class="item">
-                <div class="date-line"><div class="date-time">19/06 23:59</div><h3>Prazo fatal David Marcelo</h3></div>
-                <p>O evento fatal já está na agenda. A execução deve ocorrer hoje, para evitar depender da sexta-feira à noite.</p>
-              </div>
-              <div class="item">
-                <div class="date-line"><div class="date-time">19/06 09:00</div><h3>Renato Mendes - preparar contrarrazões</h3></div>
-                <p><strong>Processo:</strong> 0006873-06.2025.8.17.2810. <strong>Fatal:</strong> 20/06/2026 às 23:59. <strong>Providência:</strong> conferir intimação e contagem, preparar contrarrazões se cabíveis. <strong>Cautela:</strong> a agenda indica grau de certeza médio sobre a contagem, então confirmar no sistema oficial.</p>
-              </div>
-              <div class="item">
-                <div class="date-line"><div class="date-time">18/06 11:15</div><h3>Publicações e pushes novos</h3></div>
-                <p>Abrir as publicações Jusbrasil de <strong>0003435-36.2023.8.17.2100</strong>, <strong>0036552-19.2026.8.17.2001</strong> e <strong>0021351-21.2025.8.17.2001</strong>, além dos pushes TRT6/TJPE/TJPB/TJPI da madrugada, para identificar prazo novo ou providência de registro.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="list">
-          <article class="section">
-            <div class="section-header">
-              <div><h2>Monitoramento</h2></div>
-              <p>Itens sem fatal imediato confirmado, mas que merecem acompanhamento.</p>
-            </div>
-            <div class="list">
-              <div class="item">
-                <div class="badge-row"><span class="badge medium">TRT6</span><span class="badge low">Acompanhar</span></div>
-                <h3>Processo 0000307-78.2026.5.06.0121</h3>
-                <p>Push informa despacho de mero expediente, intimações expedidas e audiência de instrução designada para <strong>17/03/2027 às 08:30</strong>. Conferir inteiro teor e registrar prazo apenas se a intimação contiver comando efetivo.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge medium">Pushes da madrugada</span></div>
-                <h3>Demais movimentações recentes</h3>
-                <p>Conferir 0000677-25.2024.5.06.0122, 0000474-36.2018.5.06.0102, 0837703-80.2022.8.15.2001 e 0000496-13.2009.8.18.0042. Até a leitura do inteiro teor, não tratar como prazo definitivo.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge low">Tecnologia</span></div>
-                <h3>PDPJ, Supabase e Security & Build</h3>
-                <p>O briefing recomenda confirmar legitimidade de acesso PDPJ de 17/06 às 09:31 e observar bloqueios técnicos do Supabase/Security & Build. Sem impacto processual direto nesta janela, mas com risco operacional se depender de sistemas.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="section">
-            <div class="section-header">
-              <div><h2>Prazos e compromissos por data</h2></div>
-              <p>Agenda consolidada com foco em vencimento fatal e preparação antecipada.</p>
-            </div>
-            <div class="list">
-              <div class="item">
-                <div class="date-line"><div class="date-time">18/06</div><h3>Hoje</h3></div>
-                <p>08:00 triagem crítica PJe/Expedito; 09:15 audiência Jakeline; 10:30 preparação David Marcelo; 11:15 triagem de publicações e pushes; 21:00 terapia.</p>
-              </div>
-              <div class="item">
-                <div class="date-line"><div class="date-time">19/06</div><h3>Amanhã</h3></div>
-                <p>09:00 preparação Renato Mendes. Às 23:59 vence o prazo fatal de <strong>David Marcelo - 0002671-24.2022.8.17.3090</strong>.</p>
-              </div>
-              <div class="item">
-                <div class="date-line"><div class="date-time">20/06</div><h3>Próximo sábado</h3></div>
-                <p>19:00 compromisso pessoal. Às 23:59 vence o prazo fatal de <strong>Renato Mendes - 0006873-06.2025.8.17.2810</strong>, com contagem a confirmar no sistema oficial.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="section">
-            <div class="section-header">
-              <div><h2>Prioridades práticas</h2></div>
-              <p>Ordem sugerida para execução real.</p>
-            </div>
-            <div class="list">
-              <div class="item"><h3>1. Validar Expedito antes de qualquer baixa.</h3><p>Conferir no PJe/TJPE se a manifestação de 17/06 às 23:10 existe, foi tempestiva e cobre o comando do prazo.</p></div>
-              <div class="item"><h3>2. Fechar a audiência Jakeline às 09:15.</h3><p>Chegar com documentos, procuração/declaracão, comprovante da contestação/documento sigiloso e estratégia objetiva de audiência.</p></div>
-              <div class="item"><h3>3. Qualificar os 5 vencidos do PJe.</h3><p>Separar o que exige medida corretiva do que é monitoramento, prazo de terceiro ou possível nova via.</p></div>
-              <div class="item"><h3>4. Preparar David Marcelo ainda hoje.</h3><p>O fatal é amanhã às 23:59; a melhor data operacional é 18/06, já registrada na agenda.</p></div>
-              <div class="item"><h3>5. Abrir publicações e pushes novos antes do almoço.</h3><p>O objetivo é capturar prazo novo enquanto ainda há janela de reação no mesmo dia.</p></div>
-              <div class="item"><h3>6. Amanhã, iniciar por Renato Mendes.</h3><p>Confirmar a contagem de contrarrazões e deixar a peça pronta antes do fatal de 20/06.</p></div>
-            </div>
-          </article>
-
-          <article class="callout">
-            <h2>Leitura final</h2>
-            <p>O dia não tem conflito formal de agenda, mas tem pressão real de sequência. A linha prudente é eliminar o risco de Expedito, cumprir Jakeline sem improviso e transformar os alertas do PJe/Jusbrasil/pushes em providências objetivas antes do fim da manhã.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="footnote">
-        Consolidação realizada em <strong>18/06/2026</strong>, com base em Google Agenda, Gmail, memória operacional do agente e acompanhamentos já registrados. <strong>Janela de pesquisa considerada:</strong> <strong>Agenda de 18/06/2026 00:00 até 20/06/2026 23:59; Gmail de 17/06/2026 a 18/06/2026, com consulta complementar dos últimos 7 dias.</strong> Prazos e atos com conteúdo não integralmente visível devem ser confirmados no sistema oficial antes de baixa ou protocolo.
-      </section>
+      <section class="top-alert"><p><strong>Crítico hoje:</strong> David Marcelo vence em 19/06/2026 às 23:59; Renato Mendes exige preparação hoje para fatal de 20/06/2026; o passivo de 5 vencidos do PJe e a validação de Expedito continuam como risco operacional até conferência em fonte oficial.</p></section>
+      <section class="hero"><div class="brand"><div class="brand-mark"><div class="brandbar"><div class="brand-seal">PS</div><div class="brand-copy"><span class="eyebrow">Relatório jurídico operacional</span><p class="office-name">Gestor de Prazos Processuais</p></div></div><h1 class="title">Plano diário de prazos e providências</h1><p class="subtitle">Consolidação executiva da agenda, alertas processuais recentes, prazos fatais, publicações de hoje e blocos operacionais criados para reduzir risco de atraso.</p><div class="rule"></div></div><aside class="stamp"><h2>Emissão</h2><p><strong>Data:</strong> 19/06/2026</p><p><strong>Horário-base:</strong> 07:15</p><p><strong>Fuso:</strong> America/Recife</p><div class="search-window"><span>Janela de pesquisa utilizada</span><strong>Agenda: 19/06/2026 00:00 até 21/06/2026 23:59</strong><strong>Gmail: 18/06/2026 a 19/06/2026, com foco em PJe, pushes, publicações, briefing executivo e avisos operacionais.</strong></div></aside></div></section>
+      <section class="grid summary"><article class="metric"><div class="value danger">4</div><div class="label">Itens críticos</div><div class="desc">David Marcelo, Renato Mendes, Expedito e 5 vencidos PJe exigem conferência e providência objetiva.</div></article><article class="metric"><div class="value warning">2</div><div class="label">Fatais até sábado</div><div class="desc">David Marcelo vence hoje às 23:59; Renato Mendes vence em 20/06 às 23:59, com contagem a confirmar.</div></article><article class="metric"><div class="value gold">3</div><div class="label">Blocos criados hoje</div><div class="desc">Triagem PJe/segurança, finalização David Marcelo e conferência de publicações/pushes novos.</div></article><article class="metric"><div class="value info">0</div><div class="label">Conflitos formais</div><div class="desc">Sem sobreposição direta; a manhã fica sequencial e densa entre 08:00 e 12:00.</div></article></section>
+      <section class="grid main"><div class="list"><article class="section"><div class="section-header"><div><h2>Panorama do dia</h2></div><p>Leitura executiva do risco imediato, da pressão de agenda e da preparação necessária.</p></div><div class="list"><div class="item"><h3>1. O dia tem um prazo fatal principal e outro fatal preparado para amanhã.</h3><p><strong>David Marcelo - 0002671-24.2022.8.17.3090</strong> vence hoje, <strong>19/06/2026 às 23:59</strong>. O bloco operacional foi criado para <strong>10:00-11:00</strong>. <strong>Renato Mendes - 0006873-06.2025.8.17.2810</strong> vence em <strong>20/06/2026 às 23:59</strong> e já tem preparação hoje às <strong>09:00-10:00</strong>, com cautela expressa sobre confirmação da contagem oficial.</p></div><div class="item"><h3>2. O passivo PJe continua crítico até qualificação individual.</h3><p>O relatório PJe de <strong>19/06/2026</strong> aponta <strong>5 vencidos, 0 urgentes e 0 em atenção</strong>. Como são prazos já expirados, a providência não é apenas listar: é verificar justa causa, nova via, prazo de terceiro, nulidade ou necessidade de baixa cautelosa.</p></div><div class="item"><h3>3. Expedito ainda pede validação pós-fatal.</h3><p>O briefing informa manifestação às <strong>23:10 de 17/06</strong> e decurso às <strong>00:12 de 18/06</strong>. Antes de baixar, conferir protocolo, teor, tempestividade e suficiência no PJe/TJPE.</p></div><div class="item"><h3>4. Jakeline virou acompanhamento pós-audiência.</h3><p>O push TRT6 do processo <strong>0000279-38.2026.5.06.0145</strong> indica audiência una realizada, acordo homologado, execução iniciada e suspensão por transação em <strong>18/06/2026</strong>. A providência agora é registrar ata, condições do acordo e controle de cumprimento.</p></div></div></article>
+      <article class="section"><div class="section-header"><div><h2>Crítico</h2></div><p>Itens que não podem permanecer incertos ao fim do dia.</p></div><div class="list"><div class="item"><div class="badge-row"><span class="badge critical">Fatal hoje</span><span class="badge medium">TJPE</span></div><h3>David Marcelo - processo 0002671-24.2022.8.17.3090</h3><p><strong>Prazo fatal:</strong> 19/06/2026 às 23:59. <strong>Providência:</strong> abrir inteiro teor, validar ciência de 29/05/2026, conferir decurso de terceiro em 08/06/2026 e protocolar manifestação se cabível. <strong>Bloco criado:</strong> 19/06, 10:00-11:00.</p></div><div class="item"><div class="badge-row"><span class="badge critical">Preparar hoje</span><span class="badge medium">TJPE</span></div><h3>Renato Mendes - processo 0006873-06.2025.8.17.2810</h3><p><strong>Fatal registrado:</strong> 20/06/2026 às 23:59. <strong>Providência:</strong> confirmar intimação e contagem oficial, preparar contrarrazões se cabíveis. <strong>Bloco já existente:</strong> 19/06, 09:00-10:00. <strong>Cautela:</strong> grau de certeza médio na agenda; confirmar no sistema oficial.</p></div><div class="item"><div class="badge-row"><span class="badge critical">Pós-fatal</span><span class="badge medium">TJPE</span></div><h3>Expedito - processo 0003051-29.2026.8.17.9000</h3><p><strong>Situação:</strong> manifestação informada às 23:10 de 17/06 e decurso às 00:12 de 18/06. <strong>Providência:</strong> validar protocolo, teor, tempestividade e suficiência antes de qualquer baixa. <strong>Risco:</strong> exposição pós-fatal se a manifestação não cobrir integralmente o comando.</p></div><div class="item"><div class="badge-row"><span class="badge critical">Passivo vencido</span><span class="badge medium">PJe</span></div><h3>5 vencidos no relatório PJe de 19/06</h3><p><strong>Processos:</strong> 0000536-68.2025.8.17.9901, 0051393-53.2025.8.17.2001, 0017706-81.2019.8.17.0001, 0000021-06.2024.8.17.2420 e 0000982-27.2026.8.17.8223. <strong>Providência:</strong> qualificar individualmente e registrar medida prática ou motivo de monitoramento.</p></div><div class="item"><div class="badge-row"><span class="badge critical">Segurança</span><span class="badge medium">Operacional</span></div><h3>Acessos PDPJ e Projuris</h3><p><strong>Alerta:</strong> briefing pede confirmar acesso PDPJ de 18/06 às 14:05 e recuperação de senha Projuris de 19/06 às 02:30 BRT. <strong>Providência:</strong> se não reconhecidos, trocar senha, revisar sessões e evitar uso de credenciais possivelmente comprometidas.</p></div></div></article>
+      <article class="section"><div class="section-header"><div><h2>Atenção</h2></div><p>Itens dos próximos dois dias ou que exigem preparo antecipado.</p></div><div class="list"><div class="item"><div class="date-line"><div class="date-time">19/06 08:00</div><h3>Triagem crítica - PJe vencidos e segurança operacional</h3></div><p>Bloco criado para qualificar os 5 vencidos e conferir os alertas de segurança. É a primeira etapa do dia porque reduz passivo e risco sistêmico.</p></div><div class="item"><div class="date-line"><div class="date-time">19/06 09:00</div><h3>Renato Mendes - preparar contrarrazões</h3></div><p>Bloco já existente na agenda. Usar a hora para confirmar contagem oficial e deixar a resposta pronta antes do fatal de sábado.</p></div><div class="item"><div class="date-line"><div class="date-time">19/06 11:00</div><h3>Conferir publicações e pushes novos</h3></div><p>Abrir inteiro teor de <strong>0043310-48.2025.8.17.2001</strong>, <strong>0000307-78.2026.5.06.0121</strong>, <strong>0000474-36.2018.5.06.0102</strong>, <strong>0003440-92.2022.8.17.2100</strong>, <strong>0066605-04.2025.4.05.8300</strong>, <strong>0061659-02.2025.8.17.2001</strong> e <strong>0000417-34.2026.5.06.0006</strong>.</p></div><div class="item"><div class="date-line"><div class="date-time">20/06 23:59</div><h3>Prazo fatal Renato Mendes</h3></div><p>Como cai no sábado, a estratégia segura é resolver hoje. A data de 20/06 deve ser tratada como limite final, não como data operacional confortável.</p></div></div></article></div>
+      <div class="list"><article class="section"><div class="section-header"><div><h2>Monitoramento</h2></div><p>Itens sem fatal imediato confirmado, mas que merecem acompanhamento.</p></div><div class="list"><div class="item"><div class="badge-row"><span class="badge medium">TRT6</span><span class="badge low">Pós-audiência</span></div><h3>Jakeline - 0000279-38.2026.5.06.0145</h3><p>Audiência una realizada em 18/06; acordo homologado; execução iniciada; processo suspenso por transação. Registrar ata, valores/condições e controle de cumprimento.</p></div><div class="item"><div class="badge-row"><span class="badge medium">Publicação</span><span class="badge low">Conferir teor</span></div><h3>0000307-78.2026.5.06.0121</h3><p>TRT6/Jusbrasil indicam intimação disponibilizada em 18/06 e publicada em 19/06. Abrir inteiro teor antes de classificar como prazo definitivo.</p></div><div class="item"><div class="badge-row"><span class="badge medium">TJPE</span><span class="badge low">Inventário</span></div><h3>0043310-48.2025.8.17.2001</h3><p>Push TJPE informa despacho/intimação publicado em 19/06 às 04:58. É item de atenção porque pode inaugurar prazo, mas depende de inteiro teor.</p></div><div class="item"><div class="badge-row"><span class="badge medium">TRT6</span><span class="badge low">Prazo recursal</span></div><h3>0000474-36.2018.5.06.0102</h3><p>Sentença em 18/06 prejudicou embargos de declaração. Avaliar impacto e eventual prazo recursal.</p></div></div></article>
+      <article class="section"><div class="section-header"><div><h2>Prazos e compromissos por data</h2></div><p>Agenda consolidada com foco em vencimento fatal e preparação antecipada.</p></div><div class="list"><div class="item"><div class="date-line"><div class="date-time">19/06</div><h3>Hoje</h3></div><p>08:00 triagem PJe/segurança; 09:00 Renato Mendes; 10:00 David Marcelo; 11:00 publicações e pushes; 23:59 fatal David Marcelo.</p></div><div class="item"><div class="date-line"><div class="date-time">20/06</div><h3>Sábado</h3></div><p>19:00 compromisso pessoal. Às 23:59 vence Renato Mendes, com contagem a confirmar em fonte oficial.</p></div><div class="item"><div class="date-line"><div class="date-time">21/06</div><h3>Domingo</h3></div><p>Nenhum compromisso ou prazo fatal localizado na janela da agenda consultada, mas manter monitoramento caso novas publicações cheguem após este relatório.</p></div></div></article>
+      <article class="section"><div class="section-header"><div><h2>Prioridades práticas</h2></div><p>Ordem sugerida para execução real.</p></div><div class="list"><div class="item"><h3>1. Qualificar os 5 vencidos do PJe e checar segurança operacional.</h3><p>Separar o que exige medida corretiva do que é monitoramento, prazo de terceiro ou nova via, e validar acessos PDPJ/Projuris.</p></div><div class="item"><h3>2. Confirmar contagem e preparar Renato Mendes.</h3><p>Não deixar o prazo de sábado para o sábado. Conferir intimação e contagem oficial antes de redigir ou protocolar.</p></div><div class="item"><h3>3. Finalizar David Marcelo ainda pela manhã.</h3><p>O fatal é hoje às 23:59, mas a data operacional segura é 10:00-11:00.</p></div><div class="item"><h3>4. Validar Expedito antes de baixar.</h3><p>Conferir se a manifestação de 17/06 às 23:10 foi efetivamente protocolada, tempestiva e suficiente.</p></div><div class="item"><h3>5. Abrir inteiro teor das publicações e pushes novos.</h3><p>Converter apenas atos confirmados em prazos definitivos; até lá, manter como atenção/monitoramento.</p></div><div class="item"><h3>6. Registrar pós-audiência de Jakeline.</h3><p>Salvar ata, condições do acordo e controle de cumprimento para evitar perda de marco futuro.</p></div></div></article><article class="callout"><h2>Leitura final</h2><p>Não há conflito formal de agenda, mas há uma manhã densa e com alto valor operacional. A rota prudente é reduzir passivo logo cedo, resolver David Marcelo antes do almoço, deixar Renato Mendes pronto ainda hoje e não transformar pushes em prazos definitivos sem inteiro teor oficial.</p></article></div></section>
+      <section class="footnote">Consolidação realizada em <strong>19/06/2026</strong>, com base em Google Agenda, Gmail, memória operacional do agente e acompanhamentos já registrados. <strong>Janela de pesquisa considerada:</strong> <strong>Agenda de 19/06/2026 00:00 até 21/06/2026 23:59; Gmail de 18/06/2026 a 19/06/2026, com foco em PJe, pushes, publicações, briefing executivo e avisos operacionais.</strong> Prazos e atos com conteúdo não integralmente visível devem ser confirmados no sistema oficial antes de baixa ou protocolo.</section>
     </main>
   </body>
 </html>
