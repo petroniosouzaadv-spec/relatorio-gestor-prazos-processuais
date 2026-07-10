@@ -6,17 +6,11 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relatório do Gestor de Prazos Processuais - 09/07/2026</title>
-    <meta
-      name="description"
-      content="Relatório do Gestor de Prazos Processuais com foco em prazos fatais, intimações recentes, agenda crítica e providências prioritárias."
-    />
+    <title>Relatório do Gestor de Prazos Processuais - 10/07/2026</title>
+    <meta name="description" content="Relatório do Gestor de Prazos Processuais com foco em prazos fatais, intimações recentes, agenda crítica e providências prioritárias." />
     <meta name="theme-color" content="#16090b" />
-    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 09/07/2026" />
-    <meta
-      property="og:description"
-      content="Painel executivo de prazos fatais, agenda crítica e providências processuais prioritárias."
-    />
+    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 10/07/2026" />
+    <meta property="og:description" content="Painel executivo de prazos fatais, agenda crítica e providências processuais prioritárias." />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +26,6 @@
         --bg-bottom: #07090d;
         --blood: #8b101d;
         --blood-strong: #b31322;
-        --blood-soft: #cf5562;
         --gold: #bb9d6d;
         --gold-soft: #d7c098;
         --ink: #f5f2f1;
@@ -47,500 +40,74 @@
         --info: #9fb8d8;
         --shadow: 0 26px 64px rgba(0, 0, 0, 0.34);
       }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
       body {
         margin: 0;
         font-family: Montserrat, "Segoe UI", Arial, sans-serif;
         color: var(--ink);
-        background:
-          radial-gradient(circle at top right, rgba(179, 19, 34, 0.18), transparent 22%),
-          linear-gradient(180deg, rgba(139, 16, 29, 0.22) 0%, rgba(139, 16, 29, 0) 20%),
-          linear-gradient(135deg, var(--bg-top) 0%, var(--bg-mid) 44%, var(--bg-bottom) 100%);
+        background: radial-gradient(circle at top right, rgba(179, 19, 34, 0.18), transparent 22%), linear-gradient(180deg, rgba(139, 16, 29, 0.22) 0%, rgba(139, 16, 29, 0) 20%), linear-gradient(135deg, var(--bg-top) 0%, var(--bg-mid) 44%, var(--bg-bottom) 100%);
       }
-
-      a {
-        color: var(--gold-soft);
-        text-decoration: none;
-      }
-
-      strong {
-        color: #fff6f7;
-      }
-
-      .page {
-        max-width: 1240px;
-        margin: 0 auto;
-        padding: 28px 20px 64px;
-      }
-
-      .top-alert {
-        margin-bottom: 18px;
-        padding: 16px 18px;
-        border: 1px solid rgba(255, 125, 138, 0.2);
-        background: linear-gradient(90deg, rgba(179, 19, 34, 0.24), rgba(179, 19, 34, 0.08));
-        border-radius: 16px;
-        box-shadow: var(--shadow);
-      }
-
-      .top-alert p {
-        margin: 0;
-        font-size: 16px;
-        line-height: 1.7;
-        color: #fff1f2;
-      }
-
-      .hero {
-        border-radius: 22px;
-        padding: 30px;
-        border: 1px solid rgba(187, 157, 109, 0.24);
-        background:
-          linear-gradient(140deg, rgba(50, 9, 16, 0.95), rgba(14, 12, 16, 0.95)),
-          linear-gradient(180deg, rgba(187, 157, 109, 0.08), rgba(187, 157, 109, 0));
-        box-shadow: var(--shadow);
-      }
-
-      .brand {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 26px;
-        flex-wrap: wrap;
-      }
-
-      .brand-mark {
-        max-width: 760px;
-        min-width: 0;
-      }
-
-      .brandbar {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 16px;
-      }
-
-      .brand-seal {
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        border: 1px solid rgba(187, 157, 109, 0.42);
-        background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95));
-        color: var(--gold-soft);
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        box-shadow: var(--shadow);
-        flex: 0 0 auto;
-      }
-
-      .brand-copy {
-        min-width: 0;
-      }
-
-      .eyebrow {
-        font-size: 10px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: #d9c8cc;
-        margin-bottom: 4px;
-        display: block;
-      }
-
-      .office-name {
-        margin: 0;
-        font-size: 22px;
-        line-height: 1;
-        font-weight: 800;
-        color: #ffffff;
-      }
-
-      .office-name small {
-        display: block;
-        margin-top: 2px;
-        font-size: 12px;
-        line-height: 1.15;
-        font-weight: 700;
-        color: #ffffff;
-      }
-
-      .title {
-        margin: 0;
-        font-size: clamp(38px, 4.4vw, 64px);
-        line-height: 0.95;
-        font-weight: 800;
-      }
-
-      .subtitle {
-        margin: 18px 0 0;
-        max-width: 760px;
-        line-height: 1.75;
-        font-size: 16px;
-        color: #e4dadd;
-      }
-
-      .rule {
-        margin-top: 22px;
-        width: 136px;
-        height: 2px;
-        background: linear-gradient(90deg, var(--danger-strong), rgba(255, 75, 93, 0));
-      }
-
-      .stamp {
-        min-width: 290px;
-        max-width: 340px;
-        padding: 20px;
-        border-radius: 18px;
-        border: 1px solid rgba(255, 125, 138, 0.16);
-        background: rgba(255, 255, 255, 0.035);
-      }
-
-      .stamp h2,
-      .section h2 {
-        margin: 0 0 10px;
-        font-size: 14px;
-        color: var(--gold-soft);
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .stamp p {
-        margin: 7px 0;
-        font-size: 15px;
-        line-height: 1.62;
-        color: #f2e8ea;
-      }
-
-      .search-window {
-        margin-top: 14px;
-        padding: 12px 14px;
-        border-radius: 14px;
-        border: 1px solid rgba(243, 191, 103, 0.24);
-        background: rgba(243, 191, 103, 0.08);
-      }
-
-      .search-window span {
-        display: block;
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #ffe2ab;
-        margin-bottom: 6px;
-      }
-
-      .search-window strong {
-        display: block;
-        line-height: 1.6;
-      }
-
-      .grid {
-        display: grid;
-        gap: 18px;
-        margin-top: 22px;
-      }
-
-      .grid.summary {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .grid.main {
-        grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.92fr);
-        align-items: start;
-      }
-
-      .metric,
-      .section,
-      .callout {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 22px;
-        backdrop-filter: blur(12px);
-        box-shadow: var(--shadow);
-      }
-
-      .metric .value {
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 1;
-        margin-bottom: 8px;
-      }
-
-      .metric .label {
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #d5c0c5;
-      }
-
-      .metric .desc {
-        margin-top: 10px;
-        color: var(--muted);
-        font-size: 14px;
-        line-height: 1.62;
-      }
-
-      .value.danger {
-        color: var(--danger-strong);
-      }
-
-      .value.warning {
-        color: var(--warning);
-      }
-
-      .value.gold {
-        color: var(--gold);
-      }
-
-      .value.info {
-        color: var(--info);
-      }
-
-      .section-header {
-        display: flex;
-        justify-content: space-between;
-        gap: 14px;
-        align-items: flex-start;
-        margin-bottom: 16px;
-      }
-
-      .section-header p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.55;
-      }
-
-      .list {
-        display: grid;
-        gap: 12px;
-      }
-
-      .item {
-        padding: 15px 16px;
-        border-radius: 15px;
-        border: 1px solid rgba(255, 240, 242, 0.08);
-        background: rgba(255, 255, 255, 0.03);
-      }
-
-      .item h3 {
-        margin: 0 0 8px;
-        font-size: 16px;
-        line-height: 1.5;
-      }
-
-      .item p {
-        margin: 0;
-        font-size: 15px;
-        line-height: 1.72;
-        color: #e6dbde;
-      }
-
-      .badge-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 10px;
-      }
-
-      .badge {
-        padding: 6px 10px;
-        border-radius: 999px;
-        font-size: 11px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        background: rgba(255, 255, 255, 0.05);
-      }
-
-      .badge.critical {
-        color: #ffd5da;
-        border-color: rgba(255, 75, 93, 0.38);
-        background: rgba(255, 75, 93, 0.11);
-      }
-
-      .badge.high {
-        color: #ffe0aa;
-        border-color: rgba(243, 191, 103, 0.24);
-        background: rgba(243, 191, 103, 0.08);
-      }
-
-      .badge.medium {
-        color: #e7dfe2;
-        border-color: rgba(231, 223, 226, 0.16);
-      }
-
-      .badge.low {
-        color: #d6eadb;
-        border-color: rgba(154, 200, 164, 0.2);
-        background: rgba(154, 200, 164, 0.08);
-      }
-
-      .date-line {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: 12px;
-      }
-
-      .date-time {
-        min-width: 92px;
-        color: var(--warning);
-        font-size: 14px;
-        font-weight: 700;
-      }
-
-      .source-list,
-      .meta {
-        margin-top: 10px;
-        padding-top: 10px;
-        border-top: 1px solid rgba(255, 240, 242, 0.08);
-        font-size: 12px;
-        line-height: 1.55;
-        color: var(--muted);
-      }
-
-      .callout {
-        background: var(--panel-strong);
-      }
-
-      .callout p {
-        margin: 0;
-        color: #e9dfe2;
-        line-height: 1.72;
-        font-size: 15px;
-      }
-
-      .footnote {
-        margin-top: 20px;
-        padding: 18px 20px;
-        border-radius: 16px;
-        background: rgba(17, 10, 12, 0.92);
-        border: 1px solid rgba(187, 157, 109, 0.14);
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.72;
-        box-shadow: var(--shadow);
-      }
-
-      .top-alert p,
-      .subtitle,
-      .stamp p,
-      .metric .desc,
-      .section-header p,
-      .item p,
-      .callout p,
-      .footnote {
-        text-align: justify;
-        text-justify: inter-word;
-        hyphens: auto;
-      }
-
-      @media (max-width: 1100px) {
-        .brand {
-          flex-direction: column;
-        }
-
-        .stamp {
-          width: 100%;
-          max-width: none;
-        }
-      }
-
-      @media (max-width: 980px) {
-        .grid.summary,
-        .grid.main {
-          grid-template-columns: 1fr;
-        }
-
-        .grid.summary {
-          gap: 14px;
-        }
-      }
-
-      @media (max-width: 640px) {
-        .page {
-          padding: 18px 14px 40px;
-        }
-
-        .hero,
-        .metric,
-        .section,
-        .callout {
-          padding: 18px;
-          border-radius: 15px;
-        }
-
-        .brandbar {
-          align-items: flex-start;
-        }
-
-        .brand-seal {
-          width: 42px;
-          height: 42px;
-          font-size: 14px;
-        }
-
-        .office-name {
-          font-size: 19px;
-        }
-
-        .office-name small {
-          font-size: 11px;
-        }
-
-        .title {
-          font-size: clamp(36px, 10.6vw, 50px);
-        }
-
-        .subtitle,
-        .top-alert p,
-        .stamp p,
-        .item p,
-        .callout p,
-        .footnote {
-          font-size: 14px;
-          text-align: justify;
-          text-justify: inter-word;
-          hyphens: auto;
-        }
-
-        .metric .value {
-          font-size: 34px;
-        }
-
-        .stamp {
-          width: 100%;
-          max-width: none;
-        }
-
-        .date-line {
-          display: block;
-        }
-
-        .date-time {
-          display: inline-block;
-          margin-bottom: 6px;
-          min-width: 0;
-        }
-      }
+      a { color: var(--gold-soft); text-decoration: none; }
+      strong { color: #fff6f7; }
+      .page { max-width: 1240px; margin: 0 auto; padding: 28px 20px 64px; }
+      .top-alert { margin-bottom: 18px; padding: 16px 18px; border: 1px solid rgba(255, 125, 138, 0.2); background: linear-gradient(90deg, rgba(179, 19, 34, 0.24), rgba(179, 19, 34, 0.08)); border-radius: 16px; box-shadow: var(--shadow); }
+      .top-alert p { margin: 0; font-size: 16px; line-height: 1.7; color: #fff1f2; }
+      .hero { border-radius: 22px; padding: 30px; border: 1px solid rgba(187, 157, 109, 0.24); background: linear-gradient(140deg, rgba(50, 9, 16, 0.95), rgba(14, 12, 16, 0.95)), linear-gradient(180deg, rgba(187, 157, 109, 0.08), rgba(187, 157, 109, 0)); box-shadow: var(--shadow); }
+      .brand { display: flex; justify-content: space-between; align-items: flex-start; gap: 26px; flex-wrap: wrap; }
+      .brand-mark { max-width: 760px; min-width: 0; }
+      .brandbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+      .brand-seal { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; border: 1px solid rgba(187, 157, 109, 0.42); background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95)); color: var(--gold-soft); font-size: 15px; font-weight: 700; letter-spacing: 0.04em; box-shadow: var(--shadow); flex: 0 0 auto; }
+      .eyebrow { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #d9c8cc; margin-bottom: 4px; display: block; }
+      .office-name { margin: 0; font-size: 22px; line-height: 1; font-weight: 800; color: #ffffff; }
+      .office-name small { display: block; margin-top: 2px; font-size: 12px; line-height: 1.15; font-weight: 700; color: #ffffff; }
+      .title { margin: 0; font-size: clamp(38px, 4.4vw, 64px); line-height: 0.95; font-weight: 800; }
+      .subtitle { margin: 18px 0 0; max-width: 760px; line-height: 1.75; font-size: 16px; color: #e4dadd; }
+      .rule { margin-top: 22px; width: 136px; height: 2px; background: linear-gradient(90deg, var(--danger-strong), rgba(255, 75, 93, 0)); }
+      .stamp { min-width: 290px; max-width: 340px; padding: 20px; border-radius: 18px; border: 1px solid rgba(255, 125, 138, 0.16); background: rgba(255, 255, 255, 0.035); }
+      .stamp h2, .section h2, .callout h2 { margin: 0 0 10px; font-size: 14px; color: var(--gold-soft); letter-spacing: 0.08em; text-transform: uppercase; }
+      .stamp p { margin: 7px 0; font-size: 15px; line-height: 1.62; color: #f2e8ea; }
+      .search-window { margin-top: 14px; padding: 12px 14px; border-radius: 14px; border: 1px solid rgba(243, 191, 103, 0.24); background: rgba(243, 191, 103, 0.08); }
+      .search-window span { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #ffe2ab; margin-bottom: 6px; }
+      .search-window strong { display: block; line-height: 1.6; }
+      .grid { display: grid; gap: 18px; margin-top: 22px; }
+      .grid.summary { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .grid.main { grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.92fr); align-items: start; }
+      .metric, .section, .callout { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 22px; backdrop-filter: blur(12px); box-shadow: var(--shadow); }
+      .metric .value { font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 8px; }
+      .metric .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #d5c0c5; }
+      .metric .desc { margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.62; }
+      .value.danger { color: var(--danger-strong); }
+      .value.warning { color: var(--warning); }
+      .value.gold { color: var(--gold); }
+      .value.info { color: var(--info); }
+      .section-header { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; margin-bottom: 16px; }
+      .section-header p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
+      .list { display: grid; gap: 12px; }
+      .item { padding: 15px 16px; border-radius: 15px; border: 1px solid rgba(255, 240, 242, 0.08); background: rgba(255, 255, 255, 0.03); }
+      .item h3 { margin: 0 0 8px; font-size: 16px; line-height: 1.5; }
+      .item p { margin: 0; font-size: 15px; line-height: 1.72; color: #e6dbde; }
+      .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+      .badge { padding: 6px 10px; border-radius: 999px; font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(255, 255, 255, 0.05); }
+      .badge.critical { color: #ffd5da; border-color: rgba(255, 75, 93, 0.38); background: rgba(255, 75, 93, 0.11); }
+      .badge.high { color: #ffe0aa; border-color: rgba(243, 191, 103, 0.24); background: rgba(243, 191, 103, 0.08); }
+      .badge.medium { color: #e7dfe2; border-color: rgba(231, 223, 226, 0.16); }
+      .badge.low { color: #d6eadb; border-color: rgba(154, 200, 164, 0.2); background: rgba(154, 200, 164, 0.08); }
+      .date-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; }
+      .date-time { min-width: 92px; color: var(--warning); font-size: 14px; font-weight: 700; }
+      .callout { background: var(--panel-strong); }
+      .callout p { margin: 0; color: #e9dfe2; line-height: 1.72; font-size: 15px; }
+      .footnote { margin-top: 20px; padding: 18px 20px; border-radius: 16px; background: rgba(17, 10, 12, 0.92); border: 1px solid rgba(187, 157, 109, 0.14); color: var(--muted); font-size: 13px; line-height: 1.72; box-shadow: var(--shadow); }
+      .top-alert p, .subtitle, .stamp p, .metric .desc, .section-header p, .item p, .callout p, .footnote { text-align: justify; text-justify: inter-word; hyphens: auto; }
+      @media (max-width: 1100px) { .brand { flex-direction: column; } .stamp { width: 100%; max-width: none; } }
+      @media (max-width: 980px) { .grid.summary, .grid.main { grid-template-columns: 1fr; } .grid.summary { gap: 14px; } }
+      @media (max-width: 640px) { .page { padding: 18px 14px 40px; } .hero, .metric, .section, .callout { padding: 18px; border-radius: 15px; } .brandbar { align-items: flex-start; } .brand-seal { width: 42px; height: 42px; font-size: 14px; } .office-name { font-size: 19px; } .office-name small { font-size: 11px; } .title { font-size: clamp(36px, 10.6vw, 50px); } .subtitle, .top-alert p, .stamp p, .item p, .callout p, .footnote { font-size: 14px; } .metric .value { font-size: 34px; } .stamp { width: 100%; max-width: none; } .date-line { display: block; } .date-time { display: inline-block; margin-bottom: 6px; min-width: 0; } }
     </style>
   </head>
   <body>
     <main class="page">
       <section class="top-alert">
-        <p>
-          <strong>Alerta de risco:</strong> hoje concentra saneamento de passivo e preparação obrigatória para a audiência presencial de <strong>10/07/2026 às 08:30</strong> em Paulista. O ponto mais sensível é qualificar imediatamente os <strong>5 vencidos do PJe</strong> e os decursos de <strong>0006873</strong> e <strong>0000496</strong>, sem deixar as publicações de hoje virarem prazo não controlado.
-        </p>
+        <p><strong>Alerta de risco:</strong> a manhã de 10/07/2026 começa com audiência presencial às 08:30 no processo <strong>0005168-33.2025.8.17.8222</strong>, após juntadas durante a noite e madrugada, e com intimação publicada hoje no HC <strong>0018861-44.2026.8.17.9000</strong>. O Recorte Digital OAB/PE também informa duas publicações sem disponibilizar teor por interrupção do serviço, o que exige conferência em fonte oficial.</p>
       </section>
 
       <section class="hero">
@@ -554,19 +121,17 @@
               </div>
             </div>
             <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
-            <p class="subtitle">
-              Consolidação realizada em <strong>09/07/2026 às 07:15</strong>, no fuso <strong>America/Recife</strong>, com base em Google Agenda, Gmail e registros operacionais já organizados. <strong>Janela de pesquisa:</strong> <strong>09/07/2026 00:00 até 11/07/2026 23:59</strong>, com busca complementar no Gmail desde <strong>08/07/2026</strong> para capturar pendências recentes. Este painel prioriza prazo fatal, ato novo, conflito de agenda e execução prática.
-            </p>
+            <p class="subtitle">Consolidação realizada em <strong>10/07/2026 às 07:15</strong>, no fuso <strong>America/Recife</strong>, com base em Google Agenda, Gmail e registros operacionais já organizados. <strong>Janela de pesquisa:</strong> <strong>10/07/2026 00:00 até 12/07/2026 23:59</strong>, com busca complementar no Gmail desde <strong>09/07/2026</strong>. Este painel prioriza vencimentos, atos publicados, preparação de audiência, conflitos e ações práticas para reduzir risco de atraso.</p>
             <div class="rule"></div>
           </div>
           <aside class="stamp">
             <h2>Leitura executiva</h2>
-            <p><strong>Risco dominante:</strong> 5 vencidos no PJe e decursos novos precisam de conferência oficial hoje.</p>
-            <p><strong>Próximo gargalo:</strong> audiência presencial amanhã, <strong>10/07/2026 às 08:30</strong>, em Paulista.</p>
-            <p><strong>Estratégia segura:</strong> usar a manhã para eliminar risco processual e a tarde para pendências sensíveis.</p>
+            <p><strong>Risco dominante:</strong> audiência presencial hoje às 08:30 com juntadas recentes e necessidade de revisão imediata.</p>
+            <p><strong>Próximo gargalo:</strong> HC criminal publicado hoje, publicações sem teor pelo Recorte OAB e fila de pushes TJPE/TRT6/TJPI/SEEU.</p>
+            <p><strong>Estratégia segura:</strong> usar blocos operacionais criados hoje para abrir sistemas oficiais, qualificar prazos e registrar responsáveis.</p>
             <div class="search-window">
               <span>Janela de pesquisa</span>
-              <strong>De 09/07/2026 00:00 até 11/07/2026 23:59</strong>
+              <strong>De 10/07/2026 00:00 até 12/07/2026 23:59, com Gmail desde 09/07/2026</strong>
             </div>
           </aside>
         </div>
@@ -574,250 +139,101 @@
 
       <section class="grid summary">
         <article class="metric">
-          <div class="value danger">5</div>
-          <div class="label">Vencidos PJe em 09/07</div>
-          <div class="desc">O relatório automatizado mantém cinco itens vencidos que exigem triagem e baixa/registro seguro.</div>
+          <div class="value danger">2</div>
+          <div class="label">Itens críticos hoje</div>
+          <div class="desc">Audiência 0005168 às 08:30 e publicação/intimação do HC 0018861 em 10/07.</div>
         </article>
         <article class="metric">
-          <div class="value warning">2</div>
-          <div class="label">Decursos novos a qualificar</div>
-          <div class="desc">0006873 e 0000496 tiveram prazo decorrido em 08/07 às 23:59 e precisam de consequência processual.</div>
+          <div class="value warning">5</div>
+          <div class="label">Blocos operacionais criados</div>
+          <div class="desc">Agenda organizada para revisão pré-audiência, HC, Recorte OAB, TRT6 e triagem de pushes/controladoria.</div>
         </article>
         <article class="metric">
-          <div class="value gold">1</div>
-          <div class="label">Audiência presencial amanhã</div>
-          <div class="desc">0005168-33.2025.8.17.8222, 10/07 às 08:30, 2º JEC Paulista, Sala A.</div>
+          <div class="value gold">3</div>
+          <div class="label">Publicações Jusbrasil 10/07</div>
+          <div class="desc">0000677, 0018861 e 0042361 exigem conferência do teor oficial antes de qualquer contagem definitiva.</div>
         </article>
         <article class="metric">
-          <div class="value info">6</div>
-          <div class="label">Blocos criados hoje</div>
-          <div class="desc">Agenda organizada para PJe, decursos, publicações, TRT6 sigiloso, controladoria, HC e triagem operacional.</div>
+          <div class="value info">0</div>
+          <div class="label">Compromissos judiciais em 11 e 12/07</div>
+          <div class="desc">Não há audiência/perícia na agenda no fim de semana; há aplicação Mounjaro em 11/07 às 19:00.</div>
         </article>
       </section>
 
       <section class="grid main">
         <div class="list">
           <article class="section">
-            <div class="section-header">
-              <div><h2>Panorama do dia</h2></div>
-              <p>Leitura objetiva do que precisa ser feito hoje e do que não deve chegar inseguro à sexta-feira.</p>
-            </div>
+            <div class="section-header"><div><h2>Panorama do dia</h2></div><p>Leitura executiva do risco imediato, da pressão de agenda e do que precisa ser resolvido hoje.</p></div>
             <div class="list">
-              <div class="item">
-                
-                <h3>1. O primeiro bloco do dia deve eliminar risco de passivo vencido.</h3>
-                <p>O relatório PJe de <strong>09/07/2026</strong> indica <strong>5 vencidos</strong>. A orientação é abrir o PJe, confirmar o status de cada item e registrar baixa, providência residual ou impossibilidade de recuperação. Até essa conferência, o grupo permanece como risco crítico.</p>
-              </div>
-              <div class="item">
-                
-                <h3>2. Os decursos de 0006873 e 0000496 exigem consequência prática.</h3>
-                <p>O processo <strong>0006873-06.2025.8.17.2810</strong> teve decurso de Renato Mendes e Via Prime em <strong>08/07/2026 23:59</strong>. O processo <strong>0000496-13.2009.8.18.0042</strong> teve decurso de Euclides de Carli no mesmo horário. Ambos exigem leitura oficial e registro do próximo passo.</p>
-              </div>
-              <div class="item">
-                
-                <h3>3. As publicações de 09/07 não devem ser tratadas só como alerta de e-mail.</h3>
-                <p><strong>0000396-46.2023.5.06.0141</strong> teve intimação TRT6 publicada em 09/07, e <strong>0071925-24.2020.8.17.2001</strong> teve despacho/intimação TJPE publicado em 09/07. A contagem só deve ser fechada após leitura do teor integral na fonte oficial.</p>
-              </div>
-              <div class="item">
-                
-                <h3>4. A audiência de amanhã precisa sair pronta hoje.</h3>
-                <p><strong>0005168-33.2025.8.17.8222</strong> está marcada para <strong>10/07/2026 às 08:30</strong>, presencialmente, no 2º Juizado Especial Cível e das Relações de Consumo de Paulista, Sala A. Como pode haver instrução imediata se não houver acordo, a preparação documental e logística deve ser concluída hoje.</p>
-              </div>
+              <div class="item"><h3>1. A prioridade absoluta é a audiência presencial do processo 0005168-33.2025.8.17.8222.</h3><p>O evento está marcado para <strong>10/07/2026, das 08:30 às 09:30</strong>, no 2º Juizado Especial Cível e das Relações de Consumo de Paulista, Sala A. O Gmail registrou juntadas às 21:38, 23:08, 23:09 e 01:15, incluindo petições recentes. Como o ato pode seguir para instrução imediata se não houver acordo, a revisão prévia de documentos, contestação, estratégia e proposta é crítica.</p></div>
+              <div class="item"><h3>2. O HC 0018861-44.2026.8.17.9000 foi publicado hoje e não pode ficar sem leitura integral.</h3><p>O push do PJe 2º grau e o Jusbrasil indicam disponibilização em <strong>09/07/2026</strong> e publicação/intimação em <strong>10/07/2026</strong>. A providência segura é abrir PJe/DJEN, identificar o teor, confirmar se há prazo, qual é a contagem aplicável e quem executará a resposta.</p></div>
+              <div class="item"><h3>3. O Recorte Digital OAB/PE criou um ponto cego operacional.</h3><p>O serviço informou <strong>2 publicações hoje</strong>, mas está interrompido e não trouxe o teor. Isso exige conferência direta no DJPE/DJU ou contato com a OAB-PE/Recorte, para não depender de aviso incompleto. O relatório cruza esse alerta com publicações Jusbrasil de <strong>0000677</strong>, <strong>0018861</strong> e <strong>0042361</strong>.</p></div>
+              <div class="item"><h3>4. Há uma fila de movimentos novos que exige classificação, mas não todos são prazo fatal imediato.</h3><p>TRT6, TJPE, TJPI e SEEU trouxeram decisão, documento sigiloso, conclusões, certidões, decursos e intimação. O risco está em deixar certidão ou documento sigiloso sem abertura oficial, pois o e-mail de push raramente basta para definir providência e contagem.</p></div>
             </div>
           </article>
 
           <article class="section">
-            <div class="section-header">
-              <div><h2>Crítico</h2></div>
-              <p>Itens vencidos, com decurso recente, audiência iminente ou risco alto de atraso.</p>
-            </div>
+            <div class="section-header"><div><h2>Crítico</h2></div><p>Itens vencendo hoje, com risco alto, conflito de agenda ou necessidade de ação imediata.</p></div>
             <div class="list">
-              <div class="item">
-                <div class="badge-row"><span class="badge critical">Risco máximo</span><span class="badge medium">PJe</span></div>
-                <h3>Relatório PJe de 09/07/2026: 5 vencidos</h3>
-                <p><strong>Providência:</strong> abrir o PJe e qualificar os cinco vencidos, incluindo confirmação de protocolo/baixa, eventual justa causa, nova via processual ou simples acompanhamento quando o prazo for de terceiro. <strong>Risco:</strong> alto enquanto não houver prova objetiva de tratamento.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge critical">Crítico</span><span class="badge medium">TJPE</span></div>
-                <h3>0006873-06.2025.8.17.2810</h3>
-                <p><strong>Ato:</strong> decorrido prazo de Renato Mendes e Via Prime em <strong>08/07/2026 23:59</strong>. <strong>Providência:</strong> abrir PJe, verificar o prazo encerrado, registrar consequência processual e confirmar se há medida residual ou apenas baixa de controle.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge critical">Crítico</span><span class="badge medium">TJPI</span></div>
-                <h3>0000496-13.2009.8.18.0042</h3>
-                <p><strong>Ato:</strong> decorrido prazo de Euclides de Carli em <strong>08/07/2026 23:59</strong>. <strong>Providência:</strong> conferir no TJPI o teor relacionado ao decurso e registrar consequência. Não presumir perda ou regularidade sem leitura oficial.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge high">Audiência amanhã</span><span class="badge medium">Presencial</span></div>
-                <h3>0005168-33.2025.8.17.8222</h3>
-                <p><strong>Compromisso:</strong> audiência presencial em <strong>10/07/2026 às 08:30</strong>, em Paulista. <strong>Providência hoje:</strong> revisar citação, documentos, estratégia de acordo/instrução, deslocamento, presença das partes e eventual necessidade de preposto/testemunhas.</p>
-              </div>
+              <div class="item"><div class="badge-row"><span class="badge critical">Crítico</span><span class="badge medium">Audiência hoje</span></div><h3>0005168-33.2025.8.17.8222 - audiência às 08:30</h3><p><strong>Providência necessária:</strong> revisar imediatamente juntadas de 09/07 e 10/07, especialmente contestação/petições/documentos; confirmar logística para Paulista, documentos físicos/digitais, proposta de acordo e linha de instrução. <strong>Risco:</strong> alto, pois a audiência pode avançar para instrução e julgamento no mesmo ato.</p></div>
+              <div class="item"><div class="badge-row"><span class="badge critical">Crítico</span><span class="badge medium">HC criminal</span></div><h3>0018861-44.2026.8.17.9000 - intimação publicada em 10/07</h3><p><strong>Providência necessária:</strong> abrir PJe 2º grau/DJEN e confirmar o teor integral, prazo, termo inicial e providência. <strong>Risco:</strong> alto pela matéria penal e porque o aviso disponível ainda não informa a providência concreta.</p></div>
+              <div class="item"><div class="badge-row"><span class="badge critical">Crítico</span><span class="badge medium">Fonte incompleta</span></div><h3>Recorte Digital OAB/PE - 2 publicações sem teor</h3><p><strong>Providência necessária:</strong> conferir as publicações diretamente na fonte oficial e resolver a interrupção cadastral do serviço. <strong>Risco:</strong> alto, pois a ausência do teor impede qualificação segura de prazo e pode ocultar prazo de curto vencimento.</p></div>
             </div>
           </article>
 
           <article class="section">
-            <div class="section-header">
-              <div><h2>Atenção</h2></div>
-              <p>Itens dos próximos dois dias ou atos novos que exigem preparação antecipada.</p>
-            </div>
+            <div class="section-header"><div><h2>Atenção</h2></div><p>Itens dos próximos 2 dias ou que exigem preparação antecipada.</p></div>
             <div class="list">
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">09/07</div>
-                  <h3>0000396-46.2023.5.06.0141</h3>
-                </div>
-                <p><strong>Origem:</strong> TRT6/Jusbrasil. <strong>Ato:</strong> intimação disponibilizada em 08/07 e publicada em <strong>09/07/2026</strong>. <strong>Providência:</strong> abrir o inteiro teor e contar prazo pela fonte oficial.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">09/07</div>
-                  <h3>0071925-24.2020.8.17.2001</h3>
-                </div>
-                <p><strong>Origem:</strong> TJPE/Jusbrasil. <strong>Ato:</strong> despacho/intimação publicado em <strong>09/07/2026</strong>. <strong>Providência:</strong> conferir teor integral e cadastrar prazo se houver comando processual.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">09/07</div>
-                  <h3>0000677-25.2024.5.06.0122</h3>
-                </div>
-                <p><strong>Origem:</strong> TRT6. <strong>Ato:</strong> documento sigiloso, intimação à Malibu e suspensão por homologação de acordo/transação em 08/07. <strong>Providência:</strong> verificar o documento sigiloso e controlar obrigações do acordo.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">09/07</div>
-                  <h3>0018861-44.2026.8.17.9000</h3>
-                </div>
-                <p><strong>Origem:</strong> TJPE/Jusbrasil/briefing. <strong>Situação:</strong> HC sensível com liminar não concedida, requisição de informações, publicação ao DJEN, conclusão e certidão. <strong>Providência:</strong> abrir inteiro teor e definir medida seguinte.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">09/07</div>
-                  <h3>Controladoria PS e JUS Paula Sial</h3>
-                </div>
-                <p><strong>Situação:</strong> seguem atrasadas as tarefas de revisão semanal, reunião inicial trabalhista, petição inicial indenizatória e despacho com juiz na 1ª Vara Cível. <strong>Providência:</strong> confirmar baixa, responsável e próximo ato.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">10/07</div>
-                  <h3>TIM e rotina administrativa</h3>
-                </div>
-                <p><strong>Alerta:</strong> fatura TIM de <strong>R$ 107,41</strong> vence em 10/07. Não é prazo processual, mas pode virar ruído operacional se ficar sem controle.</p>
-              </div>
+              <div class="item"><div class="date-line"><div class="date-time">10/07</div><h3>0000145-51.2024.5.06.0122 - decisão e documento sigiloso no TRT6</h3></div><p>O push informa agravo interno não conhecido, decisão, documento sigiloso e intimação ao autor. Como o advogado do réu é Petrônio Leonardo Ramos de Souza, a orientação é abrir decisão e sigilo no PJe para confirmar impacto e eventual providência defensiva.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">10/07</div><h3>0000417-34.2026.5.06.0006 - autos conclusos e suspensão encerrada</h3></div><p>O TRT6 registrou autos conclusos para decisão e revogação de suspensão/sobrestamento por homologação de acordo/transação. Conferir se há ato pendente, acordo a cumprir ou risco de decisão subsequente.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">10/07</div><h3>0000677-25.2024.5.06.0122 - publicação Jusbrasil/TRT6</h3></div><p>Publicação com disponibilização em 09/07 e publicação em 10/07. O teor do e-mail está truncado, então o passo correto é abrir a publicação oficial antes de cadastrar prazo ou classificar como mero acompanhamento.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">10/07</div><h3>0042361-87.2026.8.17.2001 - publicação TJPE via Jusbrasil</h3></div><p>Nova publicação em processo da 10ª Vara Cível da Capital. Exige leitura do teor oficial para definir se há prazo, ciência, despacho ou providência de regularização.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">10/07</div><h3>SEEU 0001541-59.2016.8.17.4011 - intimação de decisão</h3></div><p>Mensagem do SEEU indica intimação referente a decisão de saneamento e organização do processo em execução penal de Elias José Ferreira. Abrir o SEEU e verificar se há prazo de manifestação ou providência externa.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">10/07</div><h3>Controladoria PS e JUS Paula Sial - tarefas atrasadas</h3></div><p>Os dois resumos de controladoria seguem apontando revisão semanal atrasada desde 03/07, reunião inicial de 05/07, petição inicial de 06/07 e despacho na 1ª Vara Cível de 07/07. Confirmar baixa real, responsável e próximo ato.</p></div>
             </div>
           </article>
         </div>
 
         <div class="list">
           <article class="section">
-            <div class="section-header">
-              <div><h2>Monitoramento</h2></div>
-              <p>Itens sem prazo fatal imediato confirmado, mas relevantes para evitar surpresa operacional.</p>
-            </div>
+            <div class="section-header"><div><h2>Monitoramento</h2></div><p>Itens sem prazo imediato confirmado, mas que merecem acompanhamento.</p></div>
             <div class="list">
-              <div class="item">
-                <div class="badge-row"><span class="badge medium">Monitorar</span></div>
-                <h3>Poliana Mendes</h3>
-                <p><strong>Entrada:</strong> chegou ZIP de WhatsApp em 08/07 às 23:53, mas o anexo não foi lido pelo conector. <strong>Providência:</strong> abrir manualmente quando houver disponibilidade e verificar se contém prazo, documento ou promessa pendente.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge low">Administrativo</span></div>
-                <h3>Portal OAB: distrato e revogação de mandato</h3>
-                <p><strong>Situação:</strong> documentos finalizados em 08/07. <strong>Providência:</strong> arquivar e avaliar necessidade de juntada, comunicação ao cliente ou baixa administrativa.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge medium">Acompanhamento</span></div>
-                <h3>Recorte Digital OAB/PE</h3>
-                <p><strong>Situação:</strong> briefing indica serviço interrompido. <strong>Providência:</strong> contato com OAB-PE ou validação alternativa para evitar lacuna de publicações.</p>
-              </div>
-              <div class="item">
-                <div class="badge-row"><span class="badge low">Técnico</span></div>
-                <h3>Escudo/Security & Build</h3>
-                <p><strong>Situação:</strong> briefing informa falha persistente e bloqueio de produção. <strong>Providência:</strong> manter monitoramento como risco técnico, sem misturar com urgências processuais.</p>
-              </div>
+              <div class="item"><div class="badge-row"><span class="badge medium">Monitorar</span><span class="badge medium">TJPE</span></div><h3>0043310-48.2025.8.17.2001</h3><p>Inventário com decurso de prazo da PGE em 08/07 às 23:59. Confirmar consequência processual e eventual próximo impulso.</p></div>
+              <div class="item"><div class="badge-row"><span class="badge medium">Monitorar</span><span class="badge medium">TJPE</span></div><h3>0005844-05.2023.8.17.4001</h3><p>Ação penal por descumprimento de medida protetiva com expedição de certidão em 09/07. Abrir certidão para verificar se há providência defensiva ou apenas registro.</p></div>
+              <div class="item"><div class="badge-row"><span class="badge medium">Monitorar</span><span class="badge medium">TJPI</span></div><h3>0000496-13.2009.8.18.0042</h3><p>Apelação cível com juntada de certidão em 09/07. Como havia decurso recente acompanhado ontem, conferir o teor para entender consequência e necessidade de ciência.</p></div>
+              <div class="item"><div class="badge-row"><span class="badge medium">Monitorar</span><span class="badge medium">TJPE</span></div><h3>0051393-53.2025.8.17.2001</h3><p>Processo concluso para despacho em 09/07. Sem prazo imediato identificado, mas relevante para acompanhamento por se conectar a providências recentes.</p></div>
+              <div class="item"><div class="badge-row"><span class="badge low">Operacional</span></div><h3>Portal OAB e conversas anexadas</h3><p>Procuração, declaração de hipossuficiência e contrato de Janes Benedito aguardam assinatura digital. Há ZIPs de WhatsApp citados no briefing que o conector não leu, incluindo Alex Rômulo, Junior Irmão, Fábio Maia, Andrea da assinatura e Banco PAN; triagem manual é recomendada.</p></div>
             </div>
           </article>
 
           <article class="section">
-            <div class="section-header">
-              <div><h2>Prazos e compromissos por data</h2></div>
-              <p>Agenda consolidada de hoje até os próximos dois dias, com foco em risco e preparação.</p>
-            </div>
+            <div class="section-header"><div><h2>Prazos e compromissos por data</h2></div><p>Agenda consolidada para hoje e próximos 2 dias.</p></div>
             <div class="list">
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">09/07</div>
-                  <h3>Blocos operacionais criados</h3>
-                </div>
-                <p><strong>07:45-08:45</strong> triagem PJe/decursos; <strong>09:00-10:00</strong> preparação da audiência 0005168; <strong>10:00-10:45</strong> publicações 0000396/0071925; <strong>10:45-11:15</strong> TRT6 0000677; <strong>11:15-12:00</strong> controladoria; <strong>14:00-15:00</strong> HC 0018861 e triagem operacional.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">10/07</div>
-                  <h3>Audiência presencial 0005168</h3>
-                </div>
-                <p><strong>08:30-09:30</strong>, 2º Juizado Especial Cível e das Relações de Consumo de Paulista, Sala A. Chegar com documentação, proposta de acordo, estratégia de instrução e logística confirmadas.</p>
-              </div>
-              <div class="item">
-                <div class="date-line">
-                  <div class="date-time">10-11/07</div>
-                  <h3>Itens pessoais/administrativos</h3>
-                </div>
-                <p><strong>10/07:</strong> aniversário transparente na agenda e fatura TIM a controlar. <strong>11/07:</strong> aplicação Mounjaro às 19:00. Sem conflito processual direto identificado, mas a sexta começa cedo pela audiência.</p>
-              </div>
+              <div class="item"><div class="date-line"><div class="date-time">10/07</div><h3>Hoje - audiência e publicações</h3></div><p>07:30 revisar juntadas de 0005168; 08:30 audiência presencial em Paulista; 09:45 abrir HC 0018861; 10:30 conferir Recorte OAB e publicações; 11:15 abrir TRT6; 14:00 triagem TJPE/TJPI/SEEU e controladoria.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">11/07</div><h3>Sábado - sem ato judicial na agenda</h3></div><p>Agenda mostra aplicação Mounjaro às 19:00. Usar o dia apenas para monitorar pendências que não tenham sido baixadas hoje, especialmente publicações sem teor e documentos sigilosos, se permanecerem abertos.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">12/07</div><h3>Domingo - sem compromisso processual identificado</h3></div><p>Não há audiência, perícia ou prazo processual confirmado na agenda para o dia. A recomendação é deixar a fila de segunda-feira preparada se o HC, Recorte ou TRT6 exigirem providência após leitura oficial.</p></div>
             </div>
           </article>
 
           <article class="section">
-            <div class="section-header">
-              <div><h2>Prioridades práticas</h2></div>
-              <p>Ordem sugerida de execução para reduzir risco antes do fim da manhã.</p>
-            </div>
+            <div class="section-header"><div><h2>Prioridades práticas</h2></div><p>Ordem sugerida para execução real.</p></div>
             <div class="list">
-              <div class="item">
-                
-                <h3>1. Abrir o PJe e qualificar os 5 vencidos do relatório de 09/07.</h3>
-                <p>Separar o que é prazo próprio, prazo de terceiro, ato já cumprido, item que exige recuperação e item apenas de monitoramento.</p>
-              </div>
-              <div class="item">
-                
-                <h3>2. Conferir os decursos de 0006873 e 0000496.</h3>
-                <p>Registrar consequência processual objetiva e decidir se há providência residual hoje.</p>
-              </div>
-              <div class="item">
-                
-                <h3>3. Fechar a preparação da audiência 0005168.</h3>
-                <p>A pasta deve estar pronta hoje: documentos, estratégia, deslocamento e presença das partes/prepostos/testemunhas.</p>
-              </div>
-              <div class="item">
-                
-                <h3>4. Abrir as publicações 0000396 e 0071925 na fonte oficial.</h3>
-                <p>Só depois da leitura integral cadastrar prazo ou classificar como mero acompanhamento.</p>
-              </div>
-              <div class="item">
-                
-                <h3>5. Verificar o sigilo e o acordo no TRT6 0000677.</h3>
-                <p>Documento sigiloso e suspensão por acordo podem gerar obrigação operacional fora da leitura superficial do push.</p>
-              </div>
-              <div class="item">
-                
-                <h3>6. Regularizar controladoria e monitoramentos.</h3>
-                <p>Baixar tarefas atrasadas, tratar Portal OAB/Poliana/Recorte e deixar sexta-feira livre para a audiência.</p>
-              </div>
+              <div class="item"><h3>1. Revisar 0005168 antes da audiência e levar plano de instrução.</h3><p>Confirmar contestação, petições de madrugada, documentos e proposta de acordo. Este é o único item com hora fixa judicial nesta manhã.</p></div>
+              <div class="item"><h3>2. Após a audiência, abrir imediatamente o HC 0018861.</h3><p>Registrar teor da intimação, prazo e providência. Não tratar a publicação como controlada enquanto o ato integral não estiver lido.</p></div>
+              <div class="item"><h3>3. Resolver o ponto cego do Recorte OAB/PE.</h3><p>Conferir DJPE/DJU e publicações Jusbrasil cruzadas. A interrupção do serviço é risco operacional, não apenas detalhe administrativo.</p></div>
+              <div class="item"><h3>4. Abrir documentos/decisões TRT6 antes do almoço.</h3><p>Priorizar 0000145, 0000417 e 0000677, porque há decisão, sigilo, acordo ou publicação pendente de qualificação.</p></div>
+              <div class="item"><h3>5. À tarde, classificar pushes, certidões e atrasos de controladoria.</h3><p>Separar o que é prazo, o que é ciência, o que é mero andamento e o que precisa de responsável humano hoje.</p></div>
             </div>
           </article>
 
           <article class="callout">
             <h2>Leitura final</h2>
-            <p>
-              A execução segura de hoje é simples e exigente: primeiro eliminar incerteza de prazo vencido, depois preparar a audiência de amanhã e só então absorver publicações, sigilos e pendências administrativas. O risco maior é deixar os decursos e publicações entrarem na sexta-feira sem classificação oficial.
-            </p>
+            <p>O dia não parece congestionado na agenda tradicional, mas está carregado nos bastidores: audiência cedo, publicação criminal, serviço de recorte interrompido e múltiplos movimentos por e-mail. A gestão segura é converter tudo em leitura oficial e responsável definido ainda hoje.</p>
           </article>
         </div>
       </section>
 
-      <section class="footnote">
-        Consolidação realizada em <strong>09/07/2026</strong>, com base em agenda, Gmail e registros operacionais já organizados. <strong>Janela de pesquisa considerada:</strong> <strong>09/07/2026 00:00 até 11/07/2026 23:59</strong>, com busca complementar no Gmail desde <strong>08/07/2026</strong>. A leitura executiva prioriza prazo fatal, ato novo, pressão de agenda e ação prática imediata.
-      </section>
+      <section class="footnote">Consolidação realizada em <strong>10/07/2026</strong>, com base em Google Agenda, Gmail, memória operacional e blocos criados nesta rodada. <strong>Janela de pesquisa considerada:</strong> <strong>10/07/2026 00:00 até 12/07/2026 23:59</strong>, com busca complementar no Gmail desde <strong>09/07/2026</strong>. Datas ambíguas ou atos sem teor integral devem ser confirmados em fonte oficial antes de contagem definitiva.</section>
     </main>
   </body>
 </html>
