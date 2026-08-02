@@ -1,103 +1,646 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Relatório do Gestor de Prazos Processuais - 01/08/2026</title>
-  <meta name="description" content="Relatório jurídico-operacional de prazos, agenda crítica e providências prioritárias." />
-  <meta name="theme-color" content="#16090b" />
-  <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 01/08/2026" />
-  <meta property="og:description" content="Painel executivo de prazos, riscos e prioridades processuais." />
-  <meta property="og:type" content="website" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <style>
-    :root{--bg-top:#15090b;--bg-mid:#2c0a10;--bg-bottom:#07090d;--gold:#bb9d6d;--gold-soft:#d7c098;--ink:#f5f2f1;--muted:#c7bcc0;--line:rgba(255,232,235,.12);--panel:rgba(17,10,12,.82);--panel-strong:rgba(24,12,15,.94);--danger:#ff7d8a;--danger-strong:#ff4b5d;--warning:#f3bf67;--success:#9ac8a4;--info:#9fb8d8;--shadow:0 26px 64px rgba(0,0,0,.34)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Montserrat,"Segoe UI",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at top right,rgba(179,19,34,.18),transparent 22%),linear-gradient(180deg,rgba(139,16,29,.22) 0%,rgba(139,16,29,0) 20%),linear-gradient(135deg,var(--bg-top) 0%,var(--bg-mid) 44%,var(--bg-bottom) 100%)}strong{color:#fff6f7}.page{max-width:1240px;margin:0 auto;padding:28px 20px 64px}
-    .top-alert{margin-bottom:18px;padding:16px 18px;border:1px solid rgba(255,125,138,.2);background:linear-gradient(90deg,rgba(179,19,34,.24),rgba(179,19,34,.08));border-radius:16px;box-shadow:var(--shadow)}.top-alert p{margin:0;font-size:16px;line-height:1.7;color:#fff1f2}
-    .hero{border-radius:22px;padding:30px;border:1px solid rgba(187,157,109,.24);background:linear-gradient(140deg,rgba(50,9,16,.95),rgba(14,12,16,.95)),linear-gradient(180deg,rgba(187,157,109,.08),rgba(187,157,109,0));box-shadow:var(--shadow)}.brand{display:flex;justify-content:space-between;align-items:flex-start;gap:26px;flex-wrap:wrap}.brand-mark{max-width:760px;min-width:0}.brandbar{display:flex;align-items:center;gap:12px;margin-bottom:16px}.brand-seal{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(187,157,109,.42);background:linear-gradient(180deg,rgba(17,10,12,.95),rgba(30,13,16,.95));color:var(--gold-soft);font-size:15px;font-weight:700;box-shadow:var(--shadow)}.eyebrow{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#d9c8cc;display:block;margin-bottom:4px}.office-name{margin:0;font-size:22px;line-height:1;font-weight:800}.office-name small{display:block;margin-top:2px;font-size:12px;line-height:1.15}.title{margin:0;font-size:clamp(38px,4.4vw,64px);line-height:.95;font-weight:800;letter-spacing:0}.subtitle{margin:18px 0 0;max-width:760px;line-height:1.75;font-size:16px;color:#e4dadd}.rule{margin-top:22px;width:136px;height:2px;background:linear-gradient(90deg,var(--danger-strong),rgba(255,75,93,0))}
-    .stamp{min-width:290px;max-width:340px;padding:20px;border-radius:18px;border:1px solid rgba(255,125,138,.16);background:rgba(255,255,255,.035)}.stamp h2,.section h2,.callout h2{margin:0 0 10px;font-size:14px;color:var(--gold-soft);letter-spacing:.08em;text-transform:uppercase}.stamp p{margin:7px 0;font-size:15px;line-height:1.62;color:#f2e8ea}.search-window{margin-top:14px;padding:12px 14px;border-radius:14px;border:1px solid rgba(243,191,103,.24);background:rgba(243,191,103,.08)}.search-window span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#ffe2ab;margin-bottom:6px}.search-window strong{display:block;line-height:1.6}
-    .grid{display:grid;gap:18px;margin-top:22px}.grid.summary{grid-template-columns:repeat(4,minmax(0,1fr))}.grid.main{grid-template-columns:minmax(0,1.42fr) minmax(320px,.92fr);align-items:start}.metric,.section,.callout{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;backdrop-filter:blur(12px);box-shadow:var(--shadow)}.metric .value{font-size:40px;font-weight:800;line-height:1;margin-bottom:8px}.metric .label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#d5c0c5}.metric .desc{margin-top:10px;color:var(--muted);font-size:14px;line-height:1.62}.danger{color:var(--danger-strong)}.warning{color:var(--warning)}.gold{color:var(--gold)}.info{color:var(--info)}
-    .section-header{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:16px}.section-header p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}.list{display:grid;gap:12px}.item{padding:15px 16px;border-radius:15px;border:1px solid rgba(255,240,242,.08);background:rgba(255,255,255,.03)}.item h3{margin:0 0 8px;font-size:16px;line-height:1.5}.item p{margin:0;font-size:15px;line-height:1.72;color:#e6dbde}.badge-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}.badge{padding:6px 10px;border-radius:999px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.05)}.badge.critical{color:#ffd5da;border-color:rgba(255,75,93,.38);background:rgba(255,75,93,.11)}.badge.high{color:#ffe0aa;border-color:rgba(243,191,103,.24);background:rgba(243,191,103,.08)}.badge.medium{color:#e7dfe2}.badge.low{color:#d6eadb;border-color:rgba(154,200,164,.2);background:rgba(154,200,164,.08)}.date-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px}.date-time{min-width:92px;color:var(--warning);font-size:14px;font-weight:700}.meta{margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,240,242,.08);font-size:12px;line-height:1.55;color:var(--muted)}.callout{background:var(--panel-strong)}.callout p{margin:0;color:#e9dfe2;line-height:1.72;font-size:15px}.footnote{margin-top:20px;padding:18px 20px;border-radius:16px;background:rgba(17,10,12,.92);border:1px solid rgba(187,157,109,.14);color:var(--muted);font-size:13px;line-height:1.72;box-shadow:var(--shadow)}
-    .top-alert p,.subtitle,.stamp p,.metric .desc,.section-header p,.item p,.callout p,.footnote{text-align:justify;text-justify:inter-word;hyphens:auto}
-    @media(max-width:1100px){.brand{flex-direction:column}.stamp{width:100%;max-width:none}}@media(max-width:980px){.grid.summary,.grid.main{grid-template-columns:1fr}.grid.summary{gap:14px}}@media(max-width:640px){.page{padding:18px 14px 40px}.hero,.metric,.section,.callout{padding:18px;border-radius:15px}.brandbar{align-items:flex-start}.brand-seal{width:42px;height:42px}.office-name{font-size:19px}.office-name small{font-size:11px}.title{font-size:clamp(36px,10.6vw,50px)}.subtitle,.top-alert p,.stamp p,.item p,.callout p,.footnote{font-size:14px}.metric .value{font-size:34px}.date-line{display:block}.date-time{display:inline-block;margin-bottom:6px;min-width:0}}
-  </style>
-</head>
-<body>
-  <main class="page">
-    <section class="top-alert"><p><strong>Alerta de risco:</strong> o processo <strong>0002321-91.2025.8.17.2100</strong> apresenta divergência material de vencimento: o controle anterior apontou <strong>31/07/2026</strong>, enquanto a Agenda atual mostra <strong>03/08/2026 às 23:59</strong>. Nenhuma dessas datas deve ser tratada como definitiva sem conferência imediata no PJe. Há ainda sentença de improcedência no <strong>0004782</strong> e arquivamento com documentos sigilosos no <strong>0000417</strong>.</p></section>
-    <section class="hero">
-      <div class="brand">
-        <div class="brand-mark">
-          <div class="brandbar"><div class="brand-seal">PS</div><div><span class="eyebrow">Relatório jurídico operacional</span><h1 class="office-name">Petrônio Souza<small>Advogados Associados</small></h1></div></div>
-          <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
-          <p class="subtitle">Consolidação realizada em <strong>01/08/2026 às 07:45</strong>, no fuso <strong>America/Sao_Paulo</strong>, com base em Google Agenda, Gmail, Notion em leitura e memória operacional. <strong>Janela de pesquisa:</strong> Agenda de <strong>01/08/2026 00:00 até 04/08/2026 00:00</strong>; Gmail de <strong>31/07/2026 07:14 até 01/08/2026 07:14</strong>; Notion na página/base de prazos.</p><div class="rule"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relatório do Gestor de Prazos Processuais - 02/08/2026</title>
+    <meta
+      name="description"
+      content="Relatório do Gestor de Prazos Processuais com foco em prazos fatais, intimações recentes, agenda crítica e providências prioritárias."
+    />
+    <meta name="theme-color" content="#16090b" />
+    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 02/08/2026" />
+    <meta
+      property="og:description"
+      content="Painel executivo de prazos fatais, agenda crítica e providências processuais prioritárias."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <style>
+      :root {
+        --bg-top: #15090b;
+        --bg-mid: #2c0a10;
+        --bg-bottom: #07090d;
+        --blood: #8b101d;
+        --blood-strong: #b31322;
+        --blood-soft: #cf5562;
+        --gold: #bb9d6d;
+        --gold-soft: #d7c098;
+        --ink: #f5f2f1;
+        --muted: #c7bcc0;
+        --line: rgba(255, 232, 235, 0.12);
+        --panel: rgba(17, 10, 12, 0.82);
+        --panel-strong: rgba(24, 12, 15, 0.94);
+        --danger: #ff7d8a;
+        --danger-strong: #ff4b5d;
+        --warning: #f3bf67;
+        --success: #9ac8a4;
+        --info: #9fb8d8;
+        --shadow: 0 26px 64px rgba(0, 0, 0, 0.34);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Montserrat, "Segoe UI", Arial, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, rgba(179, 19, 34, 0.18), transparent 22%),
+          linear-gradient(180deg, rgba(139, 16, 29, 0.22) 0%, rgba(139, 16, 29, 0) 20%),
+          linear-gradient(135deg, var(--bg-top) 0%, var(--bg-mid) 44%, var(--bg-bottom) 100%);
+      }
+
+      a {
+        color: var(--gold-soft);
+        text-decoration: none;
+      }
+
+      strong {
+        color: #fff6f7;
+      }
+
+      .page {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 28px 20px 64px;
+      }
+
+      .top-alert {
+        margin-bottom: 18px;
+        padding: 16px 18px;
+        border: 1px solid rgba(255, 125, 138, 0.2);
+        background: linear-gradient(90deg, rgba(179, 19, 34, 0.24), rgba(179, 19, 34, 0.08));
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+      }
+
+      .top-alert p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #fff1f2;
+      }
+
+      .hero {
+        border-radius: 22px;
+        padding: 30px;
+        border: 1px solid rgba(187, 157, 109, 0.24);
+        background:
+          linear-gradient(140deg, rgba(50, 9, 16, 0.95), rgba(14, 12, 16, 0.95)),
+          linear-gradient(180deg, rgba(187, 157, 109, 0.08), rgba(187, 157, 109, 0));
+        box-shadow: var(--shadow);
+      }
+
+      .brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 26px;
+        flex-wrap: wrap;
+      }
+
+      .brand-mark {
+        max-width: 760px;
+        min-width: 0;
+      }
+
+      .brandbar {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+
+      .brand-seal {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(187, 157, 109, 0.42);
+        background: linear-gradient(180deg, rgba(17, 10, 12, 0.95), rgba(30, 13, 16, 0.95));
+        color: var(--gold-soft);
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        box-shadow: var(--shadow);
+        flex: 0 0 auto;
+      }
+
+      .brand-copy {
+        min-width: 0;
+      }
+
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #d9c8cc;
+        margin-bottom: 4px;
+        display: block;
+      }
+
+      .office-name {
+        margin: 0;
+        font-size: 22px;
+        line-height: 1;
+        font-weight: 800;
+        color: #ffffff;
+      }
+
+      .office-name small {
+        display: block;
+        margin-top: 2px;
+        font-size: 12px;
+        line-height: 1.15;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .title {
+        margin: 0;
+        font-size: clamp(38px, 4.4vw, 64px);
+        line-height: 0.95;
+        font-weight: 800;
+      }
+
+      .subtitle {
+        margin: 18px 0 0;
+        max-width: 760px;
+        line-height: 1.75;
+        font-size: 16px;
+        color: #e4dadd;
+      }
+
+      .rule {
+        margin-top: 22px;
+        width: 136px;
+        height: 2px;
+        background: linear-gradient(90deg, var(--danger-strong), rgba(255, 75, 93, 0));
+      }
+
+      .stamp {
+        min-width: 290px;
+        max-width: 340px;
+        padding: 20px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 125, 138, 0.16);
+        background: rgba(255, 255, 255, 0.035);
+      }
+
+      .stamp h2,
+      .section h2 {
+        margin: 0 0 10px;
+        font-size: 14px;
+        color: var(--gold-soft);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .stamp p {
+        margin: 7px 0;
+        font-size: 15px;
+        line-height: 1.62;
+        color: #f2e8ea;
+      }
+
+      .search-window {
+        margin-top: 14px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(243, 191, 103, 0.24);
+        background: rgba(243, 191, 103, 0.08);
+      }
+
+      .search-window span {
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #ffe2ab;
+        margin-bottom: 6px;
+      }
+
+      .search-window strong {
+        display: block;
+        line-height: 1.6;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+        margin-top: 22px;
+      }
+
+      .grid.summary {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .grid.main {
+        grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.92fr);
+        align-items: start;
+      }
+
+      .metric,
+      .section,
+      .callout {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px;
+        backdrop-filter: blur(12px);
+        box-shadow: var(--shadow);
+      }
+
+      .metric .value {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 8px;
+      }
+
+      .metric .label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #d5c0c5;
+      }
+
+      .metric .desc {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.62;
+      }
+
+      .value.danger {
+        color: var(--danger-strong);
+      }
+
+      .value.warning {
+        color: var(--warning);
+      }
+
+      .value.gold {
+        color: var(--gold);
+      }
+
+      .value.info {
+        color: var(--info);
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        align-items: flex-start;
+        margin-bottom: 16px;
+      }
+
+      .section-header p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .item {
+        padding: 15px 16px;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 240, 242, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .item h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .item p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.72;
+        color: #e6dbde;
+      }
+
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+
+      .badge {
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 11px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .badge.critical {
+        color: #ffd5da;
+        border-color: rgba(255, 75, 93, 0.38);
+        background: rgba(255, 75, 93, 0.11);
+      }
+
+      .badge.high {
+        color: #ffe0aa;
+        border-color: rgba(243, 191, 103, 0.24);
+        background: rgba(243, 191, 103, 0.08);
+      }
+
+      .badge.medium {
+        color: #e7dfe2;
+        border-color: rgba(231, 223, 226, 0.16);
+      }
+
+      .badge.low {
+        color: #d6eadb;
+        border-color: rgba(154, 200, 164, 0.2);
+        background: rgba(154, 200, 164, 0.08);
+      }
+
+      .date-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .date-time {
+        min-width: 92px;
+        color: var(--warning);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .source-list,
+      .meta {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 240, 242, 0.08);
+        font-size: 12px;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .callout {
+        background: var(--panel-strong);
+      }
+
+      .callout p {
+        margin: 0;
+        color: #e9dfe2;
+        line-height: 1.72;
+        font-size: 15px;
+      }
+
+      .footnote {
+        margin-top: 20px;
+        padding: 18px 20px;
+        border-radius: 16px;
+        background: rgba(17, 10, 12, 0.92);
+        border: 1px solid rgba(187, 157, 109, 0.14);
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.72;
+        box-shadow: var(--shadow);
+      }
+
+      .top-alert p,
+      .subtitle,
+      .stamp p,
+      .metric .desc,
+      .section-header p,
+      .item p,
+      .callout p,
+      .footnote {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+      }
+
+      @media (max-width: 1100px) {
+        .brand {
+          flex-direction: column;
+        }
+
+        .stamp {
+          width: 100%;
+          max-width: none;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .grid.summary,
+        .grid.main {
+          grid-template-columns: 1fr;
+        }
+
+        .grid.summary {
+          gap: 14px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 18px 14px 40px;
+        }
+
+        .hero,
+        .metric,
+        .section,
+        .callout {
+          padding: 18px;
+          border-radius: 15px;
+        }
+
+        .brandbar {
+          align-items: flex-start;
+        }
+
+        .brand-seal {
+          width: 42px;
+          height: 42px;
+          font-size: 14px;
+        }
+
+        .office-name {
+          font-size: 19px;
+        }
+
+        .office-name small {
+          font-size: 11px;
+        }
+
+        .title {
+          font-size: clamp(36px, 10.6vw, 50px);
+        }
+
+        .subtitle,
+        .top-alert p,
+        .stamp p,
+        .item p,
+        .callout p,
+        .footnote {
+          font-size: 14px;
+          text-align: justify;
+          text-justify: inter-word;
+          hyphens: auto;
+        }
+
+        .metric .value {
+          font-size: 34px;
+        }
+
+        .stamp {
+          width: 100%;
+          max-width: none;
+        }
+
+        .date-line {
+          display: block;
+        }
+
+        .date-time {
+          display: inline-block;
+          margin-bottom: 6px;
+          min-width: 0;
+        }
+      }
+    </style>
+  </head>
+    <body>
+    <main class="page">
+      <section class="top-alert">
+        <p><strong>Alerta crítico:</strong> o processo <strong>0002321-91.2025.8.17.2100</strong> tem vencimento registrado para 03/08/2026 às 23:59, mas o histórico também menciona 31/07/2026. Não há confirmação de protocolo nas fontes lidas. A providência segura é conferir o PJe, fechar a manifestação e preservar comprovante ainda hoje.</p>
+      </section>
+
+      <section class="hero">
+        <div class="brand">
+          <div class="brand-mark">
+            <div class="brandbar">
+              <div class="brand-seal">PS</div>
+              <div class="brand-copy">
+                <span class="eyebrow">Relatório jurídico operacional</span>
+                <h1 class="office-name">Petrônio Souza<small>Advogados Associados</small></h1>
+              </div>
+            </div>
+            <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
+            <p class="subtitle">Consolidação realizada em <strong>02/08/2026 às 07:45</strong>, no fuso <strong>America/Sao_Paulo</strong>, a partir da Agenda, Gmail, base de prazos do Notion e memória operacional. O horizonte principal cobre hoje e os próximos dois dias, com antecipação prudencial de risco.</p>
+            <div class="rule"></div>
+          </div>
+          <aside class="stamp">
+            <h2>Leitura executiva</h2>
+            <p><strong>Risco dominante:</strong> prazo oficial e protocolo de <strong>0002321</strong> ainda não confirmados.</p>
+            <p><strong>Conflito removido:</strong> duas tarefas antes sobrepostas às 21:00 foram antecipadas e sequenciadas pela manhã.</p>
+            <p><strong>Preparação-chave:</strong> segunda-feira começa às 07:10 fora do escritório e mantém compromisso médico às 10:00.</p>
+            <div class="search-window"><span>Janela de pesquisa</span><strong>Agenda: 02/08/2026 00:00 a 05/08/2026 00:00<br />Gmail: 01/08/2026 07:14 a 02/08/2026 07:14 BRT<br />Notion e memória: controles vigentes e pendências recentes</strong></div>
+          </aside>
         </div>
-        <aside class="stamp"><h2>Leitura executiva</h2><p><strong>Risco dominante:</strong> data fatal contraditória no 0002321, com nova prova e minuta do cliente pendentes de revisão técnica.</p><p><strong>Gargalo:</strong> cinco blocos processuais entre 08:00 e 11:25, seguidos de intake urgente.</p><p><strong>Estratégia segura:</strong> validar termos oficiais e impedir protocolo de peça automatizada ou do cliente sem revisão.</p><div class="search-window"><span>Janela de pesquisa utilizada</span><strong>Agenda: 01/08 00:00 a 04/08 00:00; Gmail: 31/07 07:14 a 01/08 07:14; fuso America/Sao_Paulo</strong></div></aside>
-      </div>
-    </section>
-    <section class="grid summary">
-      <article class="metric"><div class="value danger">1</div><div class="label">Divergência fatal crítica</div><div class="desc">0002321 exige conferência imediata no PJe antes de protocolo ou baixa.</div></article>
-      <article class="metric"><div class="value warning">6</div><div class="label">Blocos na manhã</div><div class="desc">Agenda organizada das 08:00 às 12:05, com cinco atualizações e um novo intake.</div></article>
-      <article class="metric"><div class="value gold">03/08</div><div class="label">Segunda comprimida</div><div class="desc">Compromissos às 07:10, 10:00 e 19:00, tarefa às 21:00 e controle crítico às 23:59.</div></article>
-      <article class="metric"><div class="value info">5</div><div class="label">Movimentos a triar</div><div class="desc">0020001, 0000786, 0033283, 0007333 e 0112247 pedem classificação.</div></article>
-    </section>
-    <section class="grid main">
-      <div class="list">
-        <article class="section"><div class="section-header"><div><h2>Panorama do dia</h2></div><p>Sábado sem compromissos prévios, convertido em manhã de saneamento preventivo.</p></div><div class="list">
-          <div class="item"><h3>1. Validar o 0002321 antes de qualquer outra entrega.</h3><p>Cícero encaminhou áudio, prints, BO PCPE nº 26E0319124866 e minuta para possível juntada na ação e na NF MPPE 034/2023. A peça foi redigida pelo cliente e depende de revisão de metadados, cadeia de custódia, pertinência, linguagem e estratégia. A divergência de vencimento amplia o risco e impede qualquer suposição segura.</p></div>
-          <div class="item"><h3>2. Qualificar a sentença desfavorável do 0004782.</h3><p>O pedido foi julgado improcedente e a publicação foi expedida em 31/07. É necessário abrir a sentença, confirmar o termo inicial, apurar o prazo recursal e corrigir a divergência cadastral que inverte polos e classifica incorretamente o caso.</p></div>
-          <div class="item"><h3>3. Não baixar o 0000417 apenas pelo arquivamento automático.</h3><p>O TRT6 registrou arquivamento definitivo às 21:17 de 31/07, acompanhado de três documentos sigilosos. A baixa só é segura depois de confirmar acordo, saldo, custas e comunicação à cliente.</p></div>
-          <div class="item"><h3>4. A Controladoria zerada não libera a fila.</h3><p>O resumo de 01/08 informa ausência de prazos e agenda, mas contradiz Agenda, Gmail, briefing e memória. Deve ser tratado como fonte auxiliar, sem efeito liberatório.</p></div>
-        </div></article>
-        <article class="section"><div class="section-header"><div><h2>Crítico</h2></div><p>Ação imediata ou risco jurídico-operacional elevado.</p></div><div class="list">
-          <div class="item"><div class="badge-row"><span class="badge critical">Crítico</span><span class="badge high">Data contraditória</span></div><h3>0002321-91.2025.8.17.2100</h3><p><strong>Vencimento:</strong> não confirmado. Controle anterior: 31/07; Agenda atual: 03/08 às 23:59. <strong>Data operacional segura:</strong> hoje, 01/08, às 08:00. <strong>Providência:</strong> validar a contagem no PJe, revisar todo o material de Cícero e só então definir assinatura/protocolo.</p><div class="meta">Agente responsável: Gestor de Prazos Processuais.</div></div>
-          <div class="item"><div class="badge-row"><span class="badge critical">Crítico</span><span class="badge medium">Sentença</span></div><h3>0004782-07.2023.8.17.2100</h3><p><strong>Ato:</strong> improcedência e expedição de publicação em 31/07. <strong>Prazo fatal:</strong> pendente de confirmação do termo oficial. <strong>Providência:</strong> abrir o inteiro teor, definir estratégia recursal e sanear o cadastro.</p></div>
-        </div></article>
-        <article class="section"><div class="section-header"><div><h2>Atenção</h2></div><p>Itens de hoje e dos próximos dois dias que exigem preparo.</p></div><div class="list">
-          <div class="item"><div class="date-line"><div class="date-time">Hoje 10:00</div><h3>0000417-34.2026.5.06.0006</h3></div><p>Conferir arquivamento definitivo e três documentos sigilosos; confirmar cumprimento integral, saldo, custas e comunicação à cliente.</p></div>
-          <div class="item"><div class="date-line"><div class="date-time">Hoje 10:35</div><h3>0020001, 0000786, 0033283, 0007333 e 0112247</h3></div><p>Abrir despacho/intimação, decursos, documentos, petição e certidão; identificar destinatário, termo inicial, eventual prazo e próximo ato.</p></div>
-          <div class="item"><div class="date-line"><div class="date-time">Hoje 11:25</div><h3>Maria Audilene x Equatorial</h3></div><p>Intake 5/5 por cobrança duplicada de energia e pagamento via cartório. Reunir comprovantes, protocolos e documentos; revisar as peças automatizadas antes de assinatura ou protocolo.</p></div>
-          <div class="item"><div class="date-line"><div class="date-time">02/08 21:00</div><h3>0004782</h3></div><p>O bloco original foi antecipado para hoje devido à sentença desfavorável. A posição recursal deve estar definida antes do início útil da semana.</p></div>
-          <div class="item"><div class="date-line"><div class="date-time">03/08 23:59</div><h3>0002321</h3></div><p>A Agenda mantém controle crítico nesse horário, mas a data não está validada. O evento foi atualizado para explicitar a divergência; não usar o calendário como substituto do termo oficial.</p></div>
-        </div></article>
-      </div>
-      <div class="list">
-        <article class="section"><div class="section-header"><div><h2>Agenda de hoje</h2></div><p>Ordem sugerida de execução já registrada.</p></div><div class="list">
-          <div class="item"><div class="date-line"><div class="date-time">08:00-09:15</div><h3>0002321</h3></div><p>Validar prazo e revisar provas/minuta de Cícero.</p></div>
-          <div class="item"><div class="date-line"><div class="date-time">09:15-10:00</div><h3>0004782</h3></div><p>Abrir sentença, confirmar termo e definir estratégia.</p></div>
-          <div class="item"><div class="date-line"><div class="date-time">10:00-10:35</div><h3>0000417</h3></div><p>Conferir arquivamento, sigilosos e baixa segura.</p></div>
-          <div class="item"><div class="date-line"><div class="date-time">10:35-11:25</div><h3>Triagem PJe/TRT6</h3></div><p>Classificar cinco processos e registrar próximos atos.</p></div>
-          <div class="item"><div class="date-line"><div class="date-time">11:25-12:05</div><h3>Maria Audilene</h3></div><p>Organizar documentos e revisar peças automatizadas.</p></div>
-        </div></article>
-        <article class="section"><div class="section-header"><div><h2>Próximos 2 dias</h2></div><p>Antecipação de domingo e segunda-feira.</p></div><div class="list">
-          <div class="item"><div class="badge-row"><span class="badge high">02/08</span></div><h3>Fechar pendências antes da segunda.</h3><p>Confirmar resultado dos blocos de hoje, revisar o 0004782 se ainda não houver estratégia fechada e separar documento/carteirinha para os compromissos Hapvida.</p></div>
-          <div class="item"><div class="badge-row"><span class="badge high">03/08 07:10</span></div><h3>Aula com Hapvida NotreDame</h3><p>Av. Manoel Borba, 737, Boa Vista. Confirmar a especialidade no aplicativo e prever deslocamento. O evento está transparente na Agenda, mas ocupa tempo real.</p></div>
-          <div class="item"><div class="badge-row"><span class="badge high">03/08 10:00</span></div><h3>Consulta de Endocrinologia</h3><p>Clínica Conselheiro Aguiar, Av. Conselheiro Aguiar, 3763, Boa Viagem. Levar documento e carteirinha.</p></div>
-          <div class="item"><div class="badge-row"><span class="badge medium">03/08 noite</span></div><h3>Aplicação e tarefa eleitoral</h3><p>Aplicação Mounjaro às 19:00 e avaliação da recusa/ciência de nomeação como mesário às 21:00. Evitar deixar pendências jurídicas críticas para esse período.</p></div>
-        </div></article>
-        <article class="section"><div class="section-header"><div><h2>Monitoramento</h2></div><p>Sem prazo fatal seguro na coleta atual.</p></div><div class="list">
-          <div class="item"><div class="badge-row"><span class="badge medium">Operacional</span></div><h3>0000786-05.2025.5.06.0122</h3><p>Decurso dos prazos de quatro partes em 30/07. Qualificar efeitos e ajustar a preparação da audiência de 25/08.</p></div>
-          <div class="item"><div class="badge-row"><span class="badge medium">Documentos</span></div><h3>0033283 e 0007333</h3><p>Juntadas em 31/07. Abrir o teor para verificar se geram resposta, ciência ou apenas acompanhamento.</p></div>
-          <div class="item"><div class="badge-row"><span class="badge low">Operação</span></div><h3>Janes Benedito e Nu Empresas</h3><p>Baixar/arquivar contrato e procuração concluídos; encaminhar o extrato de julho para conciliação e contabilidade.</p></div>
-        </div></article>
-        <article class="section"><div class="section-header"><div><h2>Prioridades práticas</h2></div><p>Sequência recomendada.</p></div><div class="list">
-          <div class="item"><h3>1. Confirmar o prazo oficial do 0002321.</h3><p>Não protocolar ou baixar antes da conferência.</p></div>
-          <div class="item"><h3>2. Revisar provas e minuta de Cícero.</h3><p>Validar integridade, pertinência e estratégia.</p></div>
-          <div class="item"><h3>3. Abrir a sentença do 0004782.</h3><p>Definir termo, prazo recursal e resposta.</p></div>
-          <div class="item"><h3>4. Conferir a baixa do 0000417.</h3><p>Validar acordo, saldo, custas e comunicação.</p></div>
-          <div class="item"><h3>5. Triar movimentos e intake.</h3><p>Classificar a fila antes do almoço e preparar a segunda-feira.</p></div>
-        </div></article>
-        <article class="callout"><h2>Leitura final</h2><p>O sábado não tem audiência nem compromisso prévio, mas concentra uma oportunidade importante de reduzir risco antes da segunda-feira. A prioridade é transformar datas contraditórias e pushes genéricos em controles confirmados pelo inteiro teor.</p></article>
-      </div>
-    </section>
-    <section class="footnote">Consolidação realizada em <strong>01/08/2026</strong>. Fontes: Google Agenda, Gmail, Notion em leitura, memória operacional e controles atualizados nesta rodada. <strong>Janela de pesquisa considerada:</strong> Agenda de <strong>01/08/2026 00:00 até 04/08/2026 00:00</strong>; Gmail de <strong>31/07/2026 07:14 até 01/08/2026 07:14</strong>; fuso <strong>America/Sao_Paulo</strong>. Agente responsável: <strong>Gestor de Prazos Processuais</strong>.</section>
-  </main>
-</body>
+      </section>
+
+      <section class="grid summary">
+        <article class="metric"><div class="value danger">1</div><div class="label">Risco crítico imediato</div><div class="desc">Prazo divergente, peça e protocolo não confirmados no processo 0002321.</div></article>
+        <article class="metric"><div class="value warning">4</div><div class="label">Blocos operacionais hoje</div><div class="desc">Agenda reorganizada entre 08:00 e 11:35, sem a antiga sobreposição das 21:00.</div></article>
+        <article class="metric"><div class="value gold">2</div><div class="label">Movimentos processuais a qualificar</div><div class="desc">Parecer novo no 0020001 e sigilos/decursos em 0000417 e 0000786.</div></article>
+        <article class="metric"><div class="value info">3</div><div class="label">Compromissos na manhã de 03/08</div><div class="desc">Hapvida às 07:10, endocrinologia às 10:00 e prazo registrado às 23:59.</div></article>
+      </section>
+
+      <section class="grid main">
+        <div class="list">
+          <article class="section">
+            <div class="section-header"><div><h2>Panorama do dia</h2></div><p>Domingo de fechamento preventivo, com prioridade absoluta para eliminar incerteza antes da manhã externa de segunda-feira.</p></div>
+            <div class="list">
+              <div class="item"><h3>1. A prioridade é o processo 0002321, não a resposta isolada ao cliente.</h3><p>Conferir o prazo oficial no PJe, revisar áudio, prints, BO nº <strong>26E0319124866</strong> e minuta, fechar a peça, enviar versão prévia ao cliente, protocolar e guardar chave/comprovante. A resposta a Cícero deve ser individualizada por processo e lastreada em fatos verificáveis.</p></div>
+              <div class="item"><h3>2. A sentença do 0004782 exige qualificação antes de qualquer conclusão recursal.</h3><p>Abrir o inteiro teor, conferir publicação e termo inicial, identificar medida cabível e registrar a decisão estratégica. O prazo fatal não foi confirmado nesta rodada.</p></div>
+              <div class="item"><h3>3. O movimento de 0020001 pode gerar nova providência.</h3><p>Em 01/08 às 16:48 houve juntada de petição de parecer. É necessário identificar autoria, conteúdo, efeito e eventual prazo, sem presumir obrigação a partir do aviso automático.</p></div>
+              <div class="item"><h3>4. A Controladoria zerada não libera a fila.</h3><p>O resumo de 02/08 informa zero prazos, audiências e contas, mas diverge da Agenda, Gmail, Notion e memória. Deve ser tratado como cobertura parcial até reconciliação.</p></div>
+            </div>
+          </article>
+
+          <article class="section">
+            <div class="section-header"><div><h2>Crítico</h2></div><p>Itens com risco alto, vencimento próximo ou necessidade de ação imediata.</p></div>
+            <div class="list">
+              <div class="item"><div class="badge-row"><span class="badge critical">Crítico</span><span class="badge high">Prazo divergente</span></div><h3>0002321-91.2025.8.17.2100</h3><p><strong>Prazo registrado:</strong> 03/08/2026 às 23:59. <strong>Divergência:</strong> histórico também aponta 31/07/2026. <strong>Data operacional:</strong> hoje, 02/08, 08:00-09:30. <strong>Risco:</strong> não há confirmação de protocolo. Conferência humana imediata no PJe é indispensável.</p></div>
+              <div class="item"><div class="badge-row"><span class="badge critical">Crítico</span><span class="badge medium">Comunicação</span></div><h3>Notificação extrajudicial de Cícero</h3><p>A réplica afirma que seguem pendentes protocolos, chaves, análise de novas provas e posição sobre seis processos. Responder por processo, separando status técnico, evidências disponíveis, próximos atos e pontos ainda sujeitos a conferência.</p></div>
+            </div>
+          </article>
+
+          <article class="section">
+            <div class="section-header"><div><h2>Atenção</h2></div><p>Providências já organizadas para hoje e itens dos próximos dois dias.</p></div>
+            <div class="list">
+              <div class="item"><div class="date-line"><div class="date-time">02/08 09:30</div><h3>0004782-07.2023.8.17.2100</h3></div><p>Avaliar sentença de improcedência, publicação, termo inicial e eventual recurso. Prazo fatal ainda não confirmado.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">02/08 10:15</div><h3>0020001-64.2023.8.17.2810</h3></div><p>Abrir a petição de parecer juntada em 01/08 às 16:48, identificar efeito e verificar eventual publicação ou mandado.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">02/08 10:50</div><h3>0000417 e 0000786</h3></div><p>No 0000417, abrir três documentos sigilosos e confirmar se o arquivamento definitivo é seguro. No 0000786, conferir decursos de 30/07 e manter a preparação da audiência de 25/08 às 08:33.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">03/08 07:10</div><h3>Hapvida - neuropsicologia</h3></div><p>Atendimento com Geysy Nathyelly na Av. Manoel Borba, 737. Levar documento com foto e carteirinha; prever deslocamento e saída antecipada.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">03/08 10:00</div><h3>Endocrinologia/metabologia</h3></div><p>Consulta com Miralda Simão na Av. Conselheiro Aguiar, 3763. A manhã externa reduz a margem para qualquer pendência jurídica deixada para segunda.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">04/08 21:00</div><h3>Conflito de tarefas administrativas</h3></div><p>Pagamento HubHealth de R$ 487,27 e cobrança Hapvida de R$ 485,54 estão no mesmo horário. A Hapvida vence em 05/08 e diverge da Controladoria zerada; conciliar e resolver antes do vencimento.</p></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="list">
+          <article class="section">
+            <div class="section-header"><div><h2>Monitoramento</h2></div><p>Itens sem fatal confirmado no horizonte, mas que merecem acompanhamento.</p></div>
+            <div class="list">
+              <div class="item"><div class="badge-row"><span class="badge medium">Monitorar</span></div><h3>Projeto Escudo</h3><p>Secret Scan e Dependency Audit seguem instáveis. Manter merge e deploy bloqueados até um ciclo integralmente verde.</p></div>
+              <div class="item"><div class="badge-row"><span class="badge medium">Monitorar</span></div><h3>0000417-34.2026.5.06.0006</h3><p>O push registra arquivamento definitivo em 31/07 às 21:17 e três documentos sigilosos. Não baixar o acompanhamento sem confirmar o conteúdo e a regularidade da baixa.</p></div>
+              <div class="item"><div class="badge-row"><span class="badge low">Sob controle</span></div><h3>Notion</h3><p>Foram localizados controles equivalentes para 0002321, 0004782, 0020001, 0000417 e 0000786, inclusive tarefas atualizadas em 01 e 02/08. Nenhum registro duplicado foi criado nesta rodada.</p></div>
+            </div>
+          </article>
+
+          <article class="section">
+            <div class="section-header"><div><h2>Prazos e compromissos por data</h2></div><p>Sequência consolidada para execução e preparação.</p></div>
+            <div class="list">
+              <div class="item"><div class="date-line"><div class="date-time">02/08</div><h3>Fechamento preventivo</h3></div><p>08:00 <strong>0002321/Cícero</strong>; 09:30 <strong>0004782</strong>; 10:15 <strong>0020001</strong>; 10:50 <strong>0000417/0000786</strong>. Blocos reorganizados sem sobreposição.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">03/08</div><h3>Manhã externa e fatal registrado</h3></div><p>07:10 Hapvida; 10:00 endocrinologia; 19:00 Mounjaro; 21:00 tarefa eleitoral; 23:59 prazo registrado do <strong>0002321</strong>, sujeito a validação oficial.</p></div>
+              <div class="item"><div class="date-line"><div class="date-time">04/08</div><h3>Compromisso pessoal e financeiro</h3></div><p>09:00 aniversário de namoro; 21:00 duas tarefas financeiras sobrepostas. Resolver HubHealth e Hapvida antes do vencimento de 05/08.</p></div>
+            </div>
+          </article>
+
+          <article class="section">
+            <div class="section-header"><div><h2>Prioridades práticas</h2></div><p>Ordem sugerida para reduzir risco jurídico e operacional.</p></div>
+            <div class="list">
+              <div class="item"><h3>1. Conferir o prazo oficial do 0002321 e o estado real do protocolo.</h3><p>Se não houver cumprimento, fechar peça, revisão e protocolo imediatamente; guardar chave e comprovante.</p></div>
+              <div class="item"><h3>2. Revisar prova e minuta antes de responder Cícero.</h3><p>A resposta deve refletir atos efetivamente praticados, pendências verificadas e próximos passos individualizados.</p></div>
+              <div class="item"><h3>3. Qualificar a sentença do 0004782.</h3><p>Definir estratégia, termo inicial e responsável pela providência recursal, sem assumir prazo não conferido.</p></div>
+              <div class="item"><h3>4. Abrir o parecer do 0020001 e os sigilos trabalhistas.</h3><p>Converter movimentos automáticos em ações concretas, datas confiáveis e controles atualizados.</p></div>
+              <div class="item"><h3>5. Preparar hoje os deslocamentos e documentos médicos de segunda.</h3><p>Isso protege a manhã externa e evita que o prazo crítico concorra com compromissos pessoais.</p></div>
+              <div class="item"><h3>6. Conciliar as cobranças de 04/08 com a Controladoria.</h3><p>O resumo zerado contradiz as cobranças recebidas e não deve ser usado para baixa automática.</p></div>
+            </div>
+          </article>
+
+          <article class="callout"><h2>Leitura final</h2><p>O risco está concentrado, não disperso: confirmar prazo e protocolo de 0002321 hoje libera a manhã externa de segunda. Todo o restante deve ser tratado em sequência, com qualificação do ato antes de qualquer afirmação definitiva.</p></article>
+        </div>
+      </section>
+
+      <section class="footnote">Consolidação realizada em <strong>02/08/2026</strong>. <strong>Janela de pesquisa:</strong> Agenda de <strong>02/08/2026 00:00 a 05/08/2026 00:00</strong>, Gmail de <strong>01/08/2026 07:14 a 02/08/2026 07:14 BRT</strong>, além da base de prazos do Notion e da memória operacional recente. <strong>Agente responsável: Gestor de Prazos Processuais.</strong></section>
+    </main>
+  </body>
 </html>
