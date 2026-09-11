@@ -1,141 +1,142 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relatório do Gestor de Prazos Processuais - 09/09/2026</title>
-    <meta name="description" content="Relatório executivo de prazos, compromissos e prioridades jurídico-operacionais." />
-    <meta name="theme-color" content="#16090b" />
-    <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 09/09/2026" />
-    <meta property="og:description" content="Painel executivo de prazos, agenda e providências prioritárias." />
-    <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <style>
-      :root { --bg-top:#15090b; --bg-mid:#2c0a10; --bg-bottom:#07090d; --blood:#8b101d; --gold:#bb9d6d; --gold-soft:#d7c098; --ink:#f5f2f1; --muted:#c7bcc0; --line:rgba(255,232,235,.12); --panel:rgba(17,10,12,.82); --panel-strong:rgba(24,12,15,.94); --danger:#ff4b5d; --warning:#f3bf67; --success:#9ac8a4; --info:#9fb8d8; --shadow:0 26px 64px rgba(0,0,0,.34); }
-      * { box-sizing:border-box; }
-      html { scroll-behavior:smooth; }
-      body { margin:0; font-family:Montserrat,"Segoe UI",Arial,sans-serif; color:var(--ink); background:radial-gradient(circle at top right,rgba(179,19,34,.18),transparent 22%),linear-gradient(180deg,rgba(139,16,29,.22) 0%,rgba(139,16,29,0) 20%),linear-gradient(135deg,var(--bg-top) 0%,var(--bg-mid) 44%,var(--bg-bottom) 100%); }
-      strong { color:#fff6f7; }
-      .page { max-width:1240px; margin:0 auto; padding:28px 20px 64px; }
-      .top-alert { margin-bottom:18px; padding:16px 18px; border:1px solid rgba(255,125,138,.2); background:linear-gradient(90deg,rgba(179,19,34,.24),rgba(179,19,34,.08)); border-radius:16px; box-shadow:var(--shadow); }
-      .top-alert p { margin:0; font-size:16px; line-height:1.7; color:#fff1f2; }
-      .hero { border-radius:22px; padding:30px; border:1px solid rgba(187,157,109,.24); background:linear-gradient(140deg,rgba(50,9,16,.95),rgba(14,12,16,.95)); box-shadow:var(--shadow); }
-      .brand { display:flex; justify-content:space-between; align-items:flex-start; gap:26px; flex-wrap:wrap; }
-      .brand-mark { max-width:760px; min-width:0; }
-      .brandbar { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
-      .brand-seal { width:46px; height:46px; border-radius:50%; display:grid; place-items:center; border:1px solid rgba(187,157,109,.42); background:linear-gradient(180deg,rgba(17,10,12,.95),rgba(30,13,16,.95)); color:var(--gold-soft); font-size:15px; font-weight:700; box-shadow:var(--shadow); flex:0 0 auto; }
-      .eyebrow { display:block; margin-bottom:4px; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:#d9c8cc; }
-      .office-name { margin:0; font-size:22px; line-height:1; font-weight:800; color:#fff; }
-      .office-name small { display:block; margin-top:2px; font-size:12px; line-height:1.15; font-weight:700; }
-      .title { margin:0; font-size:clamp(38px,4.4vw,64px); line-height:.95; font-weight:800; }
-      .subtitle { margin:18px 0 0; max-width:760px; line-height:1.75; font-size:16px; color:#e4dadd; }
-      .rule { margin-top:22px; width:136px; height:2px; background:linear-gradient(90deg,var(--danger),rgba(255,75,93,0)); }
-      .stamp { min-width:290px; max-width:340px; padding:20px; border-radius:18px; border:1px solid rgba(255,125,138,.16); background:rgba(255,255,255,.035); }
-      .stamp h2,.section h2,.callout h2 { margin:0 0 10px; font-size:14px; color:var(--gold-soft); letter-spacing:.08em; text-transform:uppercase; }
-      .stamp p { margin:7px 0; font-size:15px; line-height:1.62; color:#f2e8ea; }
-      .search-window { margin-top:14px; padding:12px 14px; border-radius:14px; border:1px solid rgba(243,191,103,.24); background:rgba(243,191,103,.08); }
-      .search-window span { display:block; margin-bottom:6px; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#ffe2ab; }
-      .search-window strong { display:block; line-height:1.6; }
-      .grid { display:grid; gap:18px; margin-top:22px; }
-      .grid.summary { grid-template-columns:repeat(4,minmax(0,1fr)); }
-      .grid.main { grid-template-columns:minmax(0,1.42fr) minmax(320px,.92fr); align-items:start; }
-      .metric,.section,.callout { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:22px; backdrop-filter:blur(12px); box-shadow:var(--shadow); }
-      .metric .value { font-size:40px; font-weight:800; line-height:1; margin-bottom:8px; }
-      .metric .label { font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#d5c0c5; }
-      .metric .desc { margin-top:10px; color:var(--muted); font-size:14px; line-height:1.62; }
-      .value.danger { color:var(--danger); } .value.warning { color:var(--warning); } .value.gold { color:var(--gold); } .value.info { color:var(--info); }
-      .section-header { display:flex; justify-content:space-between; gap:14px; align-items:flex-start; margin-bottom:16px; }
-      .section-header p { margin:0; color:var(--muted); font-size:13px; line-height:1.55; }
-      .list { display:grid; gap:12px; }
-      .item { padding:15px 16px; border-radius:15px; border:1px solid rgba(255,240,242,.08); background:rgba(255,255,255,.03); }
-      .item h3 { margin:0 0 8px; font-size:16px; line-height:1.5; }
-      .item p { margin:0; font-size:15px; line-height:1.72; color:#e6dbde; }
-      .badge-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px; }
-      .badge { padding:6px 10px; border-radius:999px; font-size:11px; letter-spacing:.05em; text-transform:uppercase; border:1px solid rgba(255,255,255,.08); background:rgba(255,255,255,.05); }
-      .badge.critical { color:#ffd5da; border-color:rgba(255,75,93,.38); background:rgba(255,75,93,.11); }
-      .badge.high { color:#ffe0aa; border-color:rgba(243,191,103,.24); background:rgba(243,191,103,.08); }
-      .badge.low { color:#d6eadb; border-color:rgba(154,200,164,.2); background:rgba(154,200,164,.08); }
-      .date-line { display:flex; flex-wrap:wrap; align-items:baseline; gap:12px; }
-      .date-time { min-width:100px; color:var(--warning); font-size:14px; font-weight:700; }
-      .callout { background:var(--panel-strong); }
-      .callout p { margin:0; color:#e9dfe2; line-height:1.72; font-size:15px; }
-      .footnote { margin-top:20px; padding:18px 20px; border-radius:16px; background:rgba(17,10,12,.92); border:1px solid rgba(187,157,109,.14); color:var(--muted); font-size:13px; line-height:1.72; box-shadow:var(--shadow); }
-      .top-alert p,.subtitle,.stamp p,.metric .desc,.section-header p,.item p,.callout p,.footnote { text-align:justify; text-justify:inter-word; hyphens:auto; }
-      @media (max-width:1100px) { .brand { flex-direction:column; } .stamp { width:100%; max-width:none; } }
-      @media (max-width:980px) { .grid.summary,.grid.main { grid-template-columns:1fr; } .grid.summary { gap:14px; } }
-      @media (max-width:640px) { .page { padding:18px 14px 40px; } .hero,.metric,.section,.callout { padding:18px; border-radius:15px; } .brandbar { align-items:flex-start; } .brand-seal { width:42px; height:42px; font-size:14px; } .office-name { font-size:19px; } .office-name small { font-size:11px; } .title { font-size:clamp(36px,10.6vw,50px); } .subtitle,.top-alert p,.stamp p,.item p,.callout p,.footnote { font-size:14px; } .metric .value { font-size:34px; } .date-line { display:block; } .date-time { display:inline-block; margin-bottom:6px; min-width:0; } }
-    </style>
-  </head>
-  <body>
-    <main class="page">
-      <section class="top-alert"><p><strong>Alerta de risco:</strong> três controles antigos permanecem críticos, não iniciados e sem comprovante. Hoje há dois prazos simultâneos pela manhã, um ato presencial à tarde e um controle recursal no fim do dia; a execução precisa ser distribuída e documentada desde cedo.</p></section>
-      <section class="hero">
-        <div class="brand">
-          <div class="brand-mark">
-            <div class="brandbar"><div class="brand-seal">PS</div><div><span class="eyebrow">Relatório jurídico operacional</span><h1 class="office-name">Petrônio Souza<small>Advogados Associados</small></h1></div></div>
-            <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
-            <p class="subtitle">Consolidação realizada em <strong>09/09/2026 às 07:45</strong>, no fuso <strong>America/Recife</strong>, a partir da Agenda, comunicações recentes, base de prazos e memória operacional. O dia exige encerramento antecipado dos atos jurídicos, preparação logística e registro objetivo de cada comprovante.</p>
-            <div class="rule"></div>
-          </div>
-          <aside class="stamp">
-            <h2>Leitura executiva</h2>
-            <p><strong>Hoje:</strong> quatro marcos jurídicos e conflito às 09:00.</p>
-            <p><strong>Risco dominante:</strong> passivo sem prova e concentração operacional.</p>
-            <p><strong>Próximo marco:</strong> manifestação técnica amanhã cedo.</p>
-            <div class="search-window"><span>Janela de pesquisa</span><strong>09/09/2026 00:00 até 11/09/2026 23:59</strong></div>
-          </aside>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatório do Gestor de Prazos Processuais - 11/09/2026</title>
+  <meta name="description" content="Relatório executivo de prazos, compromissos e prioridades jurídico-operacionais." />
+  <meta name="theme-color" content="#16090b" />
+  <meta property="og:title" content="Relatório do Gestor de Prazos Processuais - 11/09/2026" />
+  <meta property="og:description" content="Painel executivo de prazos, agenda e providências prioritárias." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <style>
+    :root { --bg-top:#15090b; --bg-mid:#2c0a10; --bg-bottom:#07090d; --gold:#bb9d6d; --gold-soft:#d7c098; --ink:#f5f2f1; --muted:#c7bcc0; --line:rgba(255,232,235,.12); --panel:rgba(17,10,12,.82); --panel-strong:rgba(24,12,15,.94); --danger:#ff4b5d; --warning:#f3bf67; --success:#9ac8a4; --info:#9fb8d8; --shadow:0 26px 64px rgba(0,0,0,.34); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Montserrat,"Segoe UI",Arial,sans-serif; color:var(--ink); background:radial-gradient(circle at top right,rgba(179,19,34,.18),transparent 22%),linear-gradient(180deg,rgba(139,16,29,.22) 0%,rgba(139,16,29,0) 20%),linear-gradient(135deg,var(--bg-top) 0%,var(--bg-mid) 44%,var(--bg-bottom) 100%); }
+    strong { color:#fff6f7; }
+    .page { max-width:1240px; margin:0 auto; padding:28px 20px 64px; }
+    .top-alert { margin-bottom:18px; padding:16px 18px; border:1px solid rgba(255,125,138,.2); background:linear-gradient(90deg,rgba(179,19,34,.24),rgba(179,19,34,.08)); border-radius:16px; box-shadow:var(--shadow); }
+    .top-alert p { margin:0; font-size:16px; line-height:1.7; color:#fff1f2; }
+    .hero { border-radius:22px; padding:30px; border:1px solid rgba(187,157,109,.24); background:linear-gradient(140deg,rgba(50,9,16,.95),rgba(14,12,16,.95)); box-shadow:var(--shadow); }
+    .brand { display:flex; justify-content:space-between; align-items:flex-start; gap:26px; flex-wrap:wrap; }
+    .brand-mark { max-width:760px; min-width:0; }
+    .brandbar { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+    .brand-seal { width:46px; height:46px; border-radius:50%; display:grid; place-items:center; border:1px solid rgba(187,157,109,.42); background:rgba(17,10,12,.95); color:var(--gold-soft); font-size:15px; font-weight:700; box-shadow:var(--shadow); flex:0 0 auto; }
+    .eyebrow { display:block; margin-bottom:4px; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:#d9c8cc; }
+    .office-name { margin:0; font-size:22px; line-height:1; font-weight:800; color:#fff; }
+    .office-name small { display:block; margin-top:2px; font-size:12px; line-height:1.15; font-weight:700; }
+    .title { margin:0; font-size:clamp(38px,4.4vw,64px); line-height:.95; font-weight:800; }
+    .subtitle { margin:18px 0 0; max-width:760px; line-height:1.75; font-size:16px; color:#e4dadd; }
+    .rule { margin-top:22px; width:136px; height:2px; background:linear-gradient(90deg,var(--danger),rgba(255,75,93,0)); }
+    .stamp { min-width:290px; max-width:340px; padding:20px; border-radius:18px; border:1px solid rgba(255,125,138,.16); background:rgba(255,255,255,.035); }
+    .stamp h2,.section h2,.callout h2 { margin:0 0 10px; font-size:14px; color:var(--gold-soft); letter-spacing:.08em; text-transform:uppercase; }
+    .stamp p { margin:7px 0; font-size:15px; line-height:1.62; color:#f2e8ea; }
+    .search-window { margin-top:14px; padding:12px 14px; border-radius:14px; border:1px solid rgba(243,191,103,.24); background:rgba(243,191,103,.08); }
+    .search-window span { display:block; margin-bottom:6px; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#ffe2ab; }
+    .search-window strong { display:block; line-height:1.6; }
+    .grid { display:grid; gap:18px; margin-top:22px; }
+    .grid.summary { grid-template-columns:repeat(4,minmax(0,1fr)); }
+    .grid.main { grid-template-columns:minmax(0,1.42fr) minmax(320px,.92fr); align-items:start; }
+    .metric,.section,.callout { background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:22px; backdrop-filter:blur(12px); box-shadow:var(--shadow); }
+    .metric .value { font-size:40px; font-weight:800; line-height:1; margin-bottom:8px; }
+    .metric .label { font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#d5c0c5; }
+    .metric .desc { margin-top:10px; color:var(--muted); font-size:14px; line-height:1.62; }
+    .value.danger { color:var(--danger); } .value.warning { color:var(--warning); } .value.gold { color:var(--gold); } .value.info { color:var(--info); }
+    .section-header { display:flex; justify-content:space-between; gap:14px; align-items:flex-start; margin-bottom:16px; }
+    .section-header p { margin:0; color:var(--muted); font-size:13px; line-height:1.55; }
+    .list { display:grid; gap:12px; }
+    .item { padding:15px 16px; border-radius:15px; border:1px solid rgba(255,240,242,.08); background:rgba(255,255,255,.03); }
+    .item h3 { margin:0 0 8px; font-size:16px; line-height:1.5; }
+    .item p { margin:0; font-size:15px; line-height:1.72; color:#e6dbde; }
+    .badge-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px; }
+    .badge { padding:6px 10px; border-radius:999px; font-size:11px; letter-spacing:.05em; text-transform:uppercase; border:1px solid rgba(255,255,255,.08); background:rgba(255,255,255,.05); }
+    .badge.critical { color:#ffd5da; border-color:rgba(255,75,93,.38); background:rgba(255,75,93,.11); }
+    .badge.high { color:#ffe0aa; border-color:rgba(243,191,103,.24); background:rgba(243,191,103,.08); }
+    .badge.low { color:#d6eadb; border-color:rgba(154,200,164,.2); background:rgba(154,200,164,.08); }
+    .date-line { display:flex; flex-wrap:wrap; align-items:baseline; gap:12px; }
+    .date-time { min-width:100px; color:var(--warning); font-size:14px; font-weight:700; }
+    .callout { background:var(--panel-strong); }
+    .callout p { margin:0; color:#e9dfe2; line-height:1.72; font-size:15px; }
+    .footnote { margin-top:20px; padding:18px 20px; border-radius:16px; background:rgba(17,10,12,.92); border:1px solid rgba(187,157,109,.14); color:var(--muted); font-size:13px; line-height:1.72; box-shadow:var(--shadow); }
+    .top-alert p,.subtitle,.stamp p,.metric .desc,.section-header p,.item p,.callout p,.footnote { text-align:justify; text-justify:inter-word; hyphens:auto; }
+    @media (max-width:1100px) { .brand { flex-direction:column; } .stamp { width:100%; max-width:none; } }
+    @media (max-width:980px) { .grid.summary,.grid.main { grid-template-columns:1fr; } }
+    @media (max-width:640px) { .page { padding:18px 14px 40px; } .hero,.metric,.section,.callout { padding:18px; border-radius:15px; } .brandbar { align-items:flex-start; } .brand-seal { width:42px; height:42px; } .office-name { font-size:19px; } .title { font-size:clamp(36px,10.6vw,50px); } .subtitle,.top-alert p,.stamp p,.item p,.callout p,.footnote { font-size:14px; } .metric .value { font-size:34px; } .date-line { display:block; } .date-time { display:inline-block; margin-bottom:6px; min-width:0; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="top-alert"><p><strong>Alerta de risco:</strong> há um prazo informado como vencido ontem sem segunda conferência e um controle recursal hoje, também sem quatro olhos. A Controladoria informa agenda zerada, em desacordo com Agenda, comunicações e base de prazos; nenhuma baixa deve ocorrer sem prova objetiva.</p></section>
+    <section class="hero">
+      <div class="brand">
+        <div class="brand-mark">
+          <div class="brandbar"><div class="brand-seal">PS</div><div><span class="eyebrow">Relatório jurídico operacional</span><h1 class="office-name">Petrônio Souza<small>Advogados Associados</small></h1></div></div>
+          <h2 class="title">Relatório do Gestor de<br />Prazos Processuais</h2>
+          <p class="subtitle">Consolidação realizada em <strong>11/09/2026 às 07:45</strong>, no fuso <strong>America/Recife</strong>, a partir do Google Agenda, comunicações recentes, base de prazos no Notion e memória operacional. A prioridade é encerrar o passivo vencido, concluir o controle de hoje e antecipar a preparação da pauta de segunda-feira.</p>
+          <div class="rule"></div>
         </div>
-      </section>
-      <section class="grid summary">
-        <article class="metric"><div class="value danger">3</div><div class="label">Pendências vencidas</div><div class="desc">Controles críticos sem início ou comprovante registrado.</div></article>
-        <article class="metric"><div class="value gold">4</div><div class="label">Marcos hoje</div><div class="desc">Dois prazos, um ato presencial e um controle recursal.</div></article>
-        <article class="metric"><div class="value warning">1</div><div class="label">Conflito direto</div><div class="desc">Dois controles jurídicos sobrepostos às 09:00.</div></article>
-        <article class="metric"><div class="value info">3</div><div class="label">Frentes 10-11/09</div><div class="desc">Preparação, manifestação técnica e contraminuta.</div></article>
-      </section>
-      <section class="grid main">
-        <div class="list">
-          <article class="section"><div class="section-header"><div><h2>Panorama do dia</h2></div><p>Alta carga e pouca margem.</p></div><div class="list">
-            <div class="item"><h3>1. Fechar os controles da manhã.</h3><p>Separar responsáveis, validar a natureza de cada ato, revisar as peças e preservar recibos. Um dos controles mantém divergência com uma sessão futura e não deve ser tratado como fatal sem conferência oficial.</p></div>
-            <div class="item"><h3>2. Preparar o ato presencial.</h3><p>Confirmar habilitação, documentos, orientação e deslocamento antes do almoço, com margem para contingências.</p></div>
-            <div class="item"><h3>3. Antecipar o protocolo noturno.</h3><p>Concluir revisão, assinatura e envio em horário comercial; usar o marco do fim do dia apenas como verificação final de recibo e chave.</p></div>
-          </div></article>
-          <article class="section"><div class="section-header"><div><h2>Crítico</h2></div><p>Ações imediatas.</p></div><div class="list">
-            <div class="item"><div class="badge-row"><span class="badge critical">Vencido</span></div><h3>Três controles sem prova objetiva</h3><p>Abrir os atos de origem, confirmar representação e localizar protocolo. Se não houver cumprimento comprovado, registrar decisão de contingência e responsável ainda hoje.</p></div>
-            <div class="item"><div class="badge-row"><span class="badge critical">Hoje, 09:00</span></div><h3>Sobreposição de dois prazos</h3><p>Dividir a execução entre responsáveis e exigir conferência de quatro olhos. Não há descrições suficientes na Agenda para confirmar termo inicial, vencimento fatal ou estado da peça.</p></div>
-            <div class="item"><div class="badge-row"><span class="badge critical">Hoje</span></div><h3>Ato presencial e recurso</h3><p>Organizar logística e documentação do ato da tarde. O recurso deve ser protocolado antes do fim do expediente, com conferência posterior do recibo.</p></div>
-          </div></article>
-          <article class="section"><div class="section-header"><div><h2>Atenção</h2></div><p>Hoje e próximos dois dias.</p></div><div class="list">
-            <div class="item"><div class="date-line"><div class="date-time">09/09</div><h3>Quatro marcos jurídicos</h3></div><p>Dois controles sobrepostos pela manhã, um ato presencial à tarde e um controle recursal no fim do dia. Evitar concentração de revisão e protocolo no período noturno.</p></div>
-            <div class="item"><div class="date-line"><div class="date-time">10/09</div><h3>Preparação e manifestação técnica</h3></div><p>Há uma frente de preparação às 09:00 e uma manifestação às 10:00 com dois registros equivalentes. Consolidar a duplicidade preservando o alerta válido e o vínculo com a base de prazos.</p></div>
-            <div class="item"><div class="date-line"><div class="date-time">11/09</div><h3>Contraminuta em controle interno</h3></div><p>Abrir o ato, validar o termo inicial e confirmar a contagem oficial. A data registrada é operacional e não deve ser confundida com vencimento fatal.</p></div>
-          </div></article>
-        </div>
-        <div class="list">
-          <article class="section"><div class="section-header"><div><h2>Monitoramento</h2></div><p>Preparação antecipada.</p></div><div class="list">
-            <div class="item"><div class="badge-row"><span class="badge high">Nova intimação</span></div><h3>Certidão criminal exige providência</h3><p>A publicação informa ciência de certidão e apresentação de dados pela defesa, mas não explicita prazo no recorte. Abrir o inteiro teor e registrar termo inicial antes de fixar qualquer data.</p></div>
-            <div class="item"><div class="badge-row"><span class="badge high">Novos atos</span></div><h3>Sigilos, manifestação e arquivamento</h3><p>Qualificar os conteúdos restritos, confirmar representação e verificar se o arquivamento encerra obrigações residuais. Um aviso de juntada deve ser associado ao comprovante correto.</p></div>
-            <div class="item"><div class="badge-row"><span class="badge high">Cliente</span></div><h3>Resposta técnica e cronograma</h3><p>Há cobrança reiterada por providências e protocolo. Responder com decisão técnica, limites claros, responsáveis e cronograma verificável, sem assumir prazos processuais não confirmados.</p></div>
-            <div class="item"><div class="badge-row"><span class="badge low">Controle</span></div><h3>Reconciliação das fontes</h3><p>A fila automática segue incompatível com Agenda, comunicações e base de prazos. Manter baixas automáticas bloqueadas até existir evidência objetiva de cumprimento.</p></div>
-          </div></article>
-          <article class="section"><div class="section-header"><div><h2>Prioridades práticas</h2></div><p>Ordem sugerida.</p></div><div class="list">
-            <div class="item"><h3>1. Distribuir os dois controles das 09:00.</h3><p>Validar atos, responsáveis, peças e recibos.</p></div>
-            <div class="item"><h3>2. Sanear os três controles vencidos.</h3><p>Localizar prova ou definir contingência documentada.</p></div>
-            <div class="item"><h3>3. Preparar o ato presencial.</h3><p>Fechar habilitação, documentos, orientação e deslocamento.</p></div>
-            <div class="item"><h3>4. Protocolar o recurso antecipadamente.</h3><p>Concluir revisão e assinatura antes do fim do expediente.</p></div>
-            <div class="item"><h3>5. Abrir a nova certidão e os sigilos.</h3><p>Qualificar impacto, termo inicial, providência e responsável.</p></div>
-            <div class="item"><h3>6. Preparar os controles de 10 e 11/09.</h3><p>Consolidar duplicidade e validar contagens oficiais.</p></div>
-          </div></article>
-          <article class="callout"><h2>Leitura final</h2><p>O objetivo do dia é retirar a operação da zona de incerteza: cada ato deve terminar com responsável, estado real, termo conferido e prova preservada. A agenda permite execução, mas não comporta deixar decisões críticas para o período noturno.</p></article>
-        </div>
-      </section>
-      <section class="footnote">Relatório público sanitizado, sem dados pessoais, números processuais, informações de saúde ou valores financeiros. <strong>Janela de pesquisa considerada:</strong> <strong>09/09/2026 00:00 até 11/09/2026 23:59</strong>. Datas dependentes de publicação, termo inicial, feriados ou calendário oficial exigem conferência humana. <strong>Agente responsável: Gestor de Prazos Processuais.</strong></section>
-    </main>
-  </body>
+        <aside class="stamp">
+          <h2>Leitura executiva</h2>
+          <p><strong>Hoje:</strong> um controle às 09:00 e um vencido sem prova.</p>
+          <p><strong>Risco dominante:</strong> ausência de segunda conferência e comprovantes.</p>
+          <p><strong>Próximo marco:</strong> vencimento informado para sábado.</p>
+          <div class="search-window"><span>Janela de pesquisa</span><strong>11/09/2026 00:00 até 13/09/2026 23:59</strong></div>
+        </aside>
+      </div>
+    </section>
+    <section class="grid summary">
+      <article class="metric"><div class="value danger">1</div><div class="label">Prazo vencido</div><div class="desc">Alerta automático indica vencimento em 10/09, sem conferência registrada.</div></article>
+      <article class="metric"><div class="value gold">1</div><div class="label">Marco hoje</div><div class="desc">Contraminuta em bloco operacional das 09:00 às 10:00.</div></article>
+      <article class="metric"><div class="value warning">6</div><div class="label">Movimentos novos</div><div class="desc">Publicação, pauta, sigilos, manifestações e decurso a qualificar.</div></article>
+      <article class="metric"><div class="value info">0</div><div class="label">Conflitos horários</div><div class="desc">Sem sobreposição direta na Agenda pesquisada; a carga decorre do passivo.</div></article>
+    </section>
+    <section class="grid main">
+      <div class="list">
+        <article class="section"><div class="section-header"><div><h2>Panorama do dia</h2></div><p>Baixa ocupação formal, alta carga oculta.</p></div><div class="list">
+          <div class="item"><h3>1. Sanear o prazo vencido.</h3><p>Abrir o ato de origem, localizar a peça e o recibo, validar a tempestividade e obter segunda conferência. Sem prova, tratar como contingência imediata.</p></div>
+          <div class="item"><h3>2. Fechar o controle recursal.</h3><p>Revisar a contraminuta, conferir a contagem oficial, colher quatro olhos e preservar protocolo antes do fim do expediente.</p></div>
+          <div class="item"><h3>3. Preparar segunda-feira.</h3><p>Conferir pauta recursal, documentos, estratégia e eventual sustentação; não deixar a preparação para o fim de semana.</p></div>
+        </div></article>
+        <article class="section"><div class="section-header"><div><h2>Crítico</h2></div><p>Ações imediatas.</p></div><div class="list">
+          <div class="item"><div class="badge-row"><span class="badge critical">Vencido em 10/09</span></div><h3>Prazo sem segunda conferência</h3><p>O alerta continua ativo no dia seguinte ao vencimento informado. Confirmar cumprimento, tempestividade, recibo e eventual medida de contingência, sem assumir que o item esteja regularizado.</p></div>
+          <div class="item"><div class="badge-row"><span class="badge critical">Hoje, 09:00</span><span class="badge high">Vencimento informado em 12/09</span></div><h3>Contraminuta recursal</h3><p>A Agenda e o Notion mantêm o item como crítico e não iniciado. A data fatal veio de alerta automático e exige validação no sistema oficial antes da baixa.</p></div>
+          <div class="item"><div class="badge-row"><span class="badge critical">Cliente</span></div><h3>Pedido urgente em conversa aberta</h3><p>Acusar recebimento, revisar os autos, definir medida contra possível liminar e comunicar estratégia ou protocolo com cronograma verificável.</p></div>
+        </div></article>
+        <article class="section"><div class="section-header"><div><h2>Atenção</h2></div><p>Hoje e próximos dois dias.</p></div><div class="list">
+          <div class="item"><div class="date-line"><div class="date-time">11/09</div><h3>Controle recursal e saneamento</h3></div><p>Reservar a manhã para o vencido e a contraminuta. Confirmar autoria e recibos de duas manifestações sigilosas juntadas ontem.</p></div>
+          <div class="item"><div class="date-line"><div class="date-time">12/09</div><h3>Marco fatal informado</h3></div><p>O alerta automático aponta vencimento no sábado. Por prudência, encerrar hoje e conferir calendário, termo inicial e indisponibilidades antes da assinatura e protocolo.</p></div>
+          <div class="item"><div class="date-line"><div class="date-time">13/09</div><h3>Preparação para a pauta de 14/09</h3></div><p>Deixar a sessão recursal pronta hoje: pauta, substabelecimento, memoriais, contato com cliente e decisão sobre sustentação.</p></div>
+        </div></article>
+      </div>
+      <div class="list">
+        <article class="section"><div class="section-header"><div><h2>Monitoramento</h2></div><p>Qualificação e preparo.</p></div><div class="list">
+          <div class="item"><div class="badge-row"><span class="badge high">Publicação</span></div><h3>Nova intimação sem inteiro teor</h3><p>Abrir o documento publicado hoje, identificar destinatário, providência, termo inicial e prazo antes de criar qualquer controle definitivo.</p></div>
+          <div class="item"><div class="badge-row"><span class="badge high">Pauta</span></div><h3>Sessão recursal na segunda-feira</h3><p>Confirmar modalidade, sala, poderes, documentos e necessidade de sustentação. A pauta foi comunicada apenas na véspera útil.</p></div>
+          <div class="item"><div class="badge-row"><span class="badge high">Sigilo</span></div><h3>Manifestações e despachos</h3><p>Qualificar documentos restritos, conferir autoria e tempestividade, e associar cada juntada ao comprovante correto. Um processo também teve dois despachos e novas intimações.</p></div>
+          <div class="item"><div class="badge-row"><span class="badge low">Operacional</span></div><h3>Continuidade de acesso</h3><p>Regularizar o sistema de gestão e instalar/testar o certificado digital antes de 12/09 para não comprometer protocolo e consulta.</p></div>
+          <div class="item"><div class="badge-row"><span class="badge low">Controle</span></div><h3>Reconciliação das fontes</h3><p>O resumo da Controladoria contradiz Agenda, Notion e alertas processuais. Manter baixas automáticas bloqueadas e usar prova documental como critério de encerramento.</p></div>
+        </div></article>
+        <article class="section"><div class="section-header"><div><h2>Prioridades práticas</h2></div><p>Ordem sugerida.</p></div><div class="list">
+          <div class="item"><h3>1. Confirmar o prazo vencido.</h3><p>Peça, protocolo, tempestividade e quatro olhos.</p></div>
+          <div class="item"><h3>2. Concluir a contraminuta.</h3><p>Contagem oficial, revisão, assinatura e recibo.</p></div>
+          <div class="item"><h3>3. Responder ao cliente urgente.</h3><p>Decisão técnica, responsável e cronograma verificável.</p></div>
+          <div class="item"><h3>4. Abrir a intimação e os sigilos.</h3><p>Qualificar impacto, termo inicial e providência.</p></div>
+          <div class="item"><h3>5. Preparar a pauta de segunda-feira.</h3><p>Estratégia, documentos e eventual sustentação.</p></div>
+          <div class="item"><h3>6. Testar os acessos operacionais.</h3><p>Sistema de gestão e certificado digital antes do fim do dia.</p></div>
+        </div></article>
+        <article class="callout"><h2>Leitura final</h2><p>A Agenda parece leve, mas o risco está nas pendências sem prova, nos alertas sem segunda conferência e nos atos recebidos fora da grade formal. Hoje deve terminar com cada item crítico associado a responsável, contagem conferida e comprovante preservado.</p></article>
+      </div>
+    </section>
+    <section class="footnote">Relatório público sanitizado, sem dados pessoais, números processuais, informações de saúde ou valores financeiros. <strong>Janela de pesquisa considerada:</strong> <strong>11/09/2026 00:00 até 13/09/2026 23:59</strong>. Datas dependentes de publicação, termo inicial, feriados ou calendário oficial exigem conferência humana. <strong>Agente responsável: Gestor de Prazos Processuais.</strong></section>
+  </main>
+</body>
 </html>
